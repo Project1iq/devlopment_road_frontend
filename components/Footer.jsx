@@ -32,7 +32,7 @@ export default function Footer() {
                   }`}
                 >
                   <Link
-                    href="https://www.linkedin.com/in/agriculture-week-b692aa287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+                    href="https://www.linkedin.com"
                     target="_blank"
                   >
                     <svg
@@ -47,7 +47,7 @@ export default function Footer() {
                   </Link>
 
                   <Link
-                    href="https://www.instagram.com/iee.iq/"
+                    href="https://www.instagram.com/"
                     target="_blank"
                   >
                     <svg
@@ -61,7 +61,7 @@ export default function Footer() {
                     </svg>
                   </Link>
 
-                  <Link href="https://www.facebook.com/iee.iq" target="_blank">
+                  <Link href="https://www.facebook.com/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -298,7 +298,7 @@ export default function Footer() {
         <div className="py-3 ">
           <h6 className="text-white text-center">
             Copyright {new Date().toDateString().split(" ")[3]} ©{" "}
-            <span className="text-white">Project One and Shahal </span>. كل الحقوق محفوظة.
+            <span className="text-white">Project One </span>. كل الحقوق محفوظة.
           </h6>
         </div>
       </div>

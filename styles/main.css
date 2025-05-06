@@ -90,15 +90,13 @@
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .index .hover-effect:hover {
-  transform: scale(1.05);
-  opacity: 0.8;
+  opacity: 0.7;
 }
 .index .card1 {
   cursor: pointer;
-  width: 250px;
+  width: 33.3333%;
   height: 300px;
   padding: 20px;
-  border-radius: 25px;
   text-align: center;
   background: url("/images/3.jpg") no-repeat center center;
   background-size: cover;
@@ -114,7 +112,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #d59d04 30%, rgb(235, 145, 1) 60%, rgba(246, 0, 0, 0.888) 90%);
+  background: linear-gradient(45deg, #2f4d73 30%, #4e709c 60%, #db263c 90%);
   opacity: 0.7;
   z-index: 1;
 }
@@ -146,10 +144,9 @@
 }
 .index .card2 {
   cursor: pointer;
-  width: 250px;
+  width: 33.3333%;
   height: 300px;
   padding: 20px;
-  border-radius: 25px;
   text-align: center;
   background: url("/images/contact/1.jpg") no-repeat center center;
   background-size: cover;
@@ -165,7 +162,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #d59d04 30%, rgb(235, 145, 1) 60%, rgba(246, 0, 0, 0.888) 90%);
+  background: linear-gradient(45deg, #2f4d73 30%, #4e709c 60%, #db263c 90%);
   opacity: 0.7;
   z-index: 1;
 }
@@ -197,10 +194,9 @@
 }
 .index .card3 {
   cursor: pointer;
-  width: 250px;
+  width: 33.3333%;
   height: 300px;
   padding: 20px;
-  border-radius: 25px;
   text-align: center;
   background: url("/images/confnew/ni.jpg") no-repeat left center; /* وضع الصورة خلف التدرج */
   background-size: cover;
@@ -220,7 +216,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #d59d04 30%, rgb(235, 145, 1) 60%, rgba(246, 0, 0, 0.888) 90%); /* تدرج لوني */
+  background: linear-gradient(45deg, #2f4d73 30%, #4e709c 60%, #db263c 90%); /* تدرج لوني */
   opacity: 0.7; /* شفافية التدرج */
   z-index: 1; /* وضعه فوق الصورة لكن تحت النص */
 }
@@ -252,10 +248,9 @@
 }
 .index .card4 {
   cursor: pointer;
-  width: 250px;
+  width: 33.3333%;
   height: 300px;
   padding: 20px;
-  border-radius: 25px;
   text-align: center;
   background: url("/images/2.jpg") no-repeat center center; /* وضع الصورة خلف التدرج */
   background-size: cover;
@@ -275,7 +270,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(45deg, #d59d04 30%, rgb(235, 145, 1) 60%, rgba(246, 0, 0, 0.888) 90%); /* تدرج لوني */
+  background: linear-gradient(45deg, #2f4d73 30%, #4e709c 60%, #db263c 90%); /* تدرج لوني */
   opacity: 0.7; /* شفافية التدرج */
   z-index: 1; /* وضعه فوق الصورة لكن تحت النص */
 }
@@ -357,7 +352,7 @@
   }
 }
 .index .section-2 {
-  background-color: #e4493b;
+  background-color: #db263c;
   /* الحاوية الرئيسية */
   /* إعداد السلايدر */
 }
@@ -376,7 +371,7 @@
   display: flex;
   justify-content: space-between;
   width: 600px;
-  height: 690px;
+  height: 440px;
   gap: 20px;
   overflow: hidden;
 }
@@ -2673,7 +2668,7 @@
 }
 
 .footer {
-  background-image: url("../public/footer_bg.jpg");
+  background-image: url("../public/images/footer.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-y: center;
