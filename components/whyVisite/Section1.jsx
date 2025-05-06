@@ -108,18 +108,19 @@ export default function Section1({ data }) {
               <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row  pt-2 ">
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
                   {" "}
-                  <div className="col-10 align-self-center">
+                 
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/people.png"
+                        src="/images/icons/1.png"
                         alt="وصف للصورة"
                         width={2000}
+
                         height={2000}
                         className={"responsiveImage "}
                       />
                     </div>
-                  </div>
+                  
                   <div className="  d-flex flex-column justify-content-center ">
                     <h5 className=" bm text-center">
                       {lang ? "تبادل المعرفة " : " Participant "}
