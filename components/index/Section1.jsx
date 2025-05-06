@@ -247,7 +247,7 @@ export default function Section1({ data }) {
             <div className="col-lg-2 col-md-4 col-12">
               <h1 className="number text-center">{Energy}+</h1>
               <p className="text text-center">
-<Image src={'/images/icons'} alt="image" width={40} height={40} />
+<Image src={'/images/icons/1.png'} alt="image" width={120} height={120} />
                 <br />
                 {lang ? "خبراء الطاقة" : "Energy Professionals"}
               </p>
