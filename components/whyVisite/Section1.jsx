@@ -108,11 +108,11 @@ export default function Section1({ data }) {
               <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row  pt-2 ">
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
                   {" "}
-                  <div className="col-12 align-self-center">
+                  <div className="col-10 align-self-center">
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/newpeople.png"
+                        src="/images/iconimg/people.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
@@ -122,18 +122,18 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center ">
                     <h5 className=" bm text-center">
-                      {lang ? "قطاع   " : " Smart "}
+                      {lang ? "تبادل المعرفة " : " Participant "}
 
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "الحلول    " : " Solutions "}
+                      {lang ? "بين الجهات " : " knowledge "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
                       {" "}
-                      {lang ? "الذكية    " : " Sector "}{" "}
+                      {lang ? "المشاركة" : "sharing"}{" "}
                     </h5>
                   </div>
                 </div>
@@ -142,7 +142,7 @@ export default function Section1({ data }) {
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/renewable.png"
+                        src="/images/iconimg/nationl.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
@@ -152,16 +152,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "الطاقة " : " Renewable "}
+                      {lang ? "  الترويج عن " : " Promoting the   "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "المتجددة  " : "  & Clean "}
+                      {lang ? " مشروع طريق   " : "  Development "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "والنظيفة " : " Energy "}
+                      {lang ? " التنمية " : " Road "}
                     </h5>
                   </div>
                 </div>
@@ -170,7 +170,7 @@ export default function Section1({ data }) {
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/wind2.png"
+                        src="/images/iconimg/publicimg.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
@@ -180,16 +180,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "الطاقة " : " Critical & "}
+                      {lang ? "تحسين الصورة  " : " Enhancing image "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "الحرجة  " : " Back-up "}
+                      {lang ? "العامة كبيئة   " : " as successful "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "والاحتياطية " : " Power "}
+                      {lang ? "استثمارية ناجحة " : " investment hub "}
                     </h5>
                   </div>
                 </div>
@@ -198,7 +198,7 @@ export default function Section1({ data }) {
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/tower.png"
+                        src="/images/iconimg/money.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
@@ -208,17 +208,17 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "النقل " : " Transmission "}
+                      {lang ? "دعم تنويع " : " Boosting local "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "و " : " & "}
+                      {lang ? "الاقتصاد " : " economic "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
                       {" "}
-                      {lang ? "التوزيع " : " Distribution "}{" "}
+                      {lang ? "المحلي " : " diversity "}{" "}
                     </h5>
                   </div>
                 </div>
