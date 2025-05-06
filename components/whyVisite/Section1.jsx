@@ -83,7 +83,7 @@ export default function Section1({ data }) {
 
   return (
     <>
-      <section className="row section-1 mx-auto">
+      <section style={{backgroundColor:""}} className="row section-1 mx-auto">
         <div action="" className="form-container ">
           <div className="container">
             <div className="row">
@@ -354,17 +354,17 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "النقل " : " Transmission "}
+                      {lang ? "تبادل المعرفة " : "  experience "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "و " : " & "}
+                      {lang ? "والخبرات بين " : " exchange  "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
                       {" "}
-                      {lang ? "التوزيع " : " Distribution "}{" "}
+                      {lang ? "المختصين والخبراء " : " among experts "}{" "}
                     </h5>
                   </div>
                 </div>
@@ -383,17 +383,17 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "استهلاك " : " Energy "}
+                      {lang ? "نشر الوعي " : " Raising "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "الطاقة " : " Consumption & "}
+                      {lang ? "بمشاركة المعرفة " : " awareness "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
                       {" "}
-                      {lang ? "وإدارتها" : "Management "}{" "}
+                      {lang ? "عن المشروع" : "through sharing "}{" "}
                     </h5>
                   </div>
                 </div>
@@ -412,16 +412,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "بطاريات " : "Battery "}
+                      {lang ? "فتح حوار " : "Start "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "والتنقل  " : "& "}
+                      {lang ? "لتوضيح  " : "dialogue "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "الكهربائي   " : " eMobility "}{" "}
+                      {lang ? "المتطلبات   " : " for clarity "}{" "}
                     </h5>
                   </div>
                 </div>
