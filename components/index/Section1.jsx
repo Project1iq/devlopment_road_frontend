@@ -7,10 +7,10 @@ import { langState } from "@/atom/atom";
 import Link from "next/link";
 import me from "../../public/me2.mp4";
 import Prime from "@/public/images/Prime Minister.png";
-import Ph1 from "@/public/images/2.jpg";
-import Ph2 from "@/public/images/12.jpg";
-import Ph3 from "@/public/images/3.jpg";
-import Ph5 from "@/public/images/15.jpg";
+import Ph1 from "@/public/images/slider-home/1.png";
+import Ph2 from "@/public/images/slider-home/2.png";
+import Ph3 from "@/public/images/slider-home/3.png";
+import Ph5 from "@/public/images/slider-home/4.png";
 
 import Ph4 from "@/public/images/5.jpg";
 
@@ -174,15 +174,22 @@ export default function Section1({ data }) {
   return (
     <>
       <div className="video-container ">
-        <video
-          src={me}
-          autoPlay
-          muted
-          loop
-          className="vid "
-          ref={videoRef}
-        />
-
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src={'/images/slider-home/1.png'} class="d-block w-100" alt="image"/>
+    </div>
+    <div class="carousel-item">
+      <img src={'/images/slider-home/2.png'} class="d-block w-100" alt="image"/>
+    </div>
+    <div class="carousel-item">
+      <img src={'/images/slider-home/3.png'} class="d-block w-100" alt="image"/>
+    </div>
+    <div class="carousel-item">
+      <img src={'/images/slider-home/4.png'} class="d-block w-100" alt="image"/>
+    </div>
+  </div>
+</div>
         <div className="video-timer">
           <div className="main col-lg-8 col-sm-12 ">
             <h1 className="text toxt1  ">

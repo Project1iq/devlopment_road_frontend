@@ -2499,7 +2499,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 26px;
+  gap: 10px;
   white-space: nowrap;
 }
 .nav .links .a {
@@ -2647,6 +2647,10 @@
   .fakenav {
     height: 50px !important;
   }
+}
+
+.active-lang {
+  background-color: #faa61a;
 }
 
 .footer {
