@@ -56,7 +56,7 @@ export default function Whoattends() {
 
         </div>
 
-        <div className="margtop">
+        {/* <div className="margtop">
           <Marquee
             direction={lang ? "left" : "right"}
             style={{ direction: "ltr" }}
@@ -74,7 +74,7 @@ export default function Whoattends() {
               />
             ))}
           </Marquee>
-        </div>
+        </div> */}
        
 
         <div className="separator col  col-12   col-sm-none col-md-none col-lg-none justify-content-center ">
@@ -84,7 +84,7 @@ export default function Whoattends() {
       <div className="row d-flex justify-content-center ">
         <h2 className="main-text text-center mt-5 ">
           {lang
-            ? " شاهد كيف تتناسب مع معرض العراق للطاقة"
+            ? " القطاعات المستهدفة"
             : "See how you fit in at Iraq Energy"}
         </h2>
       </div>
@@ -95,7 +95,7 @@ export default function Whoattends() {
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/1.jpg"
+            src="/images/whoattends/1.png"
             alt="government image"
             width={3000}
             height={0}
@@ -104,15 +104,15 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الحكومة" : "Government"}
+            {lang ? "قطاع النقل والخدمات اللوجستية" : "Government"}
           </h3>{" "}
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           <Image
-            src="/images/picdubai/2.jpg"
+            src="/images/whoattends/2.png"
             alt="uti image "
             width={3000}
             height={0}
@@ -121,16 +121,16 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الخدمات العامة والرقابة" : "Utilities & Regulatory"}
+            {lang ? "   قطاع البنية التحتية والانشاءات" : "Utilities & Regulatory"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/3.jpg"
+            src="/images/whoattends/9.png"
             alt="dev image"
             width={3000}
             height={0}
@@ -139,18 +139,18 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "المقاولون والمهندسون والمطورون"
+              ? " القطاع الحكومي والمؤسسات الدولية"
               : "EPC Contractors & Developers"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/4.jpg"
+            src="/images/whoattends/4.png"
             alt="system image"
             width={3000}
             height={0}
@@ -159,11 +159,11 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "المقاولون الفرعيون ومنسقي البرمجة"
+              ? "قطاع التكنولوجيا والاتصالات"
               : "Sub-contractors & System Integrators"}
           </h3>
         </div>
@@ -172,7 +172,7 @@ export default function Whoattends() {
         <div className="col-lg-2 col-sm-12 text-center ">
           {" "}
           <Image
-            src="/images/picdubai/5.jpg"
+            src="/images/whoattends/5.png"
             alt="distributors image"
             width={3000}
             height={0}
@@ -181,17 +181,17 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "شركات التجارة الكهربائية"
+              ? "قطاع التجارة والصناعة"
               : "  Distributors & Electrical Trading Companies"}
           </h3>{" "}
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           <Image
-            src="/images/picdubai/6.jpg"
+            src="/images/whoattends/6.png"
             alt="wholesalers image"
             width={3000}
             height={0}
@@ -200,18 +200,18 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "تجار الجملة، المصنعون، والبائعون"
+              ? "قطاع التمويل والاستثمار"
               : "Wholesalers, Manufacturers & Resellers"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/7.jpg"
+            src="/images/whoattends/7.png"
             alt="consultants image"
             width={3000}
             height={0}
@@ -220,16 +220,16 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "المستشارون" : "Consultants"}
+            {lang ? "قطاع السياحة والخدمات" : "Consultants"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/8.jpg"
+            src="/images/whoattends/8.png"
             alt="financiers image"
             width={3000}
             height={0}
@@ -238,10 +238,10 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الخبراء الماليون" : " Financiers"}
+            {lang ? " قطاع التعليم والتدريب" : " Financiers"}
           </h3>
         </div>
       </div>

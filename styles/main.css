@@ -3189,6 +3189,12 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
 .whyVisite .btn-container .btn {
   flex-grow: 1;
 }
+.whyVisite p {
+  color: #1a283c;
+}
+.whyVisite b {
+  color: #304D73;
+}
 .whyVisite .section-1 .mai {
   overflow-x: auto;
 }
@@ -3323,7 +3329,7 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
   transition: transform 0.3s ease-in-out;
 }
 .whyVisite .section-2 p {
-  color: #000000;
+  color: #1a283c;
   font-size: 18px;
   line-height: 28px;
   font-weight: 400;
@@ -4904,7 +4910,8 @@ body.whitebk {
   margin: 0px 0px 1rem;
   color: #304D73;
 }
-.whoattends h4 {
+.whoattends h5 {
+  color: #1a283c;
   margin-bottom: 16px;
 }
 .whoattends h3 {
