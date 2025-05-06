@@ -49,7 +49,7 @@
   position: relative;
   top: -7px;
   z-index: 2;
-  background-color: #e4493b;
+  background-color: #2f4d73;
   border-radius: 10px;
   padding: 15px 60px;
 }
@@ -3174,6 +3174,8 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
   overflow-x: auto;
 }
 .whyVisite .section-1 .responsiveImage {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: auto;
   border-radius: 10px;
@@ -3294,6 +3296,8 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
   }
 }
 .whyVisite .section-2 .responsiveImage {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: auto;
   border-radius: 0px;
