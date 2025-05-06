@@ -369,7 +369,7 @@ export default function Section1({ data }) {
           <div className="mb-4">
             <h2 className="hn">
               {lang
-                ? "   التواصل والتعاون لتحويل مستقبل الطاقة في العراق    "
+                ? "  رؤية معرض ومؤتمر طريق التنمية    "
                 : "Connect, Collaborate, and Shape the Future of Energy in Iraq"}{" "}
             </h2>
           </div>
@@ -379,13 +379,13 @@ export default function Section1({ data }) {
             <div className="col-8  mt-2 ">
               <p>
                 {lang
-                  ? "  يحظى برعاية السيد رئيس الوزراء ووزارة الكهرباء العراقية - وزارة النفط - الهيئة الوطنية للاستثمار مما يحقق فرص تعزيز التعاون مع الشركات الاستثمارية المتخصصة في مجال الطاقة، ويواصل معرض ومؤتمر طاقة العراق بنسختها العاشرة ربط مجتمع الطاقة العالمي مع موردي الطاقة الدوليين"
+                  ? "  أن يكون معرض مشروع طريق التنمية العراقي منصة ملهمة للتواصل والتفاعل مع المجتمع المحلي والدولي، تسلط الضوء على رؤية المشروع كمحرك رئيسي للتكامل الاقتصادي والتنمية المستدامة في العراق والمنطقة. يهدف المعرض إلى تقديم المشروع بوصفه نموذجًا عالميًا للابتكار والبنية التحتية، وتعزيز الشراكات المحلية والدولية، وتحفيز مشاركة القطاعين العام والخاص لتحقيق النمو الشامل والمستدام    "
                   : "Under the patronage of the Prime Minister, the Ministry of Electricity of Iraq, the Ministry of Oil, and the National Investment Commission, the 10th edition of the Iraq Energy Exhibition and Conference continues to foster cooperation with investment companies specialized in the energy sector"}
               </p>
             </div>
             <div className="col-2"></div>
           </div>
-          <div className="row d-flex justify-content-sm-center justify-content-md-between mb-5 mt-5">
+          <div className="row justify-content-sm-center justify-content-md-between mb-5 mt-5">
             <div className="card1 col-3 col-sm-12 hover-effect">
               <Link href="/govermentSupport">
                 <h2>
@@ -397,7 +397,6 @@ export default function Section1({ data }) {
                 </h2>
               </Link>
             </div>
-
             <div className="card2 col-3 col-sm-12 hover-effect">
               <Link href="/whyVisite">
                 <h2>
@@ -416,17 +415,6 @@ export default function Section1({ data }) {
                   <span
                     className="underline"
                     style={{ width: lang ? "60%" : "83%" }}
-                  ></span>
-                </h2>
-              </Link>
-            </div>
-            <div className="card4 col-3 col-sm-12 hover-effect">
-              <Link href="/contact">
-                <h2>
-                  {lang ? "  تعاون معنا" : " PARTNER"}
-                  <span
-                    className="underline"
-                    style={{ width: lang ? "83%" : "78%" }}
                   ></span>
                 </h2>
               </Link>
