@@ -1,0 +1,31 @@
+{ "platina": [
+    {
+      "id": 1,
+      "image": "images/sponsersrole/Al Ojaimi Empower House.png",
+      "name": "Al ojaime Empower House",
+      "name_ar": "مجموعة العجيمي الصناعية"
+    },
+    {
+      "id": 2,
+      "image": "images/sponsersrole/GE.png",
+      "name": "GE VERNOVA",
+      "name_ar": "جي فيرنوفا"
+    },
+    {
+      "id": 3,
+      "image": "images/sponsersrole/Raban.png",
+      "name": "Raban Al Safina",
+      "name_ar": "ربان السفينة"
+    },
+    {
+      "id": 4,
+      "image": "images/sponsersrole/Energy.png",
+      "name": "Siemens Energy",
+      "name_ar": " سيمنس للطاقة"
+    }
+    
+  ],
+  "gold": [
+
+  ]
+}

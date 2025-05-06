@@ -1,0 +1,149 @@
+.sectors {
+  .main-text {
+    font-weight: 700;
+    font-size: 50px;
+
+    line-height: 60px;
+    margin: 0 0 1rem;
+    color: #faa61a;
+  }
+  .mai {
+    overflow-x: visible;
+    overflow-y: visible;
+    @media (max-width: 999px) {
+      overflow-x: auto;
+    }
+  }
+  .sector-item {
+    cursor: pointer; // يجعل العنصر قابلاً للنقر
+    transition: transform 0.3s ease; // تأثير الحركة أثناء hover
+  }
+  .sector-item:hover {
+    transform: scale(1.05); // تكبير العنصر قليلاً
+  }
+  .responsiveImage {
+    
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+  }
+  .bm {
+    color: #E4493B;
+    font-weight: 600;
+  }
+}
+.temp {
+  .main-text {
+    font-weight: 700;
+    font-size: 50px;
+
+    line-height: 60px;
+    margin: 0 0 1rem;
+    color: #faa61a;
+  }
+  p {
+    font-weight: 420;
+    color: #2c2c2c;
+    font-size: 18px;
+  }
+}
+.sectors2 {
+  .main-text {
+    font-weight: 700;
+    font-size: 5rem; // تم تقليل الحجم
+    line-height: 2.5rem; // جعل ارتفاع السطر مناسباً
+    margin: 0 0 1rem;
+    color: #faa61a;
+  }
+
+  .text-center {
+    font-weight: 400;
+    color: #2c2c2c;
+    font-size: 1.1rem; // جعل النص أكثر وضوحاً وسهولة
+  }
+
+  .mai {
+    overflow-x: visible;
+    overflow-y: visible;
+    @media (max-width: 999px) {
+      overflow-x: auto;
+    }
+  }
+
+  .sector-item {
+    cursor: pointer;
+    transition: transform 0.3s ease; 
+    text-decoration: none; 
+    margin-bottom: 2rem; 
+
+  
+  }
+
+  .description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #2c2c2c;
+    margin-bottom: 1rem; 
+  }
+
+  .read-more {
+    display: inline-block;
+    font-size: 1rem;
+    color: #faa61a;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #9f1e5b; // تغيير اللون عند hover
+    }
+  }
+
+  .responsiveImage {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 1.5rem; // المسافة بين الصورة وباقي المحتوى
+  }
+
+  .separator {
+    hr {
+      border-top: 2px solid #ccc;
+    }
+  }
+}
+
+.temp {
+  .main-text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 0 1rem;
+    color: #faa61a;
+  }
+
+  p {
+    font-weight: 420;
+    color: #2c2c2c;
+    font-size: 18px;
+  }
+}
+
+.temp {
+  .main-text {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 60px;
+    margin: 0 0 1rem;
+    color: #faa61a;
+  }
+
+  p {
+    font-weight: 420;
+    color: #2c2c2c;
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,524 @@
+.register {
+  .section-1 {
+    background-color: #fafafa;
+
+    .bigcon {
+      background-color: #fafafa;
+    }
+
+    .borda {
+      background-color: #fff;
+      margin-top: 30px;
+      box-shadow: 0 2px 3px rgba(40, 50, 78, 0.12),
+        0 0 4px rgba(40, 50, 78, 0.12);
+      margin-bottom: 40px;
+      padding-bottom: 2rem !important;
+      border-radius: 10px;
+    }
+
+    .title {
+      background-image: url("/images/register/10th-IEE.jpg");
+      border-radius: 10px;
+      height: 33.2vh;
+      background-position: center top;
+      background-size: cover;
+      width: 92%;
+      border: 1px solid #2e3f51;
+
+      @media (max-width: 321px) {
+        background-size: cover;
+        height: 13.2vh;
+      }
+
+      @media (max-width: 767px) {
+        background-size: cover;
+        height: 18.2vh;
+      }
+
+      @media (max-width: 1001px) {
+        background-size: cover;
+        height: 20.2vh;
+      }
+
+      h1 {
+        color: #fff;
+        font-size: 50px;
+        font-weight: 700;
+        padding: 10px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 35px;
+        }
+      }
+    }
+
+    .maintext {
+      color: #eec11d;
+      font-weight: 700;
+      font-size: 30px;
+
+      line-height: 40px;
+
+      @media (max-width: 998px) {
+        font-size: 25px;
+      }
+    }
+
+    .pargh {
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
+}
+
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem !important;
+
+  &+.input {
+    margin-top: 1.5rem !important;
+  }
+}
+
+.input-label {
+  color: #2f2f2f;
+  position: absolute;
+  bottom: .5rem !important;
+  font-size: 18px;
+  font-weight: 500;
+  transition: .25s ease;
+  background-color: #ffffff !important;
+  padding: 0 0.5rem;
+  z-index: 0;
+}
+
+.input-label-date{
+  z-index: 999;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #b5b5b5;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: .25rem;
+  color: #000000 !important;
+
+  &:focus,
+  &:valid {
+    outline: 0;
+    border-bottom-color: #eec11d !important;
+    border-width: 2px !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+
+    &+.input-label {
+      color: #eec11d;
+      transform: translateY(-1.5rem);
+    }
+  }
+}
+
+.action {
+  margin-top: 2rem;
+}
+
+.action-button {
+  font: inherit;
+  font-size: 1.25rem;
+  padding: 1em;
+  width: 100%;
+  font-weight: 500;
+  background-color: #eec11d;
+  border-radius: 6px;
+  color: #FFF;
+  border: 0;
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.card-info {
+  padding: 1rem 1rem;
+  text-align: center;
+  font-size: .875rem;
+  color: #8597a3;
+
+  a {
+    display: block;
+    color: #eec11d;
+    text-decoration: none;
+  }
+}
+
+
+.select-label {
+  color: #2f2f2f;
+  position: absolute;
+  bottom: .5rem;
+  font-size: 18px;
+  font-weight: 500 !important;
+  transition: .25s ease;
+  background-color: #ffffff;
+  padding: 0 0.5rem;
+  z-index: 0;
+}
+
+.select-label.focused {
+  color: #eec11d;
+  transform: translateY(-1.5rem);
+}
+
+.select-label-date {
+  z-index: 999;
+}
+
+
+
+/* button navbar */
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-angle-offset {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@property --gradient-percent {
+  syntax: "<percentage>";
+  initial-value: 5%;
+  inherits: false;
+}
+
+@property --gradient-shine {
+  syntax: "<color>";
+  initial-value: white;
+  inherits: false;
+}
+
+.shiny-cta {
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: .8rem 2.5rem;
+  font-family: inherit;
+  font-size: 1.125rem;
+  line-height: 1.2;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  color: #ffffff !important;
+  background: linear-gradient(#b9003a,
+      #91002e) padding-box,
+    conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      #ff3d6d var(--gradient-percent),
+      #ff6b8b calc(var(--gradient-percent) * 2),
+      #ff3d6d calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)) border-box;
+
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+/* Dots pattern */
+.shiny-cta::before {
+  --size: calc(100% - var(--shadow-size) * 3);
+  --position: 3px;
+  --space: calc(var(--position) * 1.5);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle at var(--position) var(--position),
+      white calc(var(--position) / 4),
+      transparent 0) padding-box;
+  background-size: var(--space) var(--space);
+  background-repeat: space;
+  mask-image: conic-gradient(from calc(var(--gradient-angle) + 45deg),
+      black,
+      transparent 10% 90%,
+      black);
+  border-radius: inherit;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Inner shimmer */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(-50deg,
+      transparent,
+      var(--shiny-cta-highlight),
+      transparent);
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.6;
+}
+
+.shiny-cta span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animate */
+.shiny-cta {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+@keyframes gradient-angle {
+  to {
+    --gradient-angle: 360deg;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes breathe {
+
+  from,
+  to {
+    scale: 1;
+  }
+
+  50% {
+    scale: 1.2;
+  }
+}
+
+
+
+
+.shiny-cta-2 {
+  width: 100%;
+  --animation: gradient-angle linear infinite;
+  --duration: 3s;
+  --shadow-size: 2px;
+  isolation: isolate;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  outline-offset: 4px;
+  padding: 1rem 2.5rem;
+  font-family: inherit;
+  font-size: 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+  border: 1px solid transparent;
+  border-radius: 360px;
+  color: #ffffff !important;
+  background: linear-gradient(#eec11d,
+  #faa61a) padding-box,
+    conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
+      transparent,
+      #d2a917 var(--gradient-percent),
+      #f5d870 calc(var(--gradient-percent) * 2),
+      #dbb733 calc(var(--gradient-percent) * 3),
+      transparent calc(var(--gradient-percent) * 4)) border-box;
+
+  box-shadow: inset 0 0 0 1px var(--shiny-cta-bg-subtle);
+
+  &::before,
+  &::after,
+  span::before {
+    content: "";
+    pointer-events: none;
+    position: absolute;
+    inset-inline-start: 50%;
+    inset-block-start: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+  }
+
+  &:active {
+    translate: 0 1px;
+  }
+}
+
+/* Dots pattern */
+.shiny-cta-2::before {
+  --size: calc(100% - var(--shadow-size) * 3);
+  --position: 3px;
+  --space: calc(var(--position) * 1.5);
+  width: var(--size);
+  height: var(--size);
+  background: radial-gradient(circle at var(--position) var(--position),
+      rgb(255, 255, 255) calc(var(--position) / 2.5),
+      transparent 0) padding-box;
+  background-size: var(--space) var(--space);
+  background-repeat: space;
+  mask-image: conic-gradient(from calc(var(--gradient-angle) + 45deg),
+      black,
+      transparent 10% 90%,
+      black);
+  border-radius: inherit;
+  opacity: 0.4;
+  z-index: -1;
+}
+
+/* Inner shimmer */
+.shiny-cta::after {
+  --animation: shimmer linear infinite;
+  width: 100%;
+  aspect-ratio: 1;
+  background: linear-gradient(-50deg,
+      transparent,
+      var(--shiny-cta-highlight),
+      transparent);
+  mask-image: radial-gradient(circle at bottom, transparent 40%, black);
+  opacity: 0.8;
+}
+
+.shiny-cta-2 span {
+  z-index: 1;
+
+  &::before {
+    --size: calc(100% + 1rem);
+    width: var(--size);
+    height: var(--size);
+    box-shadow: inset 0 -1ex 2rem 4px var(--shiny-cta-highlight);
+    opacity: 0;
+  }
+}
+
+/* Animate */
+.shiny-cta-2 {
+  --transition: 800ms cubic-bezier(0.25, 1, 0.5, 1);
+  transition: var(--transition);
+  transition-property: --gradient-angle-offset, --gradient-percent,
+    --gradient-shine;
+
+  &,
+  &::before,
+  &::after {
+    animation: var(--animation) var(--duration),
+      var(--animation) calc(var(--duration) / 0.4) reverse paused;
+    animation-composition: add;
+  }
+
+  span::before {
+    transition: opacity var(--transition);
+    animation: calc(var(--duration) * 1.5) breathe linear infinite;
+  }
+}
+
+.shiny-cta-2:is(:hover, :focus-visible) {
+  --gradient-percent: 20%;
+  --gradient-angle-offset: 95deg;
+  --gradient-shine: var(--shiny-cta-highlight-subtle);
+
+  &,
+  &::before,
+  &::after {
+    animation-play-state: running;
+  }
+
+  span::before {
+    opacity: 1;
+  }
+}
+
+/* Hide the default calendar icon */
+input[type="date"]::-webkit-calendar-picker-indicator,
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  opacity: 0; /* Hide the default icon */
+}
+
+/* Add a custom calendar icon */
+.input-field.date-input,
+.input-field.datetime-input {
+  position: relative;
+}
+
+.input-field.date-input::after,
+.input-field.datetime-input::after {
+  content: "📅"; /* Use a custom icon (emoji or FontAwesome) */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't interfere with input */
+  color: #eec11d; /* Change the icon color */
+  font-size: 1.2em;
+}
+
+/* Optional: Add hover effect */
+.input-field.date-input:hover::after,
+.input-field.datetime-input:hover::after {
+  color: #eec11d; /* Darker color on hover */
+}
