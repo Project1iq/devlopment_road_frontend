@@ -3205,7 +3205,7 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
   height: 184px;
 }
 .whyVisite .section-1 .bm {
-  color: #E4493B;
+  color: #FFFAFA;
   font-weight: 600;
 }
 .whyVisite .section-1 .title {
@@ -3256,7 +3256,7 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
   font-size: 50px;
   line-height: 60px;
   margin: 0 0 1rem;
-  color: #faa61a;
+  color: #FFFAFA;
 }
 .whyVisite .section-1 .sub-title {
   color: #868686;
