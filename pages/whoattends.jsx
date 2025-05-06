@@ -30,42 +30,30 @@ export default function Whoattends() {
       <div className="container">
         <div>
           <h2 className="main-text text-center mt-5 mb-5">
-            {lang ? "  من يحضر:-" : "Who attends Iraq energy:-"}
+            {lang ? "  رؤية معرض ومؤتمر طريق التنمية :-" : "Development Road Expo & Conference Vision:-"}
           </h2>
         </div>
         <div className="text-center">
-          {lang ? (
-            <>
-              <h4>
-                توجيه دعوات رسمية الى السيد رئيس الوزراء وشريحة متخصصة من اصحاب
-                القرار في الحكومة المركزية
-              </h4>
-              <h7 className="h7">
-                وستشمل ايضاً: كبار المسؤولين من السادة الوزراء والوكلاء
-                والمستشارين. لجنة الكهرباء والطاقة النيابية في البرلمان. السادة
-                المحافظون ورؤساء واعضاء مجالس المحافظات. المصنعون في القطاعات
-                المستفيدة. اتحاد الصناعات واتحاد الغرف ورجال الاعمال. السفارات
-                واعضاء السلك الدبلوماسي في العراق.
-              </h7>{" "}
-            </>
-          ) : (
-            <>
-              <h4>
-                Official invitations will be directed to the Prime Minister and
-                a specialized group of decision-makers in the central
-                government.
-              </h4>
-              <h7 className="h7">
-                It will also include: senior officials such as ministers,
-                deputies, and advisors. The Parliamentary Energy and Electricity
-                Committee. Governors and heads and members of the provincial
-                councils. Manufacturers in the benefiting sectors. The
-                Federation of Industries, the Federation of Chambers, and
-                businessmen. Embassies and members of the diplomatic corps in
-                Iraq.
-              </h7>
-            </>
-          )}
+        {lang ? (
+  <>
+    <h5>
+      أن يكون معرض مشروع طريق التنمية العراقي منصة ملهمة للتواصل والتفاعل مع المجتمع المحلي والدولي،
+      تسلط الضوء على رؤية المشروع كمحرك رئيسي للتكامل الاقتصادي والتنمية المستدامة في العراق والمنطقة.
+      يهدف المعرض إلى تقديم المشروع بوصفه نموذجاً عالمياً للابتكار والبنية التحتية، وتعزيز الشراكات المحلية والدولية،
+      وتحفيز مشاركة القطاعين العام والخاص لتحقيق النمو الشامل والمستدام.
+    </h5>
+  </>
+) : (
+  <>
+    <h5>
+      The Development Road Exhibition aims to be an inspiring platform for engagement with both local and international communities,
+      highlighting the project's vision as a key driver for economic integration and sustainable development in Iraq and the region.
+      The exhibition seeks to present the project as a global model of innovation and infrastructure, foster local and international partnerships,
+      and encourage public and private sector participation to achieve inclusive and sustainable growth.
+    </h5>
+  </>
+)}
+
         </div>
 
         <div className="margtop">
