@@ -30,45 +30,33 @@ export default function Whoattends() {
       <div className="container">
         <div>
           <h2 className="main-text text-center mt-5 mb-5">
-            {lang ? "  من يحضر:-" : "Who attends Iraq energy:-"}
+            {lang ? "  رؤية معرض ومؤتمر طريق التنمية :-" : "Development Road Expo & Conference Vision:-"}
           </h2>
         </div>
         <div className="text-center">
-          {lang ? (
-            <>
-              <h4>
-                توجيه دعوات رسمية الى السيد رئيس الوزراء وشريحة متخصصة من اصحاب
-                القرار في الحكومة المركزية
-              </h4>
-              <h7 className="h7">
-                وستشمل ايضاً: كبار المسؤولين من السادة الوزراء والوكلاء
-                والمستشارين. لجنة الكهرباء والطاقة النيابية في البرلمان. السادة
-                المحافظون ورؤساء واعضاء مجالس المحافظات. المصنعون في القطاعات
-                المستفيدة. اتحاد الصناعات واتحاد الغرف ورجال الاعمال. السفارات
-                واعضاء السلك الدبلوماسي في العراق.
-              </h7>{" "}
-            </>
-          ) : (
-            <>
-              <h4>
-                Official invitations will be directed to the Prime Minister and
-                a specialized group of decision-makers in the central
-                government.
-              </h4>
-              <h7 className="h7">
-                It will also include: senior officials such as ministers,
-                deputies, and advisors. The Parliamentary Energy and Electricity
-                Committee. Governors and heads and members of the provincial
-                councils. Manufacturers in the benefiting sectors. The
-                Federation of Industries, the Federation of Chambers, and
-                businessmen. Embassies and members of the diplomatic corps in
-                Iraq.
-              </h7>
-            </>
-          )}
+        {lang ? (
+  <>
+    <h5>
+      أن يكون معرض مشروع طريق التنمية العراقي منصة ملهمة للتواصل والتفاعل مع المجتمع المحلي والدولي،
+      تسلط الضوء على رؤية المشروع كمحرك رئيسي للتكامل الاقتصادي والتنمية المستدامة في العراق والمنطقة.
+      يهدف المعرض إلى تقديم المشروع بوصفه نموذجاً عالمياً للابتكار والبنية التحتية، وتعزيز الشراكات المحلية والدولية،
+      وتحفيز مشاركة القطاعين العام والخاص لتحقيق النمو الشامل والمستدام.
+    </h5>
+  </>
+) : (
+  <>
+    <h5>
+      The Development Road Exhibition aims to be an inspiring platform for engagement with both local and international communities,
+      highlighting the project's vision as a key driver for economic integration and sustainable development in Iraq and the region.
+      The exhibition seeks to present the project as a global model of innovation and infrastructure, foster local and international partnerships,
+      and encourage public and private sector participation to achieve inclusive and sustainable growth.
+    </h5>
+  </>
+)}
+
         </div>
 
-        <div className="margtop">
+        {/* <div className="margtop">
           <Marquee
             direction={lang ? "left" : "right"}
             style={{ direction: "ltr" }}
@@ -86,7 +74,7 @@ export default function Whoattends() {
               />
             ))}
           </Marquee>
-        </div>
+        </div> */}
        
 
         <div className="separator col  col-12   col-sm-none col-md-none col-lg-none justify-content-center ">
@@ -96,7 +84,7 @@ export default function Whoattends() {
       <div className="row d-flex justify-content-center ">
         <h2 className="main-text text-center mt-5 ">
           {lang
-            ? " شاهد كيف تتناسب مع معرض العراق للطاقة"
+            ? " القطاعات المستهدفة"
             : "See how you fit in at Iraq Energy"}
         </h2>
       </div>
@@ -107,7 +95,7 @@ export default function Whoattends() {
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/1.jpg"
+            src="/images/whoattends/1.png"
             alt="government image"
             width={3000}
             height={0}
@@ -116,15 +104,15 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الحكومة" : "Government"}
+            {lang ? "قطاع النقل والخدمات اللوجستية" : "Government"}
           </h3>{" "}
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           <Image
-            src="/images/picdubai/2.jpg"
+            src="/images/whoattends/2.png"
             alt="uti image "
             width={3000}
             height={0}
@@ -133,16 +121,16 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الخدمات العامة والرقابة" : "Utilities & Regulatory"}
+            {lang ? "   قطاع البنية التحتية والانشاءات" : "Utilities & Regulatory"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/3.jpg"
+            src="/images/whoattends/9.png"
             alt="dev image"
             width={3000}
             height={0}
@@ -151,18 +139,18 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "المقاولون والمهندسون والمطورون"
+              ? " القطاع الحكومي والمؤسسات الدولية"
               : "EPC Contractors & Developers"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/4.jpg"
+            src="/images/whoattends/4.png"
             alt="system image"
             width={3000}
             height={0}
@@ -171,11 +159,11 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "المقاولون الفرعيون ومنسقي البرمجة"
+              ? "قطاع التكنولوجيا والاتصالات"
               : "Sub-contractors & System Integrators"}
           </h3>
         </div>
@@ -184,7 +172,7 @@ export default function Whoattends() {
         <div className="col-lg-2 col-sm-12 text-center ">
           {" "}
           <Image
-            src="/images/picdubai/5.jpg"
+            src="/images/whoattends/5.png"
             alt="distributors image"
             width={3000}
             height={0}
@@ -193,17 +181,17 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "شركات التجارة الكهربائية"
+              ? "قطاع التجارة والصناعة"
               : "  Distributors & Electrical Trading Companies"}
           </h3>{" "}
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           <Image
-            src="/images/picdubai/6.jpg"
+            src="/images/whoattends/6.png"
             alt="wholesalers image"
             width={3000}
             height={0}
@@ -212,18 +200,18 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang
-              ? "تجار الجملة، المصنعون، والبائعون"
+              ? "قطاع التمويل والاستثمار"
               : "Wholesalers, Manufacturers & Resellers"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/7.jpg"
+            src="/images/whoattends/7.png"
             alt="consultants image"
             width={3000}
             height={0}
@@ -232,16 +220,16 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "المستشارون" : "Consultants"}
+            {lang ? "قطاع السياحة والخدمات" : "Consultants"}
           </h3>
         </div>
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
-            src="/images/picdubai/8.jpg"
+            src="/images/whoattends/8.png"
             alt="financiers image"
             width={3000}
             height={0}
@@ -250,10 +238,10 @@ export default function Whoattends() {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
-            {lang ? "الخبراء الماليون" : " Financiers"}
+            {lang ? " قطاع التعليم والتدريب" : " Financiers"}
           </h3>
         </div>
       </div>

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import img from "@/public/images/whyVisite/3.jpg";
-import img2 from "@/public/images/whyVisite/4.jpg";
+
 import { useRecoilValue } from "recoil";
 import { langState } from "@/atom/atom";
 import Link from "next/link";

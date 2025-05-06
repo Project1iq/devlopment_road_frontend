@@ -89,8 +89,8 @@ export default function Nav() {
         },
 
         {
-          name: "Who Attends",
-          nameAr: "من يحضر",
+          name: "Development Road Vision",
+          nameAr: "رؤية طريق التنمية ",
           href: "/whoattends",
         },
 
