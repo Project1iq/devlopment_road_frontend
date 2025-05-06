@@ -42,7 +42,7 @@ export default function Sponsers() {
           </div>
           <h5
             style={{
-              color: "#faa61a",
+              color: "#304D73",
               width: "auto",
               fontWeight: "600",
               marginBottom: "10vh",

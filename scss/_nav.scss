@@ -25,7 +25,7 @@
     --bs-dropdown-link-active-bg: #fff;
   }
   .main-btn {
-    background-color: #faa61a;
+    background-color: #304D73;
     &:hover {
       a {
         color: #97530f !important;
@@ -63,7 +63,7 @@
       margin-right: 3px;
     }
     &:hover {
-      color: #faa61a;
+      color: #304D73;
     }
   }
 
@@ -103,7 +103,7 @@
     svg {
       fill: #000;
       &:hover {
-        fill: #faa61a;
+        fill: #304D73;
       }
     }
   }
@@ -131,14 +131,14 @@
         text-align: right;
       }
       &:hover {
-        color: #faa61a;
+        color: #304D73;
         text-decoration: underline;
         text-underline-offset: 7px;
-        text-decoration-color: #faa61a;
+        text-decoration-color: #304D73;
         text-decoration-thickness: 2px;
       }
       &.active {
-        color: #faa61a;
+        color: #304D73;
         background-color: #fff;
       }
     }
@@ -157,14 +157,14 @@
         text-align: right;
       }
       &:hover {
-        color: #faa61a;
+        color: #304D73;
         text-decoration: underline;
         text-underline-offset: 7px;
-        text-decoration-color: #faa61a;
+        text-decoration-color: #304D73;
         text-decoration-thickness: 2px;
       }
       &.active {
-        color: #faa61a;
+        color: #304D73;
         background-color: #fff;
       }
     }
@@ -208,11 +208,11 @@
     &:hover {
       text-decoration: underline;
       text-underline-offset: 7px;
-      text-decoration-color: #faa61a;
+      text-decoration-color: #304D73;
       text-decoration-thickness: 2px;
     }
     &.active {
-      color: #faa61a;
+      color: #304D73;
       background-color: #fff;
     }
   }
@@ -239,11 +239,11 @@
     &:hover {
       text-decoration: underline;
       text-underline-offset: 7px;
-      text-decoration-color: #faa61a;
+      text-decoration-color: #304D73;
       text-decoration-thickness: 2px;
     }
     &.active {
-      color: #faa61a;
+      color: #304D73;
       background-color: #fff;
     }
   }
@@ -266,5 +266,5 @@
 }
 
 .active-lang{
-  background-color: #faa61a;
+  background-color: #304D73;
 }

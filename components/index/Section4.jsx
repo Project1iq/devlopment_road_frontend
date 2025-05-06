@@ -140,7 +140,7 @@ export default function Section4({ data }) {
                 fontWeight: "700",
                 lineHeight: "50px",
                 margin: " 0 0 1rem",
-                color: "#faa61a",
+                color: "#304D73",
               }}
             >
               {" "}
@@ -153,7 +153,7 @@ export default function Section4({ data }) {
                 fontWeight: "700",
                 lineHeight: "50px",
                 margin: " 0 0 1rem",
-                color: "#faa61a",
+                color: "#304D73",
               }}
             >
               {" "}
@@ -175,7 +175,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع النقل و الخدمات اللوجستية" : "Government"}
@@ -193,7 +193,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع البنية التحتية و الانشاءات" : "Government"}
@@ -211,7 +211,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع الطاقة والمرافق" : "Government"}
@@ -229,7 +229,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع التكنلوجيا والاتصالات" : "Government"}
@@ -247,7 +247,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "ثطاع التجارة والصناعة" : "Government"}
@@ -265,7 +265,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع التمويل والاستثمار" : "Government"}
@@ -283,7 +283,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "ثطاع السياحة والخدمات" : "Government"}
@@ -301,7 +301,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "قطاع التغليم والتدريب" : "Government"}
@@ -319,7 +319,7 @@ export default function Section4({ data }) {
           />
           <h3
             style={{
-              color: "#faa61a",
+              color: "#304D73",
             }}
           >
             {lang ? "القطاع الحكومي والمؤسسات الدولية" : "Government"}

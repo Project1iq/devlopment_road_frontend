@@ -72,7 +72,7 @@
   }
 }
 .index .hn {
-  color: #faa61a;
+  color: #304D73;
   font-weight: 700;
   font-size: 40px;
   line-height: 50px;
@@ -98,7 +98,7 @@
   height: 300px;
   padding: 20px;
   text-align: center;
-  background: url("/images/3.jpg") no-repeat center center;
+  background: url("/images/cardsimg/1.png") no-repeat center center;
   background-size: cover;
   color: white;
   position: relative;
@@ -148,7 +148,7 @@
   height: 300px;
   padding: 20px;
   text-align: center;
-  background: url("/images/contact/1.jpg") no-repeat center center;
+  background: url("/images/cardsimg/5.png") no-repeat center center;
   background-size: cover;
   color: white;
   position: relative;
@@ -198,7 +198,7 @@
   height: 300px;
   padding: 20px;
   text-align: center;
-  background: url("/images/confnew/ni.jpg") no-repeat left center; /* وضع الصورة خلف التدرج */
+  background: url("/images/cardsimg/3.png") no-repeat left center; /* وضع الصورة خلف التدرج */
   background-size: cover;
   color: white;
   position: relative;
@@ -518,7 +518,7 @@
   }
   .index .section-3 .tabs .tabs-list .tab-item:hover {
     color: black;
-    border-left: solid 0px #faa61a;
+    border-left: solid 0px #304D73;
   }
 }
 .index .section-3 .tabs .tabs-list {
@@ -533,25 +533,25 @@
   border-left: 4px solid #e9ecef;
 }
 .index .section-3 .tabs .tab-item:hover {
-  color: #faa61a;
-  border-left: solid 4px #faa61a;
+  color: #304D73;
+  border-left: solid 4px #304D73;
 }
 .index .section-3 .tabs .tab-item:lang(ar) {
   border-left: solid 4px rgba(233, 236, 239, 0);
   border-right: solid 4px #e9ecef;
 }
 .index .section-3 .tabs .tab-item:lang(ar).active {
-  color: #faa61a;
-  border-right: solid 4px #faa61a;
+  color: #304D73;
+  border-right: solid 4px #304D73;
   border-left: solid 4px rgba(250, 168, 26, 0);
 }
 .index .section-3 .tabs .tab-item:lang(ar):hover {
-  color: #faa61a;
-  border-right: solid 4px #faa61a;
+  color: #304D73;
+  border-right: solid 4px #304D73;
 }
 .index .section-3 .tabs .tab-item.active {
-  color: #faa61a;
-  border-left: solid 4px #faa61a;
+  color: #304D73;
+  border-left: solid 4px #304D73;
 }
 .index .section-3 .tabs .tab-panel {
   padding: 20px;
@@ -2445,7 +2445,7 @@
   --bs-dropdown-link-active-bg: #fff;
 }
 .nav .main-btn {
-  background-color: #faa61a;
+  background-color: #304D73;
 }
 .nav .main-btn:hover a {
   color: #97530f !important;
@@ -2477,7 +2477,7 @@
   margin-right: 3px;
 }
 .nav .lang:hover {
-  color: #faa61a;
+  color: #304D73;
 }
 .nav.nav-scrolled {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -2507,7 +2507,7 @@
   fill: #000;
 }
 .nav .menu svg:hover {
-  fill: #faa61a;
+  fill: #304D73;
 }
 .nav .links {
   display: flex;
@@ -2534,14 +2534,14 @@
   text-align: right;
 }
 .nav .links .a:hover {
-  color: #faa61a;
+  color: #304D73;
   text-decoration: underline;
   text-underline-offset: 7px;
-  text-decoration-color: #faa61a;
+  text-decoration-color: #304D73;
   text-decoration-thickness: 2px;
 }
 .nav .links .a.active {
-  color: #faa61a;
+  color: #304D73;
   background-color: #fff;
 }
 .nav .links a {
@@ -2559,14 +2559,14 @@
   text-align: right;
 }
 .nav .links a:hover {
-  color: #faa61a;
+  color: #304D73;
   text-decoration: underline;
   text-underline-offset: 7px;
-  text-decoration-color: #faa61a;
+  text-decoration-color: #304D73;
   text-decoration-thickness: 2px;
 }
 .nav .links a.active {
-  color: #faa61a;
+  color: #304D73;
   background-color: #fff;
 }
 
@@ -2607,11 +2607,11 @@
 .off-links .a:hover {
   text-decoration: underline;
   text-underline-offset: 7px;
-  text-decoration-color: #faa61a;
+  text-decoration-color: #304D73;
   text-decoration-thickness: 2px;
 }
 .off-links .a.active {
-  color: #faa61a;
+  color: #304D73;
   background-color: #fff;
 }
 .off-links a {
@@ -2637,11 +2637,11 @@
 .off-links a:hover {
   text-decoration: underline;
   text-underline-offset: 7px;
-  text-decoration-color: #faa61a;
+  text-decoration-color: #304D73;
   text-decoration-thickness: 2px;
 }
 .off-links a.active {
-  color: #faa61a;
+  color: #304D73;
   background-color: #fff;
 }
 
@@ -2664,7 +2664,7 @@
 }
 
 .active-lang {
-  background-color: #faa61a;
+  background-color: #304D73;
 }
 
 .footer {
@@ -3331,7 +3331,7 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
 }
 
 .govermentSupport .bg-image {
-  background: url("../public/images/covermentSupport/hj.jpg");
+  background: url("/images/cardsimg/3.png");
   width: 100%;
   height: 400px;
   background-size: cover;
@@ -5042,7 +5042,7 @@ body.whitebk {
 .sectors2 .read-more {
   display: inline-block;
   font-size: 1rem;
-  color: #faa61a;
+  color: #304D73;
   font-weight: 600;
   cursor: pointer;
   text-decoration: underline;
@@ -5256,7 +5256,7 @@ body input:focus {
   font-size: 25px;
   line-height: 30px;
   margin: 0 0 1rem;
-  color: #faa61a;
+  color: #304D73;
 }
 
 .decoration {

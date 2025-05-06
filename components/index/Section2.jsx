@@ -139,7 +139,7 @@ export default function Section2({ data }) {
             <Slider {...settings}>
               <div>
                 <Image
-                  src="/images/sliders/MOE.jpg"
+                  src="/images/cardsimg/4.png"
                   alt="Slide 1"
                   width={3000}
                   height={0}
@@ -148,7 +148,7 @@ export default function Section2({ data }) {
               </div>
               <div>
                 <Image
-                  src="/images/sliders/2.jpg"
+                  src="/images/cardsimg/2.png"
                   alt="Slide 2"
                   width={3000}
                   height={0}
@@ -157,7 +157,7 @@ export default function Section2({ data }) {
               </div>
               <div>
                 <Image
-                  src="/images/sliders/4.jpg"
+                  src="/images/cardsimg/6.png"
                   alt="Slide 3"
                   width={3000}
                   height={0}
