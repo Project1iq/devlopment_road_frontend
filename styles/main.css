@@ -5181,8 +5181,8 @@ body input:focus {
   font-size: 1rem;
   transition: all 0.3s ease;
   font-weight: 600;
-  background-color: #faa61a;
-  border: 1px solid #f9ad2a;
+  background-color: #304D73;
+  border: 1px solid #2b4566;
 }
 @media screen and (max-width: 768px) {
   .main-btn {
