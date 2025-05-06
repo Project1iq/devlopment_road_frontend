@@ -90,7 +90,7 @@ export default function Section1({ data }) {
               <div className="col-md-12 col-12 ">
                 <div className="">
                   <h2 className="main-text text-center">
-                    {lang ? " الطاقة في العراق  :-" : "The Energy in iraq :-"}
+                    {lang ? " فوائد معرض ومؤتمر طريق التنمية :-" : "Why the Development Road Matters :-"}
                   </h2>
                   <div>
                     <ul className="list-unstyled">
@@ -108,11 +108,11 @@ export default function Section1({ data }) {
               <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row  pt-2 ">
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
                   {" "}
-                  <div className="col-10 align-self-center">
+                  <div className="col-12 align-self-center">
                     <div className="responsiveIcon mb-4">
                       {" "}
                       <Image
-                        src="/images/iconimg/work.png"
+                        src="/images/iconimg/newpeople.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
@@ -137,6 +137,151 @@ export default function Section1({ data }) {
                     </h5>
                   </div>
                 </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
+                  <div className="col-10 align-self-center">
+                    <div className="responsiveIcon mb-4">
+                      {" "}
+                      <Image
+                        src="/images/iconimg/renewable.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    </div>
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "الطاقة " : " Renewable "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "المتجددة  " : "  & Clean "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {lang ? "والنظيفة " : " Energy "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
+                  <div className="col-10 align-self-center">
+                    <div className="responsiveIcon mb-4">
+                      {" "}
+                      <Image
+                        src="/images/iconimg/wind2.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    </div>
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "الطاقة " : " Critical & "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "الحرجة  " : " Back-up "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {lang ? "والاحتياطية " : " Power "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
+                  <div className="col-10 align-self-center">
+                    <div className="responsiveIcon mb-4">
+                      {" "}
+                      <Image
+                        src="/images/iconimg/tower.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    </div>
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "النقل " : " Transmission "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "و " : " & "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {" "}
+                      {lang ? "التوزيع " : " Distribution "}{" "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
+                <div className="col-10 align-self-center">
+                    <div className="responsiveIcon mb-4">
+                      {" "}
+                      <Image
+                        src="/images/iconimg/consumption.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    </div>
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "استهلاك " : " Energy "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "الطاقة " : " Consumption & "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {" "}
+                      {lang ? "وإدارتها" : "Management "}{" "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
+                <div className="col-10 align-self-center">
+                    <div className="responsiveIcon mb-4">
+                      {" "}
+                      <Image
+                        src="/images/iconimg/eb2.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    </div>
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "بطاريات " : "Battery "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "والتنقل  " : "& "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {lang ? "الكهربائي   " : " eMobility "}{" "}
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              <div className="mai col-md-12 col-12 d-flex justify-content-center flex-md-row  pt-2 ">
+          
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
                   <div className="col-10 align-self-center">
                     <div className="responsiveIcon mb-4">
