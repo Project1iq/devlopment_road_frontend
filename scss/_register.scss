@@ -383,10 +383,10 @@
   border-radius: 360px;
   color: #ffffff !important;
   background: linear-gradient(#304D73,
-  #faa61a) padding-box,
+  #304D73) padding-box,
     conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
       transparent,
-      #d2a917 var(--gradient-percent),
+      #304D73 var(--gradient-percent),
       #f5d870 calc(var(--gradient-percent) * 2),
       #dbb733 calc(var(--gradient-percent) * 3),
       transparent calc(var(--gradient-percent) * 4)) border-box;
