@@ -268,7 +268,7 @@ export default function Nav() {
                           </li>
                           <li className={!lang ? 'active-lang' : ''}>
                             <a onClick={() => {
-                              setLang(null);
+                              //setLang(null);
                             }} href="#">
                               <span className="top_bar_menu-text">
                                 English

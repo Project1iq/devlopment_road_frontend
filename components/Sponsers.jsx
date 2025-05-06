@@ -51,7 +51,7 @@ export default function Sponsers() {
             {lang ? "تحت رعاية " : " UNDER THE PATRONAGE"}
           </h5>
           <div className="row d-flex justify-content-center align-items-center ">
-            <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center mb-5 mb-lg-0 mb-md-0">
+            {/* <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center mb-5 mb-lg-0 mb-md-0">
               <Image
                 src="/images/sponser/gov/MOE.png"
                 alt="وصف الصورة"
@@ -62,7 +62,7 @@ export default function Sponsers() {
                   maxWidth: "130px",
                 }}
               />
-            </div>
+            </div> */}
             <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center  mb-5 mb-lg-0 mb-md-0">
               <Image
                 src="/images/sponser/gov/Prime Minister.png"
@@ -75,7 +75,7 @@ export default function Sponsers() {
                 }}
               />
             </div>
-            <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center  mb-5 mb-lg-0 mb-md-0">
+            {/* <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center  mb-5 mb-lg-0 mb-md-0">
               <Image
                 src="/images/sponser/gov/MOI.png"
                 alt="وصف الصورة"
@@ -86,14 +86,14 @@ export default function Sponsers() {
                   maxWidth: "130px",
                 }}
               />
-            </div>
+            </div> */}
           </div>
         </div>
-        <div className="separator col col-xl-8 col-8 col-md-8 col-sm-8 col-sm-none col-md-none col-lg-none justify-content-center">
+        {/* <div className="separator col col-xl-8 col-8 col-md-8 col-sm-8 col-sm-none col-md-none col-lg-none justify-content-center">
           <hr style={{ color: " #000000" }} />
-        </div>
+        </div> */}
       </div>
-      <div className="white row justify-content-center">
+      {/* <div className="white row justify-content-center">
         <div className="kbab col-12 text-center" style={{ marginTop: "2vh" }}>
           <h5
             style={{
@@ -334,7 +334,7 @@ export default function Sponsers() {
           </div>
         </div>
        
-      </div>
+      </div> */}
     </div>
   );
 }
