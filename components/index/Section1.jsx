@@ -243,7 +243,7 @@ export default function Section1({ data }) {
                 : "Connect, Collaborate, and Shape the Future of Energy in Iraq"}{" "}
             </h2>
           </div>
-          <div className="counter-section row mb-4 ">
+          <div className="counter-section row mb-4 py-4 ">
             <div className="col-lg-2 col-md-4 col-12">
               <Image src={'/images/icons/4.png'} alt="image" width={80} height={80} />
               <p className="text text-center">
@@ -291,9 +291,17 @@ export default function Section1({ data }) {
                 {lang ? "الترويج عن مشروع طريق التنمية" : "Energy Professionals"}
               </p>
             </div>
+
+            <div className="col-12 mt-3">
+              <Link className="btn-default" href={'/contact'}>
+              {lang ? "عرض التفاصيل" : "Energy Professionals"}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
+
+      
       <section className="row section-1 container mx-auto mt-5 ">
         <div className="bg-overlay"></div>
         <div

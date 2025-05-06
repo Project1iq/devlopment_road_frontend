@@ -49,7 +49,6 @@
     top: -7px;
     z-index: 2;
     background-color: #2f4d73;
-    border-radius: 10px;
     padding: 15px 60px;
 
     .border-right {
@@ -2757,3 +2756,23 @@
   font-size: 14px;
   justify-content: center;
 } 
+
+.btn-default{
+  width: 100%;
+  max-width: 150px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+  color: #ffffff;
+  transition: .3s all ease-in-out;
+  margin: auto;
+
+  &:hover{
+    background-color: #ffffff !important;
+    color: #22264c !important;
+  }
+}
