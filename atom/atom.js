@@ -2,7 +2,7 @@ import { atom } from "recoil";
 
 export const langState = atom({
   key: "langState",
-  default: null,
+  default: 'ar',
 });
 
 export const scrollPositionState = atom({
