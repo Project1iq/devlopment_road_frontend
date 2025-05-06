@@ -194,7 +194,7 @@ export default function Section1({ data }) {
           <div className="main col-lg-8 col-sm-12 ">
             <h1 className="text toxt1  ">
               {lang
-                ? "رسم مستقبل الطاقة "
+                ? "معرض يجمع الفرص ومؤتمر يصنع التغيير "
                 : "SHAPING THE FUTURE OF ENERGY "}
             </h1>
             <h1 className="text toxt  ">
@@ -204,13 +204,13 @@ export default function Section1({ data }) {
             </h1>
             <h5 className={lang ? " text1  pe-3 " : " text1  ps-3"}>
               {" "}
-              {lang ? "    24 - 26 شباط 2025" : "24 - 26 Feb 2025"}
+              {lang ? "    11 - 22 شباط 2025" : "24 - 26 Feb 2025"}
             </h5>
             <h5 className={lang ? " text1 tmn pe-3 " : " text1 tmn ps-3"}>
               {" "}
               {lang ? "   العراق - بغداد - المنصور - شارع دمشق - ساحة الفارس العربي" : "Iraq- Baghdad – Al- Mansour -Damascus Street – Arabian Knight Square"}
             </h5>
-            <div className="mai">
+            <div className="mai mt-md-5 pt-md-5">
               <Link href={"/reserveSpace"} className="main-btn mt-0 ms-3">
                 {lang ? "احجز مساحتك" : "Book Your Space"}
               </Link>
@@ -221,11 +221,6 @@ export default function Section1({ data }) {
                 {lang ? "التسجيل للزيارة" : "Register as a visitor"}
               </Link>
             </div>
-            <div className="mai">
-              <Link href={"/reserveSpace"} className="main-btn mt-5 ms-3">
-                {lang ? "  تحميل كتيب المبيعات" : "Download Brochure"}
-              </Link>
-            </div>
           </div>
         </div>
       </div>
@@ -234,16 +229,17 @@ export default function Section1({ data }) {
         <div className="bg-overlay"></div>
         <div
           className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
-          data-aos={lang ? "fade-left" : "fade-right"}
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
         >
-          <div className="mb-5 pb-1">
-            <h2 className="hn">
-              {lang
-                ? "   الفوائد الاقتصادية    "
-                : "Connect, Collaborate, and Shape the Future of Energy in Iraq"}{" "}
-            </h2>
-          </div>
-          <div className="counter-section row mb-4 ">
+          <div className="counter-section row mb-4 py-4 ">
+            <div className="mb-5 pb-1">
+              <h2 className="title-section-1">
+                {lang
+                  ? "   الفوائد الاقتصادية    "
+                  : "Connect, Collaborate, and Shape the Future of Energy in Iraq"}{" "}
+              </h2>
+            </div>
             <div className="col-lg-2 col-md-4 col-12">
               <Image src={'/images/icons/4.png'} alt="image" width={80} height={80} />
               <p className="text text-center">
@@ -290,6 +286,76 @@ export default function Section1({ data }) {
                 <br />
                 {lang ? "الترويج عن مشروع طريق التنمية" : "Energy Professionals"}
               </p>
+            </div>
+
+            <div className="col-12 mt-3">
+              <Link className="btn-default" href={'/contact'}>
+                {lang ? "عرض التفاصيل" : "Energy Professionals"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="row section-1 container mx-auto mt-5 ">
+        <div className="bg-overlay"></div>
+        <div
+          className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
+          data-aos="fade-up"
+          data-aos-anchor-placement="center-bottom"
+        >
+          <div className="counter-section row justify-content-center mb-4 py-4 ">
+            <div className="mb-5 pb-1">
+              <h2 className="title-section-1">
+                {lang
+                  ? "   الفوائد الاجتماعية    "
+                  : "Connect, Collaborate, and Shape the Future of Energy in Iraq"}{" "}
+              </h2>
+            </div>
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image src={'/images/icons/4.png'} alt="image" width={80} height={80} />
+              <p className="text text-center">
+                <br />
+                {lang ? "تبادل المعرفة و الخبرات من خلال اتاحة الفرص للمختصين والخبراء" : "Energy Professionals"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image src={'/images/icons/5.png'} alt="image" width={80} height={80} />
+              <p className="text text-center">
+                <br />
+                {lang ? "نشر الوعي باهمية هذا الطريق للجانب المحلي والاقليمي والدولي" : "Energy Professionals"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image src={'/images/icons/6.png'} alt="image" width={80} height={80} />
+              <p className="text text-center">
+                <br />
+                {lang ? "تحسين مستوى المعيشة للمواطن و زيادة الدخل المحلي للفرد" : "Energy Professionals"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 mt-md-5 col-md-4 col-12">
+              <Image src={'/images/icons/3.png'} alt="image" width={80} height={80} />
+              <p className="text text-center">
+                <br />
+                {lang ? "انشاء نقطة حوار مباشرة توضح المتطلبات المستهدفة في المشروع" : "Energy Professionals"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 mt-md-5 col-md-4 col-12">
+              <Image src={'/images/icons/1.png'} alt="image" width={80} height={80} />
+              <p className="text text-center">
+                <br />
+                {lang ? "تقليل معدل البطالة و زيادة فرص الشباب في المشاركة في اعمار البلد" : "Energy Professionals"}
+              </p>
+            </div>
+
+            <div className="col-12 mt-3">
+              <Link className="btn-default" href={'/contact'}>
+                {lang ? "عرض التفاصيل" : "Energy Professionals"}
+              </Link>
             </div>
           </div>
         </div>
