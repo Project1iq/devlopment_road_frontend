@@ -23,50 +23,53 @@ export default function Sectors() {
       <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row pt-2">
         {[
           //all pages below in file name sectors in components
-          {
-            imgSrc: "/images/iconimg/work.png",
-            ar: ["قطاع", "الحلول", "الذكية"],
-            en: ["Smart", "Solutions", "Sector"],
-            link: "/smart",
-          },
-          {
-            imgSrc: "/images/iconimg/renewable.png",
-            ar: ["	قطاع   ", "توزیع", "الطاقة الكھربائیة"],
-            en: ["Electricity  ", "Distribution", "Sector"],
-            link: "/renewable",
-          },
-          {
-            imgSrc: "/images/iconimg/wind2.png",
-            ar: ["	الطاقة  ", "المتجدده", "والنظیفة"],
-            en: ["Renewable  ", "& Clean", "Energy"],
-            link: "/critical",
-          },
-          {
-            imgSrc: "/images/iconimg/tower.png",
-            ar: ["انتاج ", "الطاقة", "	 الكھربائیة "],
-            en: ["Production  ", "of", "electricity"],
-            link: "/transmission",
-          },
-          {
-            imgSrc: "/images/iconimg/consumption.png",
-            ar: [" الاستثمار  ", "في قطاع", "الانتاج"],
-            en: ["Investment  ", "in Generation", "Sector"],
-            link: "/management",
-          },
-          {
-            imgSrc: "/images/iconimg/eb2.png",
-            ar: ["	قطاع   ", "نقل", " الطاقة الكهربائية "],
-            en: ["Electricity  ", "Transmission", "Sector"],
-            link: "/emobility",
-          },
+          
+            {
+              imgSrc: "/images/icons/1.png",
+              ar: ["تبادل المعرفة", "بين الجهات", "المشاركة"],
+              en: ["Smart", "Solutions", "Sector"],
+              link: "/smart",
+            },
+            {
+              imgSrc: "/images/icons/3.png",
+              ar: ["تحسين الصورة", "العامة كبيئة", "استثمارية ناجحة"],
+              en: ["Electricity", "Distribution", "Sector"],
+              link: "/renewable",
+            },
+            {
+              imgSrc: "/images/icons/4.png",
+              ar: ["دعم تنويع", "الاقتصاد", "المحلي"],
+              en: ["Renewable", "& Clean", "Energy"],
+              link: "/critical",
+            },
+            {
+              imgSrc: "/images/icons/6.png",
+              ar: ["جذب", "استثمارات", "اجنبية"],
+              en: ["Production", "of", "electricity"],
+              link: "/transmission",
+            },
+            {
+              imgSrc: "/images/icons/5.png",
+              ar: ["خلق", "فرص عمل", "دولية"],
+              en: ["Investment", "in Generation", "Sector"],
+              link: "/management",
+            },
+            {
+              imgSrc: "/images/icons/2.png",
+              ar: ["الترويج عن", "مشروع طريق", "التنمية"],
+              en: ["Electricity", "Transmission", "Sector"],
+              link: "/emobility",
+            },
+          
+          
         ].map((sector, index) => (
           <Link
             href={sector.link}
             key={index}
             className="sector-item col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3"
           >
-            <div className="col-10 align-self-center">
-              <div className="responsiveIcon mb-4">
+            <div className="col-11 align-self-center mb-4">
+              
                 {" "}
                 <Image
                   src={sector.imgSrc}
@@ -75,7 +78,7 @@ export default function Sectors() {
                   height={2000}
                   className="responsiveImage"
                 />
-              </div>
+              
             </div>
             <div className="d-flex flex-column justify-content-center text-center">
               {sector[lang ? "ar" : "en"].map((text, i) => (

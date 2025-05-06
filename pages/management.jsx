@@ -3,23 +3,14 @@ import { useRecoilState } from "recoil";
 import { langState } from "@/atom/atom";
 import Temp from "@/components/sectors/temp";
 
-export default function Investment() {
+export default function InternationalJobs() {
   const [lang, setLang] = useRecoilState(langState);
   const data = [
     {
-      t_en: "Investment in the Power Generation Sector",
-      t_ar: "الاستثمار في قطاع الإنتاج",
-      d_ar1: `وضعت وزارة الكهرباء آلية ومعايير جديدة لإستقطاب الشركات الاستثمارية الرصينة المحلية والدولية، للإستثمار في قطاعي (إنتاج الطاقة الكهربائية، وتوزيع الطاقة الكهربائية).`,
-
-      d_ar2: `الاستثمار في قطاع الإنتاج يتطلب من الشركات الاستثمارية أن تكون ذات خبرة عالية في مجال صناعة الكهرباء. يجب أن تكون الشركة قد نفذت أعمالًا مشابهة لبناء محطات وفقًا لمواصفات وطلبات وزارة الكهرباء.`,
-      d_ar3: `يجب على الشركات الاستثمارية أن تلتزم بتنفيذ المشاريع حسب المدة المحددة بموجب العقد المبرم، وتقديم نبذة عن أعمالها السابقة ومدى نجاحها في مشاريع مماثلة.`,
-      d_ar4: `وبناءً على ما تقدم، تقوم الوزارة بالتأكد من رصانة هذه الشركات، لتفادي دخول الشركات الرديئة والوهمية عند إبرام العقود وتنفيذ المشاريع.`,
-
-      d_en1: `The Ministry of Electricity has established new mechanisms and standards to attract credible local and international investment companies for investment in the power generation and distribution sectors.`,
-
-      d_en2: `Investment in the Power Generation Sector requires investment companies to have extensive experience in the electricity industry. The company should have executed similar projects for building power plants according to the specifications and requirements of the Ministry of Electricity.`,
-      d_en3: `The investment company must commit to completing the projects within the timeline specified in the signed contract, and provide a summary of its previous work and the success of its similar projects.`,
-      d_en4: `Based on this, the Ministry ensures the credibility of these companies to avoid entering into contracts with low-quality or fake companies for project execution.`,
+      t_en: "Creating International Job Opportunities in the Path of Development Exhibition",
+      t_ar: "خلق فرص عمل دولية في معرض طريق التنمية",
+      d_ar: `يهدف معرض طريق التنمية إلى استعراض الفرص العديدة لخلق وظائف دولية في مختلف القطاعات، مع التركيز على جذب الاستثمارات وتوسيع سوق العمل. يعكس المعرض استراتيجية التنمية المستدامة التي تسعى إلى توفير بيئة حاضنة للابتكار والتعاون الدولي، مع فتح آفاق جديدة للتوظيف عبر شراكات عالمية تعزز من نمو الاقتصاد المحلي وتعزز فرص العمل على نطاق عالمي.`,
+      d_en: `The Path of Development Exhibition aims to showcase numerous opportunities for creating international jobs across various sectors, with a focus on attracting investments and expanding the job market. The exhibition reflects a sustainable development strategy that seeks to provide an innovation-friendly environment and international collaboration, opening new employment opportunities through global partnerships that enhance local economic growth and create worldwide job opportunities.`,
     },
   ];
 
@@ -27,14 +18,8 @@ export default function Investment() {
     <Temp
       title_ar={data[0].t_ar}
       title_en={data[0].t_en}
-      desc_ar1={data[0].d_ar1}
-      desc_ar2={data[0].d_ar2}
-      desc_ar3={data[0].d_ar3}
-      desc_ar4={data[0].d_ar4}
-      desc_en1={data[0].d_en1}
-      desc_en2={data[0].d_en2}
-      desc_en3={data[0].d_en3}
-      desc_en4={data[0].d_en4}
+      desc_ar={data[0].d_ar}
+      desc_en={data[0].d_en}
       lang={lang}
     />
   );
