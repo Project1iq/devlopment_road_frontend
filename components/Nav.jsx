@@ -404,7 +404,7 @@ export default function Nav() {
               }}
             >
               <Image
-                src="/images/Logos/5f13ea73-616e-4764-a725-c196d111df47_10th-IEE---Avatar.webp"
+                src="/logo.png"
                 alt="logo"
                 width={3000}
                 height={3000}
@@ -444,7 +444,7 @@ export default function Nav() {
                 }}
               >
                 <Image
-                  src="/images/Logos/5f13ea73-616e-4764-a725-c196d111df47_10th-IEE---Avatar.webp"
+                src="/logo.png"
                   alt="logo"
                   width={3000}
                   height={3000}
