@@ -83,8 +83,8 @@ export default function Section1({ data }) {
 
   return (
     <>
-      <section style={{backgroundColor:""}} className="row section-1 mx-auto">
-        <div action="" className="form-container ">
+      <section style={{backgroundColor:"#304D73"}} className="row section-1 mx-auto">
+        <div  style={{backgroundColor:"#304D73"}} action="" className="form-container ">
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-12 ">
@@ -108,7 +108,7 @@ export default function Section1({ data }) {
               <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row  pt-2 ">
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
                   {" "}
-                  <div className="col-12 align-self-center">
+                  <div className="col-11 align-self-center mb-4">
                    
                       {" "}
                       <Image
@@ -138,46 +138,19 @@ export default function Section1({ data }) {
                     </h5>
                   </div>
                 </div>
-                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
-                      {" "}
-                      <Image
-                        src="/images/iconimg/nationl.png"
-                        alt="وصف للصورة"
-                        width={2000}
-                        height={2000}
-                        className={"responsiveImage "}
-                      />
-                    </div>
-                  </div>
-                  <div className="  d-flex flex-column justify-content-center">
-                    <h5 className=" bm text-center">
-                      {lang ? "  الترويج عن " : " Promoting the   "}
-                      <br />
-                    </h5>
-                    <h5 className="bm text-center">
-                      {lang ? " مشروع طريق   " : "  Development "}
-                      <br />
-                    </h5>
-
-                    <h5 className="bm text-center">
-                      {lang ? " التنمية " : " Road "}
-                    </h5>
-                  </div>
-                </div>
+            
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                  <div className="col-11 align-self-center mb-4">
+                    
                       {" "}
                       <Image
-                        src="/images/iconimg/publicimg.png"
+                        src="/images/icons/3.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                    
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -195,17 +168,17 @@ export default function Section1({ data }) {
                   </div>
                 </div>
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                  <div className="col-11 align-self-center mb-4">
+                    
                       {" "}
                       <Image
-                        src="/images/iconimg/money.png"
+                        src="/images/icons/4.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                   
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -224,17 +197,17 @@ export default function Section1({ data }) {
                   </div>
                 </div>
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                <div className="col-11 align-self-center mb-4">
+                   
                       {" "}
                       <Image
-                        src="/images/iconimg/consumption.png"
+                        src="/images/icons/6.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                    
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -253,17 +226,17 @@ export default function Section1({ data }) {
                   </div>
                 </div>
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
-                <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                <div className="col-11 align-self-center mb-4">
+                   
                       {" "}
                       <Image
-                        src="/images/iconimg/eb2.png"
+                        src="/images/icons/5.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                    
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -280,21 +253,50 @@ export default function Section1({ data }) {
                     </h5>
                   </div>
                 </div>
-              </div>
-              <div className="mai col-md-12 col-12 d-flex justify-content-center flex-md-row  pt-2 ">
-          
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                  <div className="col-11 align-self-center mb-4">
+                    
                       {" "}
                       <Image
-                        src="/images/iconimg/renewable.png"
+                        src="/images/icons/2.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                   
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "  الترويج عن " : " Promoting the   "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? " مشروع طريق   " : "  Development "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {lang ? " التنمية " : " Road "}
+                    </h5>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="mai col-md-12 col-12 d-flex justify-content-center flex-md-row  pt-2 ">
+          
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
+                  <div className="col-11 align-self-center mb-4">
+                   
+                      {" "}
+                      <Image
+                        src="/images/icons/8.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                   
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -311,75 +313,20 @@ export default function Section1({ data }) {
                     </h5>
                   </div>
                 </div>
-                <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
-                      {" "}
-                      <Image
-                        src="/images/iconimg/wind2.png"
-                        alt="وصف للصورة"
-                        width={2000}
-                        height={2000}
-                        className={"responsiveImage "}
-                      />
-                    </div>
-                  </div>
-                  <div className="  d-flex flex-column justify-content-center">
-                    <h5 className=" bm text-center">
-                      {lang ? "تحسين " : " Enhancing "}
-                      <br />
-                    </h5>
-                    <h5 className="bm text-center">
-                      {lang ? "مستوى  " : " quality of "}
-                      <br />
-                    </h5>
-
-                    <h5 className="bm text-center">
-                      {lang ? "المعيشة " : " life "}
-                    </h5>
-                  </div>
-                </div>
+             
+            
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                  <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                <div className="col-11 align-self-center mb-4">
+                    
                       {" "}
                       <Image
-                        src="/images/iconimg/tower.png"
+                        src="/images/icons/11.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
-                  </div>
-                  <div className="  d-flex flex-column justify-content-center">
-                    <h5 className=" bm text-center">
-                      {lang ? "تبادل المعرفة " : "  experience "}
-                      <br />
-                    </h5>
-                    <h5 className="bm text-center">
-                      {lang ? "والخبرات بين " : " exchange  "}
-                      <br />
-                    </h5>
-
-                    <h5 className="bm text-center">
-                      {" "}
-                      {lang ? "المختصين والخبراء " : " among experts "}{" "}
-                    </h5>
-                  </div>
-                </div>
-                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
-                <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
-                      {" "}
-                      <Image
-                        src="/images/iconimg/consumption.png"
-                        alt="وصف للصورة"
-                        width={2000}
-                        height={2000}
-                        className={"responsiveImage "}
-                      />
-                    </div>
+                    
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -398,17 +345,17 @@ export default function Section1({ data }) {
                   </div>
                 </div>
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
-                <div className="col-10 align-self-center">
-                    <div className="responsiveIcon mb-4">
+                <div className="col-11 align-self-center mb-4">
+                    
                       {" "}
                       <Image
-                        src="/images/iconimg/eb2.png"
+                        src="/images/icons/7.png"
                         alt="وصف للصورة"
                         width={2000}
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
+                   
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
@@ -425,7 +372,66 @@ export default function Section1({ data }) {
                     </h5>
                   </div>
                 </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center py-4 px-3">
+                  <div className="col-11 align-self-center mb-4">
+                    
+                      {" "}
+                      <Image
+                        src="/images/icons/10.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      
+                      />
+                    
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "تبادل المعرفة " : "  experience "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "والخبرات بين " : " exchange  "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {" "}
+                      {lang ? "المختصين والخبراء " : " among experts "}{" "}
+                    </h5>
+                  </div>
+                </div>
+                <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
+                  <div className="col-11 align-self-center mb-4">
+                    
+                      {" "}
+                      <Image
+                        src="/images/icons/9.png"
+                        alt="وصف للصورة"
+                        width={2000}
+                        height={2000}
+                        className={"responsiveImage "}
+                      />
+                    
+                  </div>
+                  <div className="  d-flex flex-column justify-content-center">
+                    <h5 className=" bm text-center">
+                      {lang ? "تحسين " : " Enhancing "}
+                      <br />
+                    </h5>
+                    <h5 className="bm text-center">
+                      {lang ? "مستوى  " : " quality of "}
+                      <br />
+                    </h5>
+
+                    <h5 className="bm text-center">
+                      {lang ? "المعيشة " : " life "}
+                    </h5>
+                  </div>
+                </div>
               </div>
+              
 
             </div>
           </div>
