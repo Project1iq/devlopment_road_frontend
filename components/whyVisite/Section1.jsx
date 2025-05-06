@@ -108,8 +108,8 @@ export default function Section1({ data }) {
               <div className="mai col-md-12 col-12 d-flex justify-content-start flex-md-row  pt-2 ">
                 <div className="col-12 col-md-2 d-flex flex-column justify-content-center  py-4 px-3">
                   {" "}
-                 
-                    <div className="responsiveIcon mb-4">
+                  <div className="col-12 align-self-center">
+                   
                       {" "}
                       <Image
                         src="/images/icons/1.png"
@@ -119,8 +119,8 @@ export default function Section1({ data }) {
                         height={2000}
                         className={"responsiveImage "}
                       />
-                    </div>
-                  
+                   
+                  </div>
                   <div className="  d-flex flex-column justify-content-center ">
                     <h5 className=" bm text-center">
                       {lang ? "تبادل المعرفة " : " Participant "}
@@ -238,17 +238,17 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "استهلاك " : " Energy "}
+                      {lang ? "جذب  " : " Attracting "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "الطاقة " : " Consumption & "}
+                      {lang ? "استثمارات  " : " foreign "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
                       {" "}
-                      {lang ? "وإدارتها" : "Management "}{" "}
+                      {lang ? "اجنبية" : "investments "}{" "}
                     </h5>
                   </div>
                 </div>
@@ -267,16 +267,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "بطاريات " : "Battery "}
+                      {lang ? "خلق " : "Creating "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "والتنقل  " : "& "}
+                      {lang ? "فرص عمل  " : "global"}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "الكهربائي   " : " eMobility "}{" "}
+                      {lang ? "دولية   " : " jobs "}{" "}
                     </h5>
                   </div>
                 </div>
@@ -298,16 +298,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "الطاقة " : " Renewable "}
+                      {lang ? "تقليل  " : " Lowering "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "المتجددة  " : "  & Clean "}
+                      {lang ? "معدلات  " : "  jobless "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "والنظيفة " : " Energy "}
+                      {lang ? "البطالة " : " rates "}
                     </h5>
                   </div>
                 </div>
@@ -326,16 +326,16 @@ export default function Section1({ data }) {
                   </div>
                   <div className="  d-flex flex-column justify-content-center">
                     <h5 className=" bm text-center">
-                      {lang ? "الطاقة " : " Critical & "}
+                      {lang ? "تحسين " : " Enhancing "}
                       <br />
                     </h5>
                     <h5 className="bm text-center">
-                      {lang ? "الحرجة  " : " Back-up "}
+                      {lang ? "مستوى  " : " quality of "}
                       <br />
                     </h5>
 
                     <h5 className="bm text-center">
-                      {lang ? "والاحتياطية " : " Power "}
+                      {lang ? "المعيشة " : " life "}
                     </h5>
                   </div>
                 </div>
