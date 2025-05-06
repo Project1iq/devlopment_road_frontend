@@ -604,17 +604,20 @@ export default function Section1({ data }) {
             <div className="alltext mb-4">
               <div className="maintalk d-flex justify-content-center mb-4">
                 <div className="maintext col-10">
-                  {lang
-                    ? "سجّل الآن واملأ النموذج لتكون جزءًا من أكبر معرض للطاقة في العراق!"
-                    : "Join the visitor registration and submit the form to be part of the biggest Energy Expo in Iraq!"}
+                {lang
+  ? "سجّل الآن وكن جزءًا من معرض طريق التنمية في العراق!"
+  : "Register now and be part of the Development Road Exhibition in Iraq!"}
+
+
                 </div>
               </div>
               <div className="pargh d-flex justify-content-center">
                 <div className="col-10">
                   <p>
-                    {lang
-                      ? "أنت على وشك التسجيل كزائر في معرض ومؤتمر العراق الدولي العاشر للطاقة، والذي سيقام من 24 إلى 26 فبراير."
-                      : <>You are about to register as a visitor for the 10<sup>th</sup> Iraq International Energy Expo & Conference which will take place from 24 to 26 of February.</>}
+                  {lang
+  ? "يسعدنا انضمامك كزائر في معرض ومؤتمر العراق الدولي للطاقة، حيث يجتمع روّاد القطاع لابتكار حلول تنموية ترسم ملامح الغد."
+  : "We’re excited to welcome you as a visitor to the Iraq International Energy Expo & Conference — a space where pioneers gather to shape the future with innovative and sustainable solutions."}
+
                   </p>
                 </div>
               </div>

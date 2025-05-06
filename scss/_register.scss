@@ -17,7 +17,7 @@
     }
 
     .title {
-      background-image: url("/images/register/10th-IEE.jpg");
+      background-image: url("/images/register/road2.png");
       border-radius: 10px;
       height: 33.2vh;
       background-position: center top;
@@ -53,7 +53,7 @@
     }
 
     .maintext {
-      color: #eec11d;
+      color: #304D73;
       font-weight: 700;
       font-size: 30px;
 
@@ -114,14 +114,14 @@
   &:focus,
   &:valid {
     outline: 0;
-    border-bottom-color: #eec11d !important;
+    border-bottom-color: #304D73 !important;
     border-width: 2px !important;
     border-top: none !important;
     border-left: none !important;
     border-right: none !important;
 
     &+.input-label {
-      color: #eec11d;
+      color: #304D73;
       transform: translateY(-1.5rem);
     }
   }
@@ -137,7 +137,7 @@
   padding: 1em;
   width: 100%;
   font-weight: 500;
-  background-color: #eec11d;
+  background-color: #304D73;
   border-radius: 6px;
   color: #FFF;
   border: 0;
@@ -155,7 +155,7 @@
 
   a {
     display: block;
-    color: #eec11d;
+    color: #304D73;
     text-decoration: none;
   }
 }
@@ -174,7 +174,7 @@
 }
 
 .select-label.focused {
-  color: #eec11d;
+  color: #304D73;
   transform: translateY(-1.5rem);
 }
 
@@ -382,7 +382,7 @@
   border: 1px solid transparent;
   border-radius: 360px;
   color: #ffffff !important;
-  background: linear-gradient(#eec11d,
+  background: linear-gradient(#304D73,
   #faa61a) padding-box,
     conic-gradient(from calc(var(--gradient-angle) - var(--gradient-angle-offset)),
       transparent,
@@ -513,12 +513,12 @@ input[type="datetime-local"]::-webkit-calendar-picker-indicator {
   top: 50%;
   transform: translateY(-50%);
   pointer-events: none; /* Ensure the icon doesn't interfere with input */
-  color: #eec11d; /* Change the icon color */
+  color: #304D73; /* Change the icon color */
   font-size: 1.2em;
 }
 
 /* Optional: Add hover effect */
 .input-field.date-input:hover::after,
 .input-field.datetime-input:hover::after {
-  color: #eec11d; /* Darker color on hover */
+  color: #304D73; /* Darker color on hover */
 }
