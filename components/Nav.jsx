@@ -257,7 +257,7 @@ export default function Nav() {
                           <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#999999"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
                         </a>
                         <ul className="p-0">
-                          <li><a className="d-flex justify-content-between align-items-center w-100" onClick={() => {
+                          <li className={lang ? 'active-lang' : ''}><a className="d-flex justify-content-between align-items-center w-100" onClick={() => {
                             setLang('ar');
                           }} href="#">
                             <span className="top_bar_menu-text">
@@ -266,14 +266,15 @@ export default function Nav() {
                             <Image width={28} height={28} src="/images/icons/ar.png" alt="ar" />
                           </a>
                           </li>
-                          <li><a onClick={() => {
-                            setLang(null);
-                          }} href="#">
-                            <span className="top_bar_menu-text">
-                              English
-                            </span>
-                            <Image width={28} height={28} src="/images/icons/en.png" alt="ar" />
-                          </a>
+                          <li className={!lang ? 'active-lang' : ''}>
+                            <a onClick={() => {
+                              setLang(null);
+                            }} href="#">
+                              <span className="top_bar_menu-text">
+                                English
+                              </span>
+                              <Image width={28} height={28} src="/images/icons/en.png" alt="ar" />
+                            </a>
                           </li>
                         </ul>
                       </li>

@@ -2649,6 +2649,10 @@
   }
 }
 
+.active-lang {
+  background-color: #faa61a;
+}
+
 .footer {
   background-image: url("../public/footer_bg.jpg");
   background-size: cover;
