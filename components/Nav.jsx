@@ -235,20 +235,22 @@ export default function Nav() {
           top: scrollPosition > imageHeight ? -(imageHeight + 8) : "0",
         }}
       >
-        <div class="top_bar">
-          <div class="container">
-            <div class="row">
-              <div class="col d-flex flex-row justify-content-between">
+        <div className="top_bar">
+          <div className="container">
+            <div className="row">
+              <div className="col d-flex flex-row justify-content-between">
                 <div className="d-flex">
-                  <div class="top_bar_contact_item">
-                    <div class="top_bar_icon">
+                  <div className="top_bar_contact_item">
+                    <div className="top_bar_icon">
                       <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#999999"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" /></svg>
                     </div>+91 9823 132 111</div>
-                  <div class="top_bar_contact_item"><div class="top_bar_icon"><img src="https://res.cloudinary.com/dxfq3iotg/image/upload/v1560918597/mail.png" alt="" /></div><a href="mailto:fastsales@gmail.com">contact@bbbootstrap.com</a></div>
+                  <div className="top_bar_contact_item"><div className="top_bar_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#999999"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" /></svg>
+                  </div><a href="mailto:fastsales@gmail.com">contact@bbbootstrap.com</a></div>
                 </div>
-                <div class="top_bar_content ml-auto">
-                  <div class="top_bar_menu">
-                    <ul class="standard_dropdown top_bar_dropdown">
+                <div className="top_bar_content ml-auto">
+                  <div className="top_bar_menu">
+                    <ul className="standard_dropdown top_bar_dropdown">
                       <li>
                         <a href="#">
                           {lang ? 'اللغة' : 'Language'}
@@ -265,7 +267,7 @@ export default function Nav() {
                           </a>
                           </li>
                           <li><a onClick={() => {
-                            setLang('en');
+                            setLang(null);
                           }} href="#">
                             <span className="top_bar_menu-text">
                               English
@@ -308,54 +310,52 @@ export default function Nav() {
                       id="logo"
                     />
                   </Link>
+                  {/* =====================
+                start
+                ========================= */}
                   {links.map((link, index) => (
-                    <li key={index} className="nav-item">
-                      <button
-                        className={`${link.links ? "dropdown-toggle" : ""}  a`}
-                        role="link"
-                        data-bs-toggle={link.links && "dropdown"}
-                        aria-expanded="false"
-                        onClick={() => {
-                          !link.links && router.push(link.href);
-                        }}
-                      >
-                        {lang ? link.nameAr : link.name}
-                        <ul className="dropdown-menu px-0">
-                          {link?.links &&
-                            link?.links.map((subLink, index) => (
-                              <li key={index}>
-                                <Link
-                                  className={`dropdown-item ${subLink.href === router.pathname
-                                    ? "active"
-                                    : ""
-                                    }`}
-                                  href={subLink.href}
-                                  onClick={() => {
-                                    router.push(subLink.href);
-                                  }}
-                                >
-                                  {lang ? subLink.nameAr : subLink.name}
-                                </Link>
-                              </li>
-                            ))}
+                    <div key={index} className="top_bar_content ml-auto p-1">
+                      <div className="top_bar_menu p-0">
+                        <ul className="standard_dropdown top_bar_dropdown p-0">
+                          <li className="p-0">
+                            <a href="#" onClick={() => {
+                              !link.links && router.push(link.href);
+                            }}>
+                              {lang ? link.nameAr : link.name}
+                              {link?.links &&
+                                <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#222222"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
+                              }
+                            </a>
+                            <ul className="p-0">
+                              {link?.links &&
+                                link?.links.map((subLink, i) => (
+                                  <li key={i}>
+                                    <Link className={`d-flex justify-content-between align-items-center w-100 dropdown-item ${subLink.href === router.pathname
+                                      ? "active"
+                                      : ""
+                                      }`}
+                                      href={subLink.href}
+                                      onClick={() => {
+                                        router.push(subLink.href);
+                                      }}
+                                    >
+                                      <span className="top_bar_menu-text">
+                                        {lang ? subLink.nameAr : subLink.name}
+                                      </span>
+                                    </Link>
+                                  </li>
+                                ))}
+                            </ul>
+                          </li>
                         </ul>
-                      </button>
-                    </li>
+                      </div>
+                    </div>
                   ))}
+
                   <div className="d-flex justify-content-end align-item-center ">
                     <Link href={"/register"} type="submit" className="btn-nav">
                       <span>{lang ? "التسجيل للزيارة" : "Register to visit"}</span>
                     </Link>
-                  </div>
-                  <div className="ms-3">
-
-                    <div class="switch-nav">
-                      <input onChange={() => setLang(!lang)} type="checkbox" id="language-toggle" />
-                      <label id="button" for="language-toggle">
-                        <div id="knob"></div>
-                        <div id="language-text">{!lang ? "العربية" : "English"}{" "}</div>
-                      </label>
-                    </div>
                   </div>
                 </ul>
               </div>
@@ -463,8 +463,7 @@ export default function Nav() {
                 {links.map((link, index) => (
                   <div
                     key={index}
-                    className={`nav-item w-100  ${link.name === open ? "open" : ""
-                      }`}
+                    className={`nav-item w-100 ${link.name === open ? "open" : ""}`}
                   >
                     <button
                       className={`a w-100 d-flex justify-content-between align-items-center ${router.pathname === link.href ? "active" : ""
@@ -476,17 +475,7 @@ export default function Nav() {
                           : setOpen(link.name === open ? false : link.name);
                       }}
                     >
-                      {/* <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        height="24px"
-                        viewBox="0 -960 960 960"
-                        width="24px"
-                        fill="#000"
-                        className="hidden"
-                      >
-                        <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
-                      </svg> */}
-                      <div className="">{lang ? link.nameAr : link.name}</div>
+                      <div>{lang ? link.nameAr : link.name}</div>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         height="24px"
@@ -500,26 +489,23 @@ export default function Nav() {
                       </svg>
                     </button>
 
-                    <div
-                      className={`d-flex overflow-hidden flex-column justify-content-center col-12`}
-                    >
-                      {link?.links &&
-                        link?.links?.map((subLink, index) => (
+                    {link.links && open === link.name && (
+                      <div className="d-flex overflow-hidden flex-column justify-content-center col-12">
+                        {link.links.map((subLink, index) => (
                           <Link
-                            className={` ${subLink.href === router.pathname ? "active" : ""
-                              } 
-                            ${link.name === open ? "open" : ""}
-                            text-center
-                            `}
+                            className={`${subLink.href === router.pathname ? "active" : ""
+                              } text-center`}
                             href={subLink.href}
                             key={index}
                           >
                             {lang ? subLink.nameAr : subLink.name}
                           </Link>
                         ))}
-                    </div>
+                      </div>
+                    )}
                   </div>
                 ))}
+
                 <button
                   onClick={() => {
                     setLang(!lang);
@@ -534,7 +520,7 @@ export default function Nav() {
                     width="16"
                     height="16"
                     fill="currentColor"
-                    class="bi bi-globe"
+                    className="bi bi-globe"
                     viewBox="0 0 16 16"
                   >
                     <path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />

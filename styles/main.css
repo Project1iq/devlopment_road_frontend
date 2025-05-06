@@ -2499,7 +2499,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 26px;
+  gap: 10px;
   white-space: nowrap;
 }
 .nav .links .a {
