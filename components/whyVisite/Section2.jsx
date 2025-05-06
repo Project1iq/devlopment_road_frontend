@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import img from "@/public/images/whyVisite/3.jpg";
-import img2 from "@/public/images/whyVisite/4.jpg";
+
 import { useRecoilValue } from "recoil";
 import { langState } from "@/atom/atom";
 import Link from "next/link";
@@ -18,111 +17,158 @@ export default function Section1({ data }) {
         <div className="mainbro">
           <h2 className="main-text text-center">
             {lang
-              ? " في معرض العراق للطاقة، يمكنك..."
-              : "At Iraq Energy you can..."}
+              ? " أهداف طريق التنمية"
+              : "Development Road Goals"}
           </h2>
         </div>
 
         <div className="row col-12 d-flex flex-md-row flex-column justify-content-center ">
-          <div className="col-12  col-md-3 d-flex flex-column justify-content-start px-3 ">
-           
-            <Image
-              src="/images/9.jpg"
-              alt="وصف للصورة"
-              width={2000}
-              height={2000}
-              className={"responsiveImage mb-3"}
-            />
-            
-            {lang ? (
-              <p>
-                {" "}
-                <b> تواصل </b> مع أكثر من 1,000 من موردي ومصنعي الطاقة
-                العالميين، واستكشف موردي الطاقة من جميع أنحاء الصناعة الذين
-                يقدمون حلولًا مصممة لتلبية احتياجات عملك.
-              </p>
-            ) : (
-              <p>
-                {" "}
-                <b> Connect </b> with over 1,000 global energy suppliers and
-                manufacturers, and explore energy providers from across the
-                industry offering solutions tailored to your business needs.
-              </p>
-            )}
-          </div>
-          <div className="col-12  col-md-3 d-flex flex-column justify-content-start px-3 ">
-            <Image
-              src="/images/2.jpg"
-              alt="وصف للصورة"
-              width={2000}
-              height={2000}
-              className={"responsiveImage mb-3"}
-            />
-            {lang ? (
-              <p>
-                {" "}
-                <b> اكتشف </b> أحدث منتجات وحلول الطاقة وابقَ على اطلاع دائم على
-                الوضع الحالي لصناعة الطاقة.
-              </p>
-            ) : (
-              <p>
-                {" "}
-                <b> Discover </b> the latest energy products and solutions, and
-                stay updated on the current state of the energy industry.
-              </p>
-            )}
-          </div>
-          <div className="col-12  col-md-3 d-flex flex-column justify-content-start px-3 ">
-            <Image
-              src="/images/15.jpg"
-              alt="وصف للصورة"
-              width={2000}
-              height={2000}
-              className={"responsiveImage mb-3"}
-            />
-            {lang ? (
-              <p>
-                {" "}
-                <b> بناء </b> شراكات جديدة في الصناعات التي تركز على الحلول
-                الذكية، والطاقة المتجددة والنظيفة، وتخزين الطاقة، والهيدروجين
-                الأخضر، والنقل والتوزيع، والطاقة الحرجة والاحتياطية، واستهلاك
-                الطاقة، وتنويع مزيج الطاقة الخاص بك.
-              </p>
-            ) : (
-              <p>
-                {" "}
-                <b> Build </b> new partnerships in industries focusing on smart
-                solutions, renewable and clean energy, energy storage, green
-                hydrogen, transmission and distribution, critical and backup
-                power, energy consumption, and diversifying your energy mix.
-              </p>
-            )}
-          </div>
-          <div className="col-12  col-md-3 d-flex flex-column justify-content-start px-3 ">
-            <Image
-              src="/images/3.jpg"
-              alt="وصف للصورة"
-              width={2000}
-              height={2000}
-              className={"responsiveImage mb-3"}
-            />
-            {lang ? (
-              <p>
-                {" "}
-                <b> تعرف </b> على المزيد حول حلول الطاقة الشائعة وتواصل مع
-                الشركات التي ستضيف قيمة إلى مشروعك للطاقة من خلال ورش العمل
-                والمؤتمر الخاص بالمعرض.
-              </p>
-            ) : (
-              <p>
-                {" "}
-                <b> Learn </b> more about popular energy solutions and connect
-                with companies that will add value to your energy project
-                through the exhibition workshops and conference.
-              </p>
-            )}
-          </div>
-        </div>
+  {/* زيادة الوعي وتعزيز الشفافية */}
+  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/1.png"
+      alt="وصف"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+    />
+    {lang ? (
+      <p>
+        <b> زيادة الوعي وتعزيز الشفافية </b>
+        <br />
+        توفير فرصة للتعريف بتفاصيل مشروع طريق التنمية ومراحله وفوائده
+      </p>
+    ) : (
+      <p>
+        <b> Raise Awareness & Transparency </b>
+        <br />
+        Introducing the project’s key phases and benefits to local and global audiences
+      </p>
+    )}
+  </div>
+
+  {/* جذب الاستثمارات */}
+  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/2.png"
+      alt="وصف"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+    />
+    {lang ? (
+      <p>
+        <b> جذب الاستثمارات </b>
+        <br />
+        استعراض المشاريع والفرص الاستثمارية الواعدة في مختلف القطاعات
+      </p>
+    ) : (
+      <p>
+        <b> Attract Investments </b>
+        <br />
+        Showcase promising investment projects across various sectors
+      </p>
+    )}
+  </div>
+
+  {/* تبادل الخبرات والتجارب */}
+  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/5.png"
+      alt="وصف"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+      style={{ height: "158px" }}
+    />
+    {lang ? (
+      <p>
+        <b> تبادل الخبرات والتجارب </b>
+        <br />
+        جمع نخبة من الخبراء لتبادل أفضل الممارسات والحلول المبتكرة
+      </p>
+    ) : (
+      <p>
+        <b> Exchange Expertise </b>
+        <br />
+        Bringing together experts to share innovative practices and solutions
+      </p>
+    )}
+  </div>
+
+  {/* تعزيز الشراكات والتعاون */}
+  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/4.png"
+      alt="وصف"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+    />
+    {lang ? (
+      <p>
+        <b> تعزيز الشراكات والتعاون </b>
+        <br />
+        بناء علاقات تعاون وشراكات استراتيجية فعّالة بين القطاعين العام والخاص
+      </p>
+    ) : (
+      <p>
+        <b> Strengthen Partnerships </b>
+        <br />
+        Build strategic cooperation between public and private sectors
+      </p>
+    )}
+  </div>
+
+  {/* تسويق المنتجات والخدمات */}
+  {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/6.png"
+      alt="تسويق"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+    />
+    {lang ? (
+      <p>
+        <b> تسويق المنتجات والخدمات </b>
+        <br />
+        عرض حلول مبتكرة في مجالات البنية التحتية، النقل، والطاقة
+      </p>
+    ) : (
+      <p>
+        <b> Market Solutions </b>
+        <br />
+        Present innovative infrastructure, transport, and energy solutions
+      </p>
+    )}
+  </div> */}
+
+  {/* دعم التجارة العالمية */}
+  {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+    <Image
+      src="/images/whyVisite/7.png"
+      alt="تجارة"
+      width={2000}
+      height={2000}
+      className={"responsiveImage mb-3"}
+    />
+    {lang ? (
+      <p>
+        <b> دعم التجارة العالمية </b>
+        <br />
+        تعزيز ربط الأسواق بين القارات عبر ممر النقل
+      </p>
+    ) : (
+      <p>
+        <b> Boost Global Trade </b>
+        <br />
+        Strengthen cross-continental trade through the development corridor
+      </p>
+    )}
+  </div> */}
+</div>
+
       </div>
     </section>
   );
