@@ -233,22 +233,22 @@ body {
 }
 
 .main-btn {
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  background-color: #304D73;
-  border: 1px solid #2b4566;
-  @media screen and (max-width: 768px) {
-    font-size: 0.7rem;
-  }
-  &:hover {
-   scale: (1.06);
-   
+  max-width: max-content;
+  width: 100%;
+  max-width: 620px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22264c !important;
+  color: #ffffff;
+  transition: .3s all ease-in-out;
+
+  &:hover{
+    background-color: #db263c !important;
+    color: #ffffff !important;
   }
 }
 .responsiveIcon {

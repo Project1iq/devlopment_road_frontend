@@ -4525,66 +4525,6 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
     padding-bottom: 50px;
   }
 }
-.contact .section-1 .form-container input {
-  background: #f7f5f2;
-  border: 1px solid #d8d8d8 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.contact .section-1 .form-container input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.contact .section-1 .form-container input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.contact .section-1 .form-container input::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.contact .section-1 .form-container textarea {
-  background: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.contact .section-1 .form-container textarea:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.contact .section-1 .form-container textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.contact .section-1 .form-container textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.contact .section-1 .form-container select {
-  background-color: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.contact .section-1 .form-container select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.contact .section-1 .form-container select::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.contact .section-1 .form-container select::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
 .contact .section-1 .form-container span {
   color: red;
 }
@@ -5063,24 +5003,23 @@ body input:focus {
 }
 
 .main-btn {
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 1rem;
-  transition: all 0.3s ease;
-  font-weight: 600;
-  background-color: #304D73;
-  border: 1px solid #2b4566;
-}
-@media screen and (max-width: 768px) {
-  .main-btn {
-    font-size: 0.7rem;
-  }
+  max-width: -moz-max-content;
+  max-width: max-content;
+  width: 100%;
+  max-width: 620px;
+  height: 50px;
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #22264c !important;
+  color: #ffffff;
+  transition: 0.3s all ease-in-out;
 }
 .main-btn:hover {
-  scale: 1.06;
+  background-color: #db263c !important;
+  color: #ffffff !important;
 }
 
 .responsiveIcon {
