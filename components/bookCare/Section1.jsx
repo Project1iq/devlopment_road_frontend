@@ -93,10 +93,12 @@ export default function Section1({ data }) {
                 <div className="px-5 text-white w-75">
                   {" "}
                   <h6>
-                    {lang
-                      ? "نحن نرحب بجميع الشركات والمؤسسات المهتمة برعاية هذا الحدث البارز. من خلال رعاية المعرض، ستحظى بفرصة كبيرة لزيادة الظهور والتواصل مع قادة الصناعة والمستثمرين. تتيح لك الرعاية فرصة تعزيز علامتك التجارية وتوسيع نطاق تأثيرك في قطاع الطاقة. للتسجيل والحصول على تفاصيل الرعاية، يرجى ملء استمارة الرعاية وسنوافيكم بكل التفاصيل اللازمة."
-                      : "We welcome all companies and organizations interested in sponsoring this prominent event. By sponsoring the exhibition, you will have a great opportunity to increase visibility and connect with industry leaders and investors. Sponsorship provides you with the chance to enhance your brand and expand your influence in the energy sector. To register and receive sponsorship details, please fill out the sponsorship form, and we will provide you with all the necessary information."}
-                  </h6>
+  {lang
+    ? "الرعاية أسرع اشكال التسويق نمو في الوقت الحاضر الرعاية هي الدعم المالــــــــــي أو العيني لنشاط ما ويتم استخدامه بشكل أساسي للوصول إلى أهدافك التجاريـة. يستخدم عدد كبير من المعارض هذه الأيام دعم الرعاية لتقديم برامج أكثر إثـــــارة. تسمح لك الرعاية بالوصول إلى أسواق متخصصة وموجهة بالإضافة إلى ذلك كاستكمال قوي لبرامج التسويق الأخرى، يمكن أن يكون للرعاية تأثير كبير على علاقات العملاء."
+    : "Sponsorship is the fastest growing form of marketing today. It is the financial or in-kind support of an activity, primarily used to achieve your business objectives. Many exhibitions today rely on sponsorship support to offer more exciting programs. Sponsorship allows you to reach specialized and targeted markets, in addition to being a powerful complement to other marketing programs. Sponsorship can have a significant impact on customer relationships."
+  }
+</h6>
+
                 </div>
               </div>
             </div>

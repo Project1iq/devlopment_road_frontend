@@ -179,11 +179,11 @@ export default function Nav() {
           nameAr: "الموقع",
           href: "/location",
         },
-        {
-          name: "Visas and Travel",
-          nameAr: "التاشيرات و السفر",
-          href: "/travel",
-        },
+        // {
+        //   name: "Visas and Travel",
+        //   nameAr: "التاشيرات و السفر",
+        //   href: "/travel",
+        // },
         {
           name: "Marketing campaign",
           nameAr: "الحملة التسويقية",
