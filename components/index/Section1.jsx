@@ -204,7 +204,7 @@ export default function Section1({ data }) {
             </h1>
             <h5 className={lang ? " text1  pe-3 " : " text1  ps-3"}>
               {" "}
-              {lang ? "    8-11  كانون الأول. 2025" : "8-11 dec 2025"}
+              {lang ? "    8-11  كانون الأول. 2025" : "2025 dec 8-11  "}
             </h5>
             <h5 className={lang ? " text1 tmn pe-3 " : " text1 tmn ps-3"}>
               {" "}
