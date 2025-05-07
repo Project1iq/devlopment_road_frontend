@@ -190,7 +190,7 @@ export default function Footer() {
                   </a>
 
                   <a
-                    href="https://maps.app.goo.gl/C3kSsSfqErnvzpQi9"
+                    href="https://maps.app.goo.gl/zairEvFrDkJe4ZGz7"
                     target="_blank"
                     className="d-flex justify-content-center justify-content-lg-start align-items-center text-decoration-none "
                   >
@@ -210,7 +210,7 @@ export default function Footer() {
                         lang ? "text-md-end" : "text-md-start"
                       } text-white mb-0 me-2`}
                     >
-                      {lang ? "بغداد - المنصور" : "Baghdad - Mansour"}
+                      {lang ? "العراق - البصرة" : "Iraq – Basra"}
                     </p>
                   </a>
                 </div>
@@ -239,7 +239,7 @@ export default function Footer() {
                     } text-white ms-2 mb-2`}
                   >
                     <span className="n">
-                      {lang ? "24 فبراير 2025:" : "24 Feb 2025:"}
+                      {lang ? "8 كانون الأول 2025:" : "8 dec 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">
@@ -257,7 +257,7 @@ export default function Footer() {
                     } text-white ms-2 mb-2`}
                   >
                     <span className="n">
-                      {lang ? "25 فبراير 2025:" : "25 Feb 2025:"}
+                      {lang ? "9 كانون الأول 2025:" : "9 dec 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">
@@ -275,7 +275,7 @@ export default function Footer() {
                     } text-white ms-2 mb-2`}
                   >
                     <span className="n">
-                      {lang ? "26 فبراير 2025:" : "26 Feb 2025:"}
+                      {lang ? "9 كانون الأول 2025:" : "9 dec 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">

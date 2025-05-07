@@ -1,4 +1,4 @@
-// :import React, { useState, useRef, useEffect } from "react";
+
 import Image from "next/image";
 import { useRecoilValue } from "recoil";
 import { langState } from "@/atom/atom";
@@ -157,7 +157,7 @@ export default function Section4({ data }) {
               }}
             >
               {" "}
-              Iraq Energy is for...
+              Target Sectors{" "}
             </h2>
           )}
         </div>
@@ -178,7 +178,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع النقل و الخدمات اللوجستية" : "Government"}
+            {lang ? "قطاع النقل و الخدمات اللوجستية" : "Transportation and Logistics Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -196,7 +196,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع البنية التحتية و الانشاءات" : "Government"}
+            {lang ? "قطاع البنية التحتية و الانشاءات" : "Infrastructure and Construction Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -214,7 +214,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع الطاقة والمرافق" : "Government"}
+            {lang ? "قطاع الطاقة والمرافق" : "Energy and Utilities Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -232,7 +232,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع التكنلوجيا والاتصالات" : "Government"}
+            {lang ? "قطاع التكنلوجيا والاتصالات" : "Technology and Communications Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -250,7 +250,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "ثطاع التجارة والصناعة" : "Government"}
+            {lang ? "قطاع التجارة والصناعة" : "Trade and Industry Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -268,7 +268,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع التمويل والاستثمار" : "Government"}
+            {lang ? "قطاع التمويل والاستثمار" : "Finance and Investment Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -286,7 +286,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "ثطاع السياحة والخدمات" : "Government"}
+            {lang ? "قطاع السياحة والخدمات" : "Tourism and Services Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -304,7 +304,7 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "قطاع التغليم والتدريب" : "Government"}
+            {lang ? "قطاع التغليم والتدريب" : "Education and Training Sector"}
           </h3>{" "}
         </div>
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
@@ -322,12 +322,10 @@ export default function Section4({ data }) {
               color: "#304D73",
             }}
           >
-            {lang ? "القطاع الحكومي والمؤسسات الدولية" : "Government"}
+            {lang ? "القطاع الحكومي والمؤسسات الدولية" : "Government Sector and International Institutions"}
           </h3>{" "}
         </div>
       </div>
-    
-
     </section>
   );
 }

@@ -53,18 +53,17 @@ export default function Section2({ data }) {
           {lang ? (
             <>
               <h2 className="mb-4">
-              معرض ومؤتمر طريق التنمية
+                معرض ومؤتمر طريق التنمية
               </h2>
               <p className="text-white mb-3">
-              معرض ومؤتمر طريق التنمية هو فعالية اقتصادية رائدة تنظم كجزء من الجهود الرامية إلى تسليط الضوء على مشروع طريق التنمية، الذي يُعد نقلة نوعية في تعزيز موقع العراق كبوابة اقتصادية رئيسية
+                معرض ومؤتمر طريق التنمية هو فعالية اقتصادية رائدة تنظم كجزء من الجهود الرامية إلى تسليط الضوء على مشروع طريق التنمية، الذي يُعد نقلة نوعية في تعزيز موقع العراق كبوابة اقتصادية رئيسية
               </p>
               <p className="text-white mb-3">
-              يهدف المعرض إلى الجمع بين الخبراء،المستثمرين، وصناع القرار من مختلف القطاعات، لتبادل الآراء والخبرات وبحث الإمكانيات الاستثمارية الضخمة التي يوفرها المشروع
-
+                يهدف المعرض إلى الجمع بين الخبراء،المستثمرين، وصناع القرار من مختلف القطاعات، لتبادل الآراء والخبرات وبحث الإمكانيات الاستثمارية الضخمة التي يوفرها المشروع
               </p>
               <div className="moretxt">
                 <p className="text-white mb-3">
-                ستقام عدد من الندوات و الورش اضافة الى مؤتمر قبل انطلاق الحدث خلال معرض بغداد الدولي للتثقيف حول معرض طريق التنمية وتسليط الضوء على مشروع التنمية وأهدافه والمشاريع الاستثمارية التي تطرح من خلاله اضافة الى المؤتمر خلال انعقاده يجمع عدد من الخبراء والمهتمين بمشروع التنمية لفتح حلقات حوارية تعريفية و فتح ابواب التعاون مع مختلف القطاعات المعنية
+                  ستقام عدد من الندوات و الورش اضافة الى مؤتمر قبل انطلاق الحدث خلال معرض بغداد الدولي للتثقيف حول معرض طريق التنمية وتسليط الضوء على مشروع التنمية وأهدافه والمشاريع الاستثمارية التي تطرح من خلاله اضافة الى المؤتمر خلال انعقاده يجمع عدد من الخبراء والمهتمين بمشروع التنمية لفتح حلقات حوارية تعريفية و فتح ابواب التعاون مع مختلف القطاعات المعنية
                 </p>
               </div>
             </>
@@ -79,7 +78,7 @@ export default function Section2({ data }) {
                 }}
                 className="mb-4"
               >
-                The 10<sup>th</sup> Iraq International Energy Expo and Conference.
+                Development Road Exhibition and Conference
               </h2>
               <p
                 style={{
@@ -88,12 +87,8 @@ export default function Section2({ data }) {
                 }}
                 className="text-white mb-3"
               >
-                Under the patronage of the Prime Minister, Ministry of
-                Electricity, Ministry of Oil, and National Investment
-                Commission, the event promotes collaboration with global energy
-                firms.
+                The Development Road Exhibition and Conference is a leading economic event organized as part of efforts to highlight the Development Road Project, which represents a qualitative shift in enhancing Iraq's position as a major economic gateway.
               </p>
-
               <p
                 style={{
                   fontSize: "18px",
@@ -101,9 +96,7 @@ export default function Section2({ data }) {
                 }}
                 className="text-white mb-3"
               >
-                The 10th Iraq Energy Expo and Conference connects global
-                energy players, showcasing solutions that redefine the energy
-                landscape and foster lasting partnerships.
+                The exhibition aims to bring together experts, investors, and decision-makers from various sectors to exchange views and experiences and explore the vast investment opportunities provided by the project.
               </p>
               <div className="moretxt">
                 <p
@@ -113,26 +106,11 @@ export default function Section2({ data }) {
                   }}
                   className="text-white mb-3"
                 >
-                  The event helps diversify energy portfolios, bridge gaps for
-                  economic integration, and attract investments in Iraq&apos;s
-                  growing energy sector.
-                </p>
-
-                <p
-                  style={{
-                    fontSize: "18px",
-                    lineHeight: "28px",
-                  }}
-                  className="text-white mb-3"
-                >
-                  Significant progress in Iraq&apos;s electricity grid has boosted
-                  the Ministry of Electricity’s appeal to international
-                  companies worldwide.
+                  A number of seminars and workshops will be held in addition to a conference prior to the event during the Baghdad International Fair to raise awareness about the Development Road Exhibition and highlight the development project, its goals, and the investment opportunities it offers. During the event, a number of experts and stakeholders in the development project will gather to open introductory dialogue sessions and open doors for cooperation with various relevant sectors.
                 </p>
               </div>
             </>
-          )}{" "}
-         
+          )}
         </div>
         <div className="sliders d-lg-flex gap-4 mx-5 d-none">
           <div style={{ width: "500px", height: "200px" }}>
