@@ -626,7 +626,7 @@ onChange={handleChage}
                       options={countryOptions}
                       value={countryOptions.find((option) => option.value === formData.country)}
                       onChange={handleChangeCountry}
-                      placeholder="اختر البلد..."
+                      placeholder={lang? "اختر البلد..." : "select country"}
                       isSearchable
                       styles={customStyles}
                       onFocus={() => setIsFocused(true)}
@@ -664,7 +664,7 @@ onChange={handleChage}
               </div>
               <div className="col-md-6 col-12  ps-5 ">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15530.130494455812!2d44.344502081993994!3d33.31643169984139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15577f003c488b0f%3A0xe799625523ce898f!2z2YXYudix2LYg2KjYutiv2KfYryDYp9mE2K_ZiNmE2Yo!5e0!3m2!1sen!2siq!4v1731948350087!5m2!1sen!2siq"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.437201747679!2d47.78418343809816!3d30.56520114271435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc49f3554130605%3A0x7ef66844633f9652!2z2KPYsdi2INmF2LnYp9ix2LYg2KfZhNio2LXYsdipINin2YTYr9mI2YTZig!5e0!3m2!1sar!2siq!4v1746642883413!5m2!1sar!2siq" 
                   width="600"
                   height="800"
                   // style="border:0;"

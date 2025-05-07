@@ -664,7 +664,7 @@ export default function Section1({ data }) {
                       options={countryOptions}
                       value={countryOptions.find((option) => option.value === formData.country)}
                       onChange={handleChangeCountry}
-                      placeholder="اختر البلد..."
+                      placeholder={lang? "اختر البلد..." : "select country"}
                       isSearchable
                       styles={customStyles}
                       onFocus={() => setIsFocused(true)}
