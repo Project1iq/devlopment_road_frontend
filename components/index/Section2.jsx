@@ -87,7 +87,7 @@ export default function Section2({ data }) {
                 }}
                 className="text-white mb-3"
               >
-                The Development Road Exhibition and Conference is a leading economic event organized as part of efforts to highlight the Development Road Project, which represents a qualitative shift in enhancing Iraq's position as a major economic gateway.
+                The Development Road Exhibition and Conference is a leading economic event organized as part of efforts to highlight the Development Road Project, which represents a qualitative shift in enhancing Iraq position as a major economic gateway.
               </p>
               <p
                 style={{

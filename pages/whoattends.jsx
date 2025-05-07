@@ -47,7 +47,7 @@ export default function Whoattends() {
   <>
     <h5>
       The Development Road Exhibition aims to be an inspiring platform for engagement with both local and international communities,
-      highlighting the project's vision as a key driver for economic integration and sustainable development in Iraq and the region.
+      highlighting the projects vision as a key driver for economic integration and sustainable development in Iraq and the region.
       The exhibition seeks to present the project as a global model of innovation and infrastructure, foster local and international partnerships,
       and encourage public and private sector participation to achieve inclusive and sustainable growth.
     </h5>
