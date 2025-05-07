@@ -1939,7 +1939,7 @@
             font-size: 26px;
             position: relative;
             color: transparent;
-          
+            -webkit-background-clip: text;
             color: var(--tp-common-black);
             @include tp-gradient(
               (329deg, #ff91fa 13.55%, #fa6490 48.54%, #f7d86a 86.44%)
