@@ -4,11 +4,11 @@ import PropTypes from "prop-types";
 export default function Temp({ title_ar, title_en, desc_ar, desc_en, lang }) {
   return (
     <div className="temp container" style={{ lineHeight: "1.8" }}>
-      <h2 className="main-text text-center mt-5 mb-4">
+      <h2 className="main-text text-center mt-5 mb-5">
         {lang ? title_ar : title_en}
       </h2>
 
-      <div className="px-0 px-md-5 mb-3 mt-5 text-center">
+      <div className="px-0  mb-3  text-center">
         {/* استخدام dangerouslySetInnerHTML إذا كنت بحاجة لعرض HTML */}
         <div
           dangerouslySetInnerHTML={{

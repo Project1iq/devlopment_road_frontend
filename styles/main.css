@@ -2800,7 +2800,7 @@
   padding-top: 1.5rem !important;
 }
 .input + .input {
-  margin-top: 1.5rem !important;
+  margin-top: 1.5rem;
 }
 
 .input-label {
@@ -2831,7 +2831,7 @@
 }
 .input-field:focus, .input-field:valid {
   outline: 0;
-  border-bottom-color: #304D73 !important;
+  border-bottom-color: #304D73;
   border-width: 2px !important;
   border-top: none !important;
   border-left: none !important;
@@ -3598,66 +3598,6 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
     padding-top: 50px;
     padding-bottom: 50px;
   }
-}
-.reserveSpace .section-1 .form-container input {
-  background: #f7f5f2;
-  border: 1px solid #d8d8d8 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reserveSpace .section-1 .form-container input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reserveSpace .section-1 .form-container input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reserveSpace .section-1 .form-container input::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reserveSpace .section-1 .form-container textarea {
-  background: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reserveSpace .section-1 .form-container textarea:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reserveSpace .section-1 .form-container textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reserveSpace .section-1 .form-container textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reserveSpace .section-1 .form-container select {
-  background-color: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reserveSpace .section-1 .form-container select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reserveSpace .section-1 .form-container select::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reserveSpace .section-1 .form-container select::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
 }
 .reserveSpace .section-1 .form-container span {
   color: red;
@@ -4783,66 +4723,6 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
     padding-bottom: 50px;
   }
 }
-.bookCare .section-1 .form-container input {
-  background: #f7f5f2;
-  border: 1px solid #d8d8d8 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.bookCare .section-1 .form-container input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.bookCare .section-1 .form-container input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.bookCare .section-1 .form-container input::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.bookCare .section-1 .form-container textarea {
-  background: #f7f5f2;
-  border: 1px solid #d8d8d8 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.bookCare .section-1 .form-container textarea:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.bookCare .section-1 .form-container textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.bookCare .section-1 .form-container textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.bookCare .section-1 .form-container select {
-  background-color: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.bookCare .section-1 .form-container select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.bookCare .section-1 .form-container select::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.bookCare .section-1 .form-container select::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
 .bookCare .section-1 .form-container span {
   color: red;
 }
@@ -4981,12 +4861,11 @@ body.whitebk {
   text-align: center;
   margin: 0 auto;
   max-width: 800px;
-  padding: 20px;
 }
 .temp .benefits-content h3 {
   color: #304D73; /* أزرق ناعم */
-  margin-top: 20px;
-  margin-bottom: 10px;
+  margin-top: 16px;
+  margin-bottom: 16px;
   font-size: 1.5rem;
 }
 .temp .benefits-content .custom-list p {
@@ -5125,7 +5004,7 @@ html input:focus,
 body input:focus {
   outline: none !important;
   box-shadow: none !important;
-  border: 1px solid #000 !important;
+  border: 1px solid #000;
 }
 
 .v-hidden {
@@ -5139,6 +5018,76 @@ body input:focus {
   .text-ph-center {
     text-align: center;
   }
+}
+
+.input {
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
+  padding-top: 1.5rem !important;
+}
+.input + .input {
+  margin-top: 1.5rem;
+}
+
+.input-label {
+  color: #2f2f2f;
+  position: absolute;
+  bottom: 0.5rem !important;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.25s ease;
+  background-color: #ffffff !important;
+  padding: 0 0.5rem;
+  z-index: 0;
+}
+
+.input-label-date {
+  z-index: 999;
+}
+
+.input-field {
+  border: 0;
+  z-index: 1;
+  background-color: transparent;
+  border-bottom: 2px solid #b5b5b5;
+  font: inherit;
+  font-size: 1.125rem;
+  padding: 0.25rem;
+  color: #000000 !important;
+}
+.input-field:focus, .input-field:valid {
+  outline: 0;
+  border-bottom-color: #304D73;
+  border-width: 2px !important;
+  border-top: none !important;
+  border-left: none !important;
+  border-right: none !important;
+}
+.input-field:focus + .input-label, .input-field:valid + .input-label {
+  color: #304D73;
+  transform: translateY(-1.5rem);
+}
+
+.select-label {
+  color: #2f2f2f;
+  position: absolute;
+  bottom: 0.5rem;
+  font-size: 18px;
+  font-weight: 500 !important;
+  transition: 0.25s ease;
+  background-color: #ffffff;
+  padding: 0 0.5rem;
+  z-index: 0;
+}
+
+.select-label.focused {
+  color: #304D73;
+  transform: translateY(-1.5rem);
+}
+
+.select-label-date {
+  z-index: 999;
 }
 
 .ps-5:lang(ar) {

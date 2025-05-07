@@ -81,7 +81,7 @@
   padding-top: 1.5rem !important;
 
   &+.input {
-    margin-top: 1.5rem !important;
+    margin-top: 1.5rem ;
   }
 }
 
@@ -114,7 +114,7 @@
   &:focus,
   &:valid {
     outline: 0;
-    border-bottom-color: #304D73 !important;
+    border-bottom-color: #304D73 ;
     border-width: 2px !important;
     border-top: none !important;
     border-left: none !important;

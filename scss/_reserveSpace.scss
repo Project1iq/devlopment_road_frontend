@@ -73,57 +73,8 @@
         padding-top: 50px;
         padding-bottom: 50px;
       }
-      input {
-        background: #f7f5f2;
-        border: 1px solid #d8d8d8 !important;
-        color: #000;
-        border-radius: 10px !important;
-        padding: 10px 20px;
-        width: 100% !important;
-        margin-bottom: 15px;
-        &:focus {
-          outline: none !important;
-          box-shadow: none !important;
-          border: 1px solid #000 !important;
-        }
-        &::placeholder {
-          color: #00000054;
-        }
-      }
-      textarea {
-        background: #f7f5f2;
-        border: 1px solid #b9b9b9 !important;
-        color: #000;
-        border-radius: 10px !important;
-        padding: 10px 20px;
-        width: 100% !important;
-        margin-bottom: 15px;
-        &:focus {
-          outline: none !important;
-          box-shadow: none !important;
-          border: 1px solid #000 !important;
-        }
-        &::placeholder {
-          color: #00000054;
-        }
-      }
-      select {
-        background-color: #f7f5f2;
-        border: 1px solid #b9b9b9 !important;
-        color: #000;
-        border-radius: 10px !important;
-        padding: 10px 20px;
-        width: 100% !important;
-        margin-bottom: 15px;
-        &:focus {
-          outline: none !important;
-          box-shadow: none !important;
-          border: 1px solid #000 !important;
-        }
-        &::placeholder {
-          color: #00000054;
-        }
-      }
+  
+      
       span {
         color: red;
       }

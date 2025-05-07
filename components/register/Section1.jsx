@@ -557,7 +557,7 @@ export default function Section1({ data }) {
     control: (provided, state) => ({
       ...provided,
       border: "none",
-      borderBottom: `2px solid ${state.isFocused ? "#eec11d" : "#b5b5b5"}`,
+      borderBottom: `2px solid ${state.isFocused ? "#304D73" : "#b5b5b5"}`,
       borderRadius: "0",
       boxShadow: "none",
       backgroundColor: "transparent",
@@ -565,7 +565,7 @@ export default function Section1({ data }) {
       padding: ".25rem",
       color: "#000000",
       "&:hover": {
-        borderBottomColor: "#eec11d",
+        borderBottomColor: "#304D73",
       },
     }),
     menu: (provided) => ({
@@ -574,7 +574,7 @@ export default function Section1({ data }) {
     }),
     option: (provided, state) => ({
       ...provided,
-      backgroundColor: state.isSelected ? "#eec11d" : "white",
+      backgroundColor: state.isSelected ? "#304D73" : "white",
       color: state.isSelected ? "#000" : "#2f2f2f",
       "&:hover": {
         backgroundColor: "#f6e27a",
