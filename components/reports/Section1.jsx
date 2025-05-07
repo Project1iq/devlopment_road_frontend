@@ -79,137 +79,144 @@ export default function Section1({ data }) {
                 </div>
               </div>
             </div>
-            <form action="" onSubmit={handleSubmit} className="form row">
-              <h5 className="main-text px-0 mb-4">
+            <h5 className="main-text px-0 mb-4">
                 {lang
                   ? "للحصول على تقرير المعرض، يرجى التواصل معنا :"
                   : "For the exhibition report, please contact us:"}
               </h5>
+              <form action="" onSubmit={handleSubmit} className="form row">
               <div className="col-md-6 col-12 pe-md-5 px-0">
-                <div className="input-group d-block">
-                  <label htmlFor="name">
-                    {lang ? "الاسم" : "Name"} <span className="mx-1">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    className="form-control col-10"
-                    placeholder={lang ? "الاسم" : "Name"}
-                    value={formData.name || ""}
-                    onChange={handleChage}
-                    required
-                  />
-                </div>
-                <div className="input-group d-block">
-                  <label htmlFor="company">
-                    {lang ? "اسم الشركة" : "Company Name"}
-                    <span className="mx-1">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="company"
-                    id="company"
-                    className="form-control col-10"
-                    placeholder={lang ? "اسم الشركة" : "Company Name"}
-                    value={formData.company || ""}
-                    onChange={handleChage}
-                    required
-                  />
-                </div>
-                <div className="input-group d-block">
-                  <label htmlFor="job_title">
-                    {lang ? "اسم القطاع المهتم به" : "The sector of interest"}
-                    <span className="mx-1">*</span>
-                  </label>
-                  <input
-                    type="text"
-                    name="job_title"
-                    id="job_title"
-                    className="form-control col-10"
-                    placeholder={lang ? "اسم القطاع المهتم به" : "The sector of interest"}
-                    value={formData.job_title || ""}
-                    onChange={handleChage}
-                    required
-                  />
-                </div>
-                <div className="input-group d-block">
-                  <label htmlFor="message">{lang ? "رسالة" : "Message"}</label>
-                  <textarea
-                    name="message"
-                    id="message"
-                    className="form-control w-100"
-                    placeholder={lang ? "رسالة" : "Message"}
-                    value={formData.message || ""}
-                    onChange={handleChage}
-                  ></textarea>
-                </div>
-              </div>
-              <div className="col-md-6 col-12 ps-5 ">
-                <div className="input-group d-block">
-                  <label htmlFor="email">
-                    {lang ? "البريد الالكتروني" : "Email"}
-                    <span className="mx-1">*</span>
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    className="form-control col-10"
-                    placeholder={lang ? "البريد الالكتروني" : "Email"}
-                    value={formData.email || ""}
-                    onChange={handleChage}
-                    required
-                  />
-                </div>
+         
 
-                <div className="input-group d-block">
-                  <label htmlFor="phone">
-                    {lang ? "رقم الهاتف" : "Phone Number"}
-                    <span className="mx-1">*</span>
-                  </label>
-                  <input
-                    type="tel"
-                    name="phone"
-                    id="phone"
-                    className="form-control col-10"
-                    placeholder={`+964`}
-                    value={formData.phone || ""}
-                    onChange={handleChage}
-                    required
-                  />
-                </div>
 
-                <div className="input-group d-block">
-                  <label htmlFor="intrest">
-                    {lang ? "مهتم " : "Interested in"}
-                    <span className="mx-1">*</span>
-                  </label>
-                  <select
-                    name="intrest"
-                    id="intrest"
-                    className="form-select col-10"
-                    value={formData.intrest || "null"}
-                    onChange={handleChage}
-                  >
-                    <option selected disabled value="null">
-                      {lang ? "اختيار" : "Choose"}
-                    </option>
-                    <option value="Participation">
-                      {lang ? "المشاركة" : "Participation"}
-                    </option>
-                    <option value="visit">
-                      {lang ? "الزيارة" : "Visit"}
-                    </option>
-                    <option value="research">
-                      {lang ? "البحث عن معلومات" : "Looking for information"}
-                    </option>
-                  </select>
-                </div>
+
+                <div className="input col-md-12 col-12">
+                    <input
+                      type="text"
+                      className="input-field"
+                      name="full_name"
+                      value={formData.name}
+                      onChange={handleChage}
+                      required
+                    />
+                    <label className="input-label">{lang ? " الاسم الكامل" : "full Name"}</label>
+                  </div>
+           
+                  <div className="input col-md-12 col-12">
+  <input
+    type="text"
+    className="input-field"
+    name="company"
+    
+    value={formData.company || ""}
+    onChange={handleChage}
+    required
+  />
+  <label className="input-label">{lang ? "اسم الشركة" : "Company Name"}</label>
+</div>
+
+
+  
+<div className="input col-md-12 col-12">
+  <input
+    required
+    className="input-field"
+    type="text"
+    name="department"
+    value={formData.department || ""}
+    onChange={handleChage}
+  />
+  <label className="input-label">
+    {lang ? "اسم القطاع المهتم به" : "Department Name"}
+  </label>
+</div>
+
+
+  <div style={{marginTop:"0px",
+  
+  }} className="input">
+    <textarea
+      required
+      className="input-field"
+      name="message"
+      value={formData.message || ""}
+      onChange={handleChage}
+    ></textarea>
+    <label className="input-label">
+      {lang ? "رسالة" : "Message"}
+    </label>
+  </div>
+</div>
+
+              <div className="col-md-6 col-12  ps-5 ">
+              <div className="input col-md-12 col-12">
+  <input
+    required
+    className="input-field"
+    type="email"
+    name="email"
+    value={formData.email || ""}
+    onChange={handleChage}
+  />
+  <label className="input-label">
+    {lang ? "البريد الالكتروني" : "Email"}
+  </label>
+</div>
+
+
+<div className="input col-md-12 col-12">
+  <input
+    required
+    className="input-field"
+    type="tel"
+    name="phone"
+    value={formData.phone || ""}
+    onChange={handleChage}
+    placeholder="+"
+  />
+  <label className="input-label">
+    {lang ? "رقم الهاتف" : "Phone Number"}
+  </label>
+</div>
+
+
+
+   
+
+<div className="input col-md-12 col-12">
+  <select
+    name="intrest"
+    style={{ borderBottom: "2px solid #b5b5b5" }}
+
+    id="intrest"
+    className="input-field"
+    value={formData.intrest || "null"}
+    onChange={handleChage}
+  >
+    <option selected disabled value="null">
+      {lang ? "اختيار" : "Choose"}
+    </option>
+    <option value="exhibitor">
+      {lang ? "العارض" : "Exhibitor"}
+    </option>
+    <option value="visitor">
+      {lang ? "الزائر" : "Visitor"}
+    </option>
+    <option value="research">
+      {lang ? "البحث عن معلومات" : "Looking for information"}
+    </option>
+  </select>
+  <label style={{ color:"#2f2f2f"}} className="input-label">
+    {lang ? "مهتم" : "Interested in"}
+  </label>
+</div>
+
+
+
 
                 <div className="input-group d-flex flex-column">
                   <button
-                    className="main-btn mt-4"
+                    className="main-btn mt-5"
                     type="submit"
                     onClick={handleSubmit}
                   >

@@ -4182,66 +4182,6 @@ input[type=datetime-local]::-webkit-calendar-picker-indicator {
     padding-bottom: 50px;
   }
 }
-.reports .section-1 .form-container input {
-  background: #f7f5f2;
-  border: 1px solid #d8d8d8 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reports .section-1 .form-container input:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reports .section-1 .form-container input::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reports .section-1 .form-container input::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reports .section-1 .form-container textarea {
-  background: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reports .section-1 .form-container textarea:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reports .section-1 .form-container textarea::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reports .section-1 .form-container textarea::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reports .section-1 .form-container select {
-  background-color: #f7f5f2;
-  border: 1px solid #b9b9b9 !important;
-  color: #000;
-  border-radius: 10px !important;
-  padding: 10px 20px;
-  width: 100% !important;
-  margin-bottom: 15px;
-}
-.reports .section-1 .form-container select:focus {
-  outline: none !important;
-  box-shadow: none !important;
-  border: 1px solid #000 !important;
-}
-.reports .section-1 .form-container select::-moz-placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
-.reports .section-1 .form-container select::placeholder {
-  color: rgba(0, 0, 0, 0.3294117647);
-}
 .reports .section-1 .form-container span {
   color: red;
 }
