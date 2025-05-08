@@ -13,8 +13,10 @@ export default function Section1({ data }) {
       sub_points: [
         {
           id: 1,
-          content_ar: "لوحة الأعلانات في المواقع الرئيسية في انحاء العراق اكثر من 200 لوحة.",
-          content: "Advertising billboards in key locations throughout Iraq more than 200 billboards.",
+          content_ar:
+            "لوحة الأعلانات في المواقع الرئيسية في انحاء العراق اكثر من 200 لوحة.",
+          content:
+            "Advertising billboards in key locations throughout Iraq more than 200 billboards.",
         },
         {
           id: 2,
@@ -23,13 +25,16 @@ export default function Section1({ data }) {
         },
         {
           id: 3,
-          content_ar: "إعلانات الوسائط القائمة على المكان لأستهداف الجمهور المختص.",
+          content_ar:
+            "إعلانات الوسائط القائمة على المكان لأستهداف الجمهور المختص.",
           content: "Location-based media ads to target the relevant audience.",
         },
         {
           id: 4,
-          content_ar: "وضع الأعلان في مقرات الجهات الحكومية الراعية والساندة للمعرض.",
-          content: "Placing the advertisement in the headquarters of the government agencies that sponsor and support the exhibition.",
+          content_ar:
+            "وضع الأعلان في مقرات الجهات الحكومية الراعية والساندة للمعرض.",
+          content:
+            "Placing the advertisement in the headquarters of the government agencies that sponsor and support the exhibition.",
         },
       ],
     },
@@ -45,13 +50,16 @@ export default function Section1({ data }) {
         },
         {
           id: 2,
-          content_ar: "حملات البريد الالكتروني المستهدفة الخاصة بشخص ما مع USPS ذات الصلة.",
+          content_ar:
+            "حملات البريد الالكتروني المستهدفة الخاصة بشخص ما مع USPS ذات الصلة.",
           content: "Targeted email campaigns with someone with relevant USPS.",
         },
         {
           id: 3,
-          content_ar: "الأعلان المدفوع (محركات البحث ومواقع التواصل الاجتماعي) لرجال الاعمال والتجار المحليين والدوليين.",
-          content: "Paid advertising (search engines and social media sites) for local and international businessmen and traders.",
+          content_ar:
+            "الأعلان المدفوع (محركات البحث ومواقع التواصل الاجتماعي) لرجال الاعمال والتجار المحليين والدوليين.",
+          content:
+            "Paid advertising (search engines and social media sites) for local and international businessmen and traders.",
         },
         {
           id: 4,
@@ -60,8 +68,10 @@ export default function Section1({ data }) {
         },
         {
           id: 5,
-          content_ar: "تعقب الزائرين المحتملين على Facebook و X و LinkedIn و Instagram.",
-          content: "Tracking potential visitors on Facebook, X, LinkedIn, and Instagram.",
+          content_ar:
+            "تعقب الزائرين المحتملين على Facebook و X و LinkedIn و Instagram.",
+          content:
+            "Tracking potential visitors on Facebook, X, LinkedIn, and Instagram.",
         },
       ],
     },
@@ -98,19 +108,28 @@ export default function Section1({ data }) {
         {
           id: 6,
           content_ar: "التسويق الجغرافي (أحداث المنافسين والمواقع الرئيسية).",
-          content: "Geographic marketing (competitors' events and key locations).",
+          content:
+            "Geographic marketing (competitors' events and key locations).",
         },
       ],
     },
   ];
 
   const points2 = [
-    { id: 1, content_ar: "لوحات اعلانية خارجية", content: "Outdoor billboards" },
+    {
+      id: 1,
+      content_ar: "لوحات اعلانية خارجية",
+      content: "Outdoor billboards",
+    },
     { id: 2, content_ar: "حملات واتس اب", content: "WhatsApp campaigns" },
     { id: 3, content_ar: "اعلانات رقمية", content: "Digital ads" },
     { id: 4, content_ar: "راديو", content: "Radio" },
     { id: 5, content_ar: "حملات ايميل", content: "Email campaigns" },
-    { id: 6, content_ar: "حملات مواقع الكترونية", content: "Website campaigns" },
+    {
+      id: 6,
+      content_ar: "حملات مواقع الكترونية",
+      content: "Website campaigns",
+    },
     { id: 7, content_ar: "حملات جرائد", content: "Newspaper campaigns" },
     { id: 8, content_ar: "حملات رسائل نصية", content: "SMS campaigns" },
     { id: 9, content_ar: "مواقع التواصل الاجتماعي", content: "Social media" },
@@ -119,7 +138,7 @@ export default function Section1({ data }) {
   return (
     <section className="row section-1 mx-auto">
       <div action="" className="form-container">
-        <div className="container">
+        <div className="container pt-lg-0 pt-5">
           <div className="bg-image col-12 mb-4">
             <div className="allpic">
               <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3 ">
@@ -128,7 +147,7 @@ export default function Section1({ data }) {
                   {lang ? "التسويق" : "Marketing"}
                 </h1>
               </div>
-              <div className="px-5 text-white w-75">
+              <div className="px-5 text-white col-lg-8 col-12">
                 <h6>
                   {lang
                     ? "نستهدف رجال الأعمال والأسواق التجارية محليًا ودوليًا عبر لوحات إعلانات في العراق، إعلانات راديو، حملات رقمية، إعلانات مدفوعة على محركات البحث، وسائل التواصل الاجتماعي، ورسائل SMS/WhatsApp. لدينا أيضًا شراكات إعلامية وتسويق عبر المؤثرين لتوسيع نطاق الوصول وتعزيز الحضور في المعرض."
@@ -182,9 +201,11 @@ export default function Section1({ data }) {
             <hr className="linebtwen" />
             <div className="col-12 mt-5">
               <h2 className="main-text ">
-                {lang ? "كيف نصل الى زوار معرضنا؟" : "How do we reach our exhibition visitors?"}
+                {lang
+                  ? "كيف نصل الى زوار معرضنا؟"
+                  : "How do we reach our exhibition visitors?"}
               </h2>
-             
+
               <div>
                 <ul className=" px-3">
                   {points2.map((point) => (

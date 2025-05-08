@@ -218,7 +218,7 @@ export default function Footer() {
                 <div></div>
               </div>
 
-              <div className="col-md-2 col-12 mb-5 mb-md-0">
+              <div className="col-md-2 col-12 mb-5 mb-md-0 px-0">
                 {" "}
                 <div
                   className={
@@ -239,16 +239,16 @@ export default function Footer() {
                   <p
                     className={`text-center ${
                       lang ? "text-md-end" : "text-md-start"
-                    } text-white ms-2 mb-2`}
+                    } text-white text-nowrap mb-2`}
                   >
                     <span className="n">
-                      {lang ? "8 كانون الأول 2025:" : "8 dec 2025:"}
+                      {lang ? "1 تشرين الثاني 2025:" : "1 nov 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">
                       {lang
-                        ? "الإثنين: 10:00 - 16:00"
-                        : "Monday: 10:00 - 16:00"}
+                        ? "سبت: 10:00 صباحا - 5:00 مساءا"
+                        : "Saturday : 10:00 AM - 5:00 PM"}
                     </span>
                     <br />
                     <span className="fs-6">{lang ? "" : ""}</span>
@@ -257,16 +257,16 @@ export default function Footer() {
                   <p
                     className={`text-center ${
                       lang ? "text-md-end" : "text-md-start"
-                    } text-white ms-2 mb-2`}
+                    } text-white text-nowrap ms-2 mb-2`}
                   >
                     <span className="n">
-                      {lang ? "9 كانون الأول 2025:" : "9 dec 2025:"}
+                      {lang ? "2 تشرين الثاني 2025:" : "2 nov 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">
                       {lang
-                        ? "الثلاثاء: 10:00 - 16:00"
-                        : "Tuesday: 10:00 - 16:00"}
+                        ? "الاحد: 10:00 صباحا - 5:00 مساءا"
+                        : "Sunday: 10:00 - 16:00"}
                     </span>
                     <br />
                     <span className="fs-6">{lang ? "" : ""}</span>
@@ -275,16 +275,33 @@ export default function Footer() {
                   <p
                     className={`text-center ${
                       lang ? "text-md-end" : "text-md-start"
-                    } text-white ms-2 mb-2`}
+                    } text-white text-nowrap ms-2 mb-2`}
                   >
                     <span className="n">
-                      {lang ? "9 كانون الأول 2025:" : "9 dec 2025:"}
+                      {lang ? "3 تشرين الثاني 2025:" : "3 nov 2025:"}
                     </span>
                     <br />
                     <span className="fs-6">
                       {lang
-                        ? "الأربعاء: 10:00 - 16:00"
-                        : "Wednesday: 10:00 - 16:00"}
+                        ? "الاثنين: 10:00 صباحا - 5:00 مساءا"
+                        : "Monday: 10:00 AM - 5:00 PM"}
+                    </span>
+                    <br />
+                    <span className="fs-6">{lang ? "" : ""}</span>
+                  </p>
+                  <p
+                    className={`text-center ${
+                      lang ? "text-md-end" : "text-md-start"
+                    } text-white text-nowrap ms-2 mb-2`}
+                  >
+                    <span className="n">
+                      {lang ? "4 تشرين الثاني 2025:" : "4 nov 2025:"}
+                    </span>
+                    <br />
+                    <span className="fs-6">
+                      {lang
+                        ? "الثلاثاء: 10:00 صباحا - 5:00 مساءا"
+                        : "Tuesday: 10:00 AM - 5:00 PM"}
                     </span>
                     <br />
                     <span className="fs-6">{lang ? "" : ""}</span>

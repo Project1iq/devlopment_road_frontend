@@ -9,7 +9,7 @@ export default function Sectors() {
   const [lang, setLang] = useRecoilState(langState);
   return (
     <div className="sectors container">
-      <div>
+      <div className="pt-md-0 pt-5">
         <h2 className="main-text text-center mt-5 mb-5">
           {lang ? "القطاعات المشاركة" : "Participating Sectors"}
         </h2>

@@ -33,8 +33,8 @@ Through this network of relations, Iraq aspires to enhance its geopolitical and 
   return (
     <section className="row section-1 mx-auto">
       <div className="form-container">
-        <div className="container">
-          <div className="bg-image col-12 mb-4">
+        <div className="container pt-md-0 pt-5">
+          <div className="bg-image col-12 mb-4 ">
             <div className="allpic">
               <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3">
                 <div className="line"> </div>
@@ -42,7 +42,7 @@ Through this network of relations, Iraq aspires to enhance its geopolitical and 
                   {lang ? "شبكة العلاقات لمشروع طريق التنمية" : "Development Road Project Relations Network"}
                 </h1>
               </div>
-              <div className="px-5 text-white w-75">
+              <div className="px-5 text-white colmd-8 col-12">
                 <h6>
                   {lang
                     ? "يُعد مشروع طريق التنمية منصة استراتيجية لتعزيز العلاقات الإقليمية والدولية للعراق، مما يسهم في تعزيز مكانته الجيوسياسية والاقتصادية."

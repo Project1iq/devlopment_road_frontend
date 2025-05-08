@@ -92,7 +92,7 @@ export default function Section1({ data }) {
                     {lang ? " فوائد معرض ومؤتمر طريق التنمية :-" : "Why the Development Road Matters :-"}
                   </h2>
                   <div>
-                    <ul className="list-unstyled">
+                    <ul className="list-unstyled d-none">
                       {points.map((point) => (
                         <li key={point.id}>
                           <p className="point mb-3 d-md-none col-md-12">

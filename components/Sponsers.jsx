@@ -29,7 +29,7 @@ export default function Sponsers() {
         background: "#ffff",
       }}
     >
-      <div className="white row justify-content-center">
+      <div className="white row justify-content-center col-lg-11 col-12 mx-auto">
         <div
           className="kbab col-12 text-center"
           style={{ marginTop: "2vh", marginBottom: "6vh" }}

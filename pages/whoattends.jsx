@@ -28,7 +28,7 @@ export default function Whoattends() {
   return (
     <div className="whoattends ">
       <div className="container">
-        <div>
+        <div className="mt-md-0 pt-5">
           <h2 className="main-text text-center mt-5 mb-5">
             {lang ? "  رؤية معرض ومؤتمر طريق التنمية :-" : "Development Road Expo & Conference Vision:-"}
           </h2>
@@ -91,7 +91,7 @@ export default function Whoattends() {
       <div className="row d-flex justify-content-center mb-5">
         <div className="col-lg-4 col-sm-12 text-center"></div>
       </div>
-      <div className="fristr row col-12 d-flex justify-content-center ps-sm-5 ms-sm-2 ps-lg-0 ms-lg-0">
+      <div className="fristr row col-12 d-flex justify-content-center ps-sm-5 ms-sm-2 ps-lg-0 ms-lg-0 mx-auto">
         <div className="col-lg-2 col-sm-12 text-center">
           {" "}
           <Image
@@ -168,7 +168,7 @@ export default function Whoattends() {
           </h3>
         </div>
       </div>
-      <div className="secondry row col-12 d-flex justify-content-center mb-5  ">
+      <div className="secondry row col-12 d-flex justify-content-center mb-5  mx-auto">
         <div className="col-lg-2 col-sm-12 text-center ">
           {" "}
           <Image

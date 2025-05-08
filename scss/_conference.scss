@@ -1,4 +1,9 @@
 .conference {
+  .allpic {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7019607843);
+} 
   .bg-image {
     background: url("/images/conference/1.png");
     width: 100%;
@@ -13,7 +18,7 @@
   }
 
   .section-1 {
-    h6 {
+    h6 { 
       line-height: 1.5;
     }
     .title {

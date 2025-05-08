@@ -16,112 +16,113 @@ export default function Section1({ data }) {
       <div className=" form-container">
         <div className="mainbro">
           <h2 className="main-text text-center">
-            {lang
-              ? " أهداف طريق التنمية"
-              : "Development Road Goals"}
+            {lang ? " أهداف طريق التنمية" : "Development Road Goals"}
           </h2>
         </div>
 
-        <div className="row col-12 d-flex flex-md-row flex-column justify-content-center ">
-  {/* زيادة الوعي وتعزيز الشفافية */}
-  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
-    <Image
-      src="/images/whyVisite/1.png"
-      alt="وصف"
-      width={2000}
-      height={2000}
-      className={"responsiveImage mb-3"}
-    />
-    {lang ? (
-      <p>
-        <b> زيادة الوعي وتعزيز الشفافية </b>
-        <br />
-        توفير فرصة للتعريف بتفاصيل مشروع طريق التنمية ومراحله وفوائده
-      </p>
-    ) : (
-      <p>
-        <b> Raise Awareness & Transparency </b>
-        <br />
-        Introducing the project’s key phases and benefits to local and global audiences
-      </p>
-    )}
-  </div>
+        <div className="row col-12 d-flex flex-md-row flex-column justify-content-center mx-auto">
+          {/* زيادة الوعي وتعزيز الشفافية */}
+          <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+            <Image
+              src="/images/whyVisite/1.png"
+              alt="وصف"
+              width={2000}
+              height={2000}
+              className={"responsiveImage mb-3"}
+            />
+            {lang ? (
+              <p>
+                <b> زيادة الوعي وتعزيز الشفافية </b>
+                <br />
+                توفير فرصة للتعريف بتفاصيل مشروع طريق التنمية ومراحله وفوائده
+              </p>
+            ) : (
+              <p>
+                <b> Raise Awareness & Transparency </b>
+                <br />
+                Introducing the project’s key phases and benefits to local and
+                global audiences
+              </p>
+            )}
+          </div>
 
-  {/* جذب الاستثمارات */}
-  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
-    <Image
-      src="/images/whyVisite/2.png"
-      alt="وصف"
-      width={2000}
-      height={2000}
-      className={"responsiveImage mb-3"}
-    />
-    {lang ? (
-      <p>
-        <b> جذب الاستثمارات </b>
-        <br />
-        استعراض المشاريع والفرص الاستثمارية الواعدة في مختلف القطاعات
-      </p>
-    ) : (
-      <p>
-        <b> Attract Investments </b>
-        <br />
-        Showcase promising investment projects across various sectors
-      </p>
-    )}
-  </div>
+          {/* جذب الاستثمارات */}
+          <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+            <Image
+              src="/images/whyVisite/2.png"
+              alt="وصف"
+              width={2000}
+              height={2000}
+              className={"responsiveImage mb-3"}
+            />
+            {lang ? (
+              <p>
+                <b> جذب الاستثمارات </b>
+                <br />
+                استعراض المشاريع والفرص الاستثمارية الواعدة في مختلف القطاعات
+              </p>
+            ) : (
+              <p>
+                <b> Attract Investments </b>
+                <br />
+                Showcase promising investment projects across various sectors
+              </p>
+            )}
+          </div>
 
-  {/* تبادل الخبرات والتجارب */}
-  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
-    <Image
-      src="/images/whyVisite/5.png"
-      alt="وصف"
-      width={2000}
-      height={2000}
-      className={"responsiveImage mb-3"}
-      style={{ height: "158px" }}
-    />
-    {lang ? (
-      <p>
-        <b> تبادل الخبرات والتجارب </b>
-        <br />
-        جمع نخبة من الخبراء لتبادل أفضل الممارسات والحلول المبتكرة
-      </p>
-    ) : (
-      <p>
-        <b> Exchange Expertise </b>
-        <br />
-        Bringing together experts to share innovative practices and solutions
-      </p>
-    )}
-  </div>
+          {/* تبادل الخبرات والتجارب */}
+          <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+            <Image
+              src="/images/whyVisite/5.png"
+              alt="وصف"
+              width={2000}
+              height={2000}
+              className={"responsiveImage mb-3"}
+              style={{ height: "158px" }}
+            />
+            {lang ? (
+              <p>
+                <b> تبادل الخبرات والتجارب </b>
+                <br />
+                جمع نخبة من الخبراء لتبادل أفضل الممارسات والحلول المبتكرة
+              </p>
+            ) : (
+              <p>
+                <b> Exchange Expertise </b>
+                <br />
+                Bringing together experts to share innovative practices and
+                solutions
+              </p>
+            )}
+          </div>
 
-  {/* تعزيز الشراكات والتعاون */}
-  <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
-    <Image
-      src="/images/whyVisite/4.png"
-      alt="وصف"
-      width={2000}
-      height={2000}
-      className={"responsiveImage mb-3"}
-    />
-    {lang ? (
-      <p>
-        <b> تعزيز الشراكات والتعاون </b>
-        <br />
-        بناء علاقات تعاون وشراكات استراتيجية فعّالة بين القطاعين العام والخاص
-      </p>
-    ) : (
-      <p>
-        <b> Strengthen Partnerships </b>
-        <br />
-        Build strategic cooperation between public and private sectors
-      </p>
-    )}
-  </div>
+          {/* تعزيز الشراكات والتعاون */}
+          <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+            <Image
+              src="/images/whyVisite/4.png"
+              alt="وصف"
+              width={2000}
+              height={2000}
+              className={"responsiveImage mb-3"}
+            />
+            {lang ? (
+              <p>
+                <b> تعزيز الشراكات والتعاون </b>
+                <br />
+                بناء علاقات تعاون وشراكات استراتيجية فعّالة بين القطاعين العام
+                والخاص
+              </p>
+            ) : (
+              <p>
+                <b> Strengthen Partnerships </b>
+                <br />
+                Build strategic cooperation between public and private sectors
+              </p>
+            )}
+          </div>
 
-  {/* تسويق المنتجات والخدمات */}
-  {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+          {/* تسويق المنتجات والخدمات */}
+          {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
     <Image
       src="/images/whyVisite/6.png"
       alt="تسويق"
@@ -144,8 +145,8 @@ export default function Section1({ data }) {
     )}
   </div> */}
 
-  {/* دعم التجارة العالمية */}
-  {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
+          {/* دعم التجارة العالمية */}
+          {/* <div className="col-12 col-md-3 d-flex flex-column justify-content-start px-3 ">
     <Image
       src="/images/whyVisite/7.png"
       alt="تجارة"
@@ -167,8 +168,7 @@ export default function Section1({ data }) {
       </p>
     )}
   </div> */}
-</div>
-
+        </div>
       </div>
     </section>
   );

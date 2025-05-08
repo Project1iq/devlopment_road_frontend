@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 export default function Temp({ title_ar, title_en, desc_ar, desc_en, lang }) {
   return (
-    <div className="temp container" style={{ lineHeight: "1.8" }}>
+    <div className="temp container pt-md-0 pt-5" style={{ lineHeight: "1.8" }}>
       <h2 className="main-text text-center mt-5 mb-5">
         {lang ? title_ar : title_en}
       </h2>

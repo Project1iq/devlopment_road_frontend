@@ -42,7 +42,7 @@ export default function Section1({ data }) {
     <>
       <section className="row section-1 mx-auto">
         <div action="" className="form-container">
-          <div className="container">
+          <div className="container pt-lg-0 pt-5">
             <div className="bg-image col-12 mb-4">
               <div className="allpic">
                 <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3 ">
@@ -50,7 +50,7 @@ export default function Section1({ data }) {
 
                   <h1 className=" px-2 textfade ">{lang ? "الموقع" : "Location"}</h1>
                 </div>
-                <div className="px-5 text-white w-75">
+                <div className="px-5 text-white col-lg-8 col-12">
                   {" "}
                   <h6>
                     {lang

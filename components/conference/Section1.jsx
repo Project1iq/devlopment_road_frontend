@@ -13,26 +13,28 @@ export default function Section1({ data }) {
 
   return (
     <>
-      <section className="row section-1 mx-auto">
+      <section className="row section-1 mx-auto ">
         <div action="" className="form-container ">
-          <div className="container">
-            <div className="bg-image col-12 mb-4">
-              <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3 ">
-                <div className="line"> </div>
+          <div className="container pt-lg-0 pt-5">
+              <div className="bg-image col-12 mb-4">
+            <div className="allpic">
+                <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3 ">
+                  <div className="line"> </div>
 
-                <h1 className=" px-2 textfade">
-                  {lang
-                    ? "معرض طريق التنمية"
-                    : "The Development Road Exhibition"}
-                </h1>
-              </div>
-              <div className="px-5 text-white w-75">
-                {" "}
-                <h6>
-                  {lang
-                    ? "يُسَلِّط معرض طريق التنمية الضوء على المبادرات الاستراتيجية والفرص التي تهدف إلى تحقيق التنمية المستدامة في العراق والمنطقة."
-                    : "The Development Road Exhibition highlights strategic initiatives and opportunities aimed at achieving sustainable development in Iraq and the region."}
-                </h6>
+                  <h1 className=" px-2 textfade">
+                    {lang
+                      ? "معرض طريق التنمية"
+                      : "The Development Road Exhibition"}
+                  </h1>
+                </div>
+                <div className="px-5 text-white col-lg-8 col-12">
+                  {" "}
+                  <h6>
+                    {lang
+                      ? "يُسَلِّط معرض طريق التنمية الضوء على المبادرات الاستراتيجية والفرص التي تهدف إلى تحقيق التنمية المستدامة في العراق والمنطقة."
+                      : "The Development Road Exhibition highlights strategic initiatives and opportunities aimed at achieving sustainable development in Iraq and the region."}
+                  </h6>
+                </div>
               </div>
             </div>
             <div className="row d-lg-flex flex-md-column flex-lg-row overflow-auto">
@@ -50,7 +52,9 @@ export default function Section1({ data }) {
                   </div>
                   <div className="px-3">
                     <h3 className="">
-                      {lang ? "مشروع ميناء الفاو الكبير" : "Al-Faw Port Project"}
+                      {lang
+                        ? "مشروع ميناء الفاو الكبير"
+                        : "Al-Faw Port Project"}
                     </h3>
                     <p>
                       {lang
@@ -94,7 +98,9 @@ export default function Section1({ data }) {
                   </div>
                   <div className="px-3 d-flex flex-column justify-content-between">
                     <h3 className="">
-                      {lang ? "المدن الصناعية والمناطق اللوجستية" : "Industrial Cities and Logistic Areas"}
+                      {lang
+                        ? "المدن الصناعية والمناطق اللوجستية"
+                        : "Industrial Cities and Logistic Areas"}
                     </h3>
                     <p style={{ paddingBottom: "73%" }}>
                       {lang
