@@ -25,9 +25,19 @@ export default function Nav() {
 
   // Update logo height on mount
   useEffect(() => {
-    const logo = document.getElementById("logo");
-    if (logo) setImageHeight(logo.clientHeight);
-  }, []);
+    const updateHeight = () => {
+      const logo = document.getElementById("logo");
+      if (logo) setImageHeight(logo.clientHeight);
+    };
+  
+    updateHeight(); // عند التحميل
+    window.addEventListener("resize", updateHeight); // عند تغيير الحجم
+  
+    return () => {
+      window.removeEventListener("resize", updateHeight); // التنظيف
+    };
+  }, []); // تظل فارغة لأنك أضفت event listener بنفسك
+  
 
   // Handle route changes and hide offcanvas
   useEffect(() => {
