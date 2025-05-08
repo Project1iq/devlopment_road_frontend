@@ -29,13 +29,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #22264c !important;
+    background-color: #183b69 !important;
     color: #ffffff;
     transition: .3s all ease-in-out;
   
     &:hover{
       background-color: #ffffff !important;
-      color: #22264c !important;
+      color: #183b69 !important;
+    }
+    @media (max-width:760px) {
+      max-width: 140px;
+      font-size: 12px;
+      height: 40px;
+      font-weight: 700;
     }
   }
   .pointer {
@@ -68,7 +74,7 @@
     font-weight: 600;
     text-shadow: 2px 2px 2px hsla(0, 0%, 5%, .6);
     @media (max-width: 767px) {
-      font-size: 13px;
+      font-size: 12px;
     }
   }
 
@@ -1804,7 +1810,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            background-color: #22264c;
+            background-color: #183b69;
             @include transform(rotate(-20deg));
             z-index: -1;
 
@@ -2418,7 +2424,7 @@
          
         }
         @media (max-width: 767px) {
-          font-size: 18px;
+          font-size: 16px;
           width: 75vw;
           padding-bottom: 0px;
         } //just try
@@ -2837,7 +2843,7 @@
 
   &:hover{
     background-color: #ffffff !important;
-    color: #22264c !important;
+    color: #183b69 !important;
   }
 }
 @media (max-content:760px) {

@@ -26,7 +26,7 @@ export default function Section1({ data }) {
   const [startCount, setStartCount] = useState(false);
 
   const [update, setUpdate] = useState(0);
-
+  const [stopAnimation, setstopAnimation] = useState(false);
   const videoRef = useRef(null);
   const [targetDate, setTargetDate] = useState(new Date("2025-04-10T09:00:00"));
 
@@ -126,6 +126,13 @@ export default function Section1({ data }) {
     };
   }, [update]);
 
+  useEffect(()=> {
+    const isSmallScreen = window.innerWidth < 576;
+    setstopAnimation(isSmallScreen);
+
+
+
+  },[])
   useEffect(() => {
     setTimeout(() => {
       setUpdate(Math.random());
@@ -229,8 +236,8 @@ export default function Section1({ data }) {
         <div className="bg-overlay"></div>
         <div
           className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
-          data-aos="fade-up"
-          data-aos-anchor-placement="center-bottom"
+          data-aos={ !stopAnimation ?"fade-up":""}
+          data-aos-anchor-placement={!stopAnimation ?"center-bottom":""}
         >
         <div className="counter-section row mb-4 py-4 ">
   <div className="mb-5 pb-1">
@@ -302,8 +309,8 @@ export default function Section1({ data }) {
   <div className="bg-overlay"></div>
   <div
     className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
-    data-aos="fade-up"
-    data-aos-anchor-placement="center-bottom"
+    data-aos={ !stopAnimation ?"fade-up":""}
+    data-aos-anchor-placement={!stopAnimation ?"center-bottom":""}
   >
     <div className="counter-section row justify-content-center mb-4 py-4 ">
       <div className="mb-5 pb-1">
