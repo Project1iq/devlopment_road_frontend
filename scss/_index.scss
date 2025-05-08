@@ -2377,6 +2377,10 @@
   .video-container {
     width: 100vw;
     position: relative;
+    @media (max-width:760px) {
+      margin-top: 75px;
+      
+    }
 
     .video-timer {
       position: absolute;
@@ -2562,6 +2566,18 @@
 	font-weight: 300;
 	line-height: 56px;
 	margin-right: 40px;
+  @media (max-width:760px) {
+    &:lang(ar) {
+      font-size: 12px;
+      margin-right: 0px;
+    }
+    &:lang(en) {
+      font-size: 10px;
+      margin-right: 0px;
+    }
+    
+    
+  }
 }
 .top_bar_contact_item:not(:first-child)
 {
@@ -2578,6 +2594,16 @@
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+  @media (max-width:760px) {
+    &:lang(ar) {
+      font-size: 12px;
+    }
+    &:lang(en) {
+      font-size: 10px;
+    }
+    
+   
+  }
 }
 .top_bar_contact_item a:hover
 {
@@ -2596,7 +2622,29 @@
 	-ms-transform: translateY(-2px);
 	-o-transform: translateY(-2px);
 	transform: translateY(-2px);
+  @media (max-width:760px) {
+    &:lang(ar) {
+      margin-right: 8px;
+      margin-left: 0px;
+    }
+    &:lang(en) {
+      margin-left: 8px;
+      margin-right: 5px;
+    }
+   
+  }
 }
+.top_bar_icon1{
+	display: inline-block;
+	margin-right: 14px;
+	-webkit-transform: translateY(-2px);
+	-moz-transform: translateY(-2px);
+	-ms-transform: translateY(-2px);
+	-o-transform: translateY(-2px);
+	transform: translateY(-2px);
+  @media (max-width:760px) {
+    margin-right: 0px;
+  }}
 .top_bar_menu
 {
 	display: inline-block;
@@ -2606,6 +2654,10 @@
 {
 	padding-left: 13px;
 	padding-right: 13px;
+  @media (max-width:760px) {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .standard_dropdown li
 {
@@ -2648,6 +2700,16 @@
 	-ms-transition: all 200ms ease;
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
+  @media (max-width:760px) {
+    &:lang(ar) {
+      font-size: 12px;
+    }
+    &:lang(en) {
+      font-size: 10px;
+    }
+    
+    
+  }
 }
 .standard_dropdown li a:hover
 {
@@ -2756,6 +2818,7 @@
 .top_bar_menu-text{
   font-size: 14px;
   justify-content: center;
+ 
 } 
 
 .btn-default{
@@ -2776,4 +2839,12 @@
     background-color: #ffffff !important;
     color: #22264c !important;
   }
+}
+@media (max-content:760px) {
+  .top_bar_menu-text{
+    font-size: 11px;
+    justify-content: center;
+   
+  } 
+
 }

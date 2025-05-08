@@ -241,7 +241,7 @@ export default function Nav() {
               <div className="col d-flex flex-row justify-content-between">
                 <div className="d-flex">
                   <div className="top_bar_contact_item">
-                    <div className="top_bar_icon">
+                    <div className="top_bar_icon1">
                       <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#999999"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" /></svg>
                     </div> <span dir="ltr">+964 787 241 1111 </span></div>
                   <div className="top_bar_contact_item"><div className="top_bar_icon">
@@ -388,19 +388,21 @@ export default function Nav() {
               </svg>
             </a>
           </div>
-          <div className="col-1 col-sm-2 col-md-4"></div>
+          
 
-          <div className="col-7 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
+          <div className="col-lg-7 col-4 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
             <Link href={"/register"} type="submit" className="shiny-cta-2">
               <span>{lang ? "التسجيل للزيارة" : "Register to visit"}</span>
             </Link>
           </div>
-          <div className="col-2 d-flex justify-content-end">
+          <div className="col-lg-1 col-1 col-md-4"></div>
+          <div className="col-lg-2 col-5 d-flex justify-content-end align-content-center ps-5">
             <Link
               href="/"
               style={{
                 height: imageHeight,
                 top: "0",
+                marginTop:"10px"
               }}
             >
               <Image
@@ -409,7 +411,7 @@ export default function Nav() {
                 width={3000}
                 height={3000}
                 style={{
-                  maxWidth: "60px",
+                  maxWidth: "600px",
                   height: "auto",
                 }}
                 className="logo w-100"
@@ -449,7 +451,7 @@ export default function Nav() {
                   width={3000}
                   height={3000}
                   style={{
-                    maxWidth: "70px",
+                    maxWidth: "30px",
                     height: "auto",
                   }}
                   className="logo w-100"

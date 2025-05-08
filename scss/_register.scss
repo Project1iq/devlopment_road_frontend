@@ -408,6 +408,16 @@
   &:active {
     translate: 0 1px;
   }
+  @media (max-width:760px) {
+    font-size: 12px;
+    padding: 0.7rem 1.7rem;
+    &:lang(en) {
+      padding: 0.7rem 0.5rem
+    }
+    &:lang(ar) {
+      padding: 0.7rem 1.0rem
+    }
+  }
 }
 
 /* Dots pattern */
