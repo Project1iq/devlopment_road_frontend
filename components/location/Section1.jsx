@@ -23,8 +23,8 @@ export default function Section1({ data }) {
     },
     {
       id: 2,
-      content_ar: "موعد الحدث: 8-11 كانون الأول 2025",
-      content: "Event date: 8-11 December 2025",
+      content_ar: "موعد الحدث: 1-4  نوفمبر 2025",
+      content: "Event date: 2025 nov 1-4 ",
     },
     {
       id: 3,
