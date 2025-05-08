@@ -178,10 +178,10 @@ export default function Footer() {
                  
                 </div>
               </div>
-              <div className="col-md-7 col-12 row px-lg-4 px-2">
+              <div className="col-md-7 col-12 row px-lg-4 px-2 mx-auto">
                 {" "}
                 {links.map((item,index) => (
-                  <a
+                  <div
                   key={index}
 
                     className={`${
@@ -202,7 +202,7 @@ export default function Footer() {
                         lang={lang}
                       />
                     ))}
-                  </a>
+                  </div>
                 ))}
                 {/* <div
                   className={
@@ -343,7 +343,7 @@ export default function Footer() {
               </svg>
             </a>
           </div>
-          <div className="py-3 col-lg-6 col-12 ">
+          <div className="py-lg-3 py-0 col-lg-6 col-12 ">
             <h6
               className={`text-white text-center text-md-${
                 lang ? "start" : "end"
