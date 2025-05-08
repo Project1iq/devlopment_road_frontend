@@ -180,8 +180,10 @@ export default function Footer() {
               </div>
               <div className="col-md-7 col-12 row px-lg-4 px-2">
                 {" "}
-                {links.map((item) => (
+                {links.map((item,index) => (
                   <a
+                  key={index}
+
                     className={`${
                       lang
                         ? "text-md-end text-center "
@@ -191,8 +193,9 @@ export default function Footer() {
                     <h4 className="text-white pb-3 ">
                       {lang ? item.nameAr : item.name}
                     </h4>
-                    {item.links.map((it) => (
+                    {item.links.map((it,i) => (
                       <QLinks
+                      key={i}
                         href={it.href}
                         ar={it.nameAr}
                         en={it.name}
