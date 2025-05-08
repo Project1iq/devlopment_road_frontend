@@ -231,8 +231,8 @@ export default function Section1({ data }) {
             <h5 className={lang ? " text1 tmn pe-3 " : " text1 tmn ps-3"}>
               {" "}
               {lang
-                ? "   العراق - البصرة - معرض البصرة الدولي - ميناء المعقل "
-                : "Iraq - Basra - Basra International Fair - Maqal Port"}
+                ? "   العراق - بغداد - معرض بغداد الدولي - ميناء المعقل "
+                : "Iraq - Baghdad - Baghdad International Fair - Maqal Port"}
             </h5>
             <div className="mai mt-md-5 pt-md-5">
               <Link href={"/reserveSpace"} className="main-btn mt-0 ms-3">

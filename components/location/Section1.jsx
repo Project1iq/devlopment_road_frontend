@@ -54,8 +54,8 @@ export default function Section1({ data }) {
                   {" "}
                   <h6>
                     {lang
-                      ? "يُقام معرض طريق التنمية الدولي في البصرة، حيث يجمع الخبراء والشركات الرائدة في مجالات النقل والبناء والاستثمار والبنى التحتية والكهرباء لمناقشة أحدث المشاريع والتوجهات المستقبلية. فرصة فريدة للتواصل واستكشاف الحلول المتطورة في التنمية."
-                      : "The Development Path International Expo is held in Basra, bringing together experts and leading companies in transportation, construction, investment, infrastructure, and electricity to discuss the latest projects and future trends. A unique opportunity to network and explore advanced development solutions."}
+                      ? "يُقام معرض طريق التنمية الدولي في بغداد، حيث يجمع الخبراء والشركات الرائدة في مجالات النقل والبناء والاستثمار والبنى التحتية والكهرباء لمناقشة أحدث المشاريع والتوجهات المستقبلية. فرصة فريدة للتواصل واستكشاف الحلول المتطورة في التنمية."
+                      : "The Development Path International Expo is held in Baghdad, bringing together experts and leading companies in transportation, construction, investment, infrastructure, and electricity to discuss the latest projects and future trends. A unique opportunity to network and explore advanced development solutions."}
                   </h6>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function Section1({ data }) {
                 <p className="sub-text">
                   {lang ? (
                     <>
-                      يقام المعرض في أرض معرض البصرة الدولي / ميناء المعقل،
+                      يقام المعرض في أرض معرض بغداد الدولي / ميناء المعقل،
                       مما يوفر الفرصة الأكبر لمشاركة ناجحة حيث يحتوي على مساحات
                       مسقفة ومكشوفة مخصصة للمعرض، بالإضافة إلى قاعات للمؤتمرات
                       الكبرى ومرافق لتقديم الخدمات اللوجستية ومنظومات أمنية
@@ -75,7 +75,7 @@ export default function Section1({ data }) {
                     </>
                   ) : (
                     <>
-                      The exhibition is held at the Basra International Fairground /
+                      The exhibition is held at the Baghdad International Fairground /
                       Maqal Port, providing the greatest opportunity for successful
                       participation. It includes covered and open spaces dedicated to
                       the expo, along with conference halls, logistical service
