@@ -6,15 +6,120 @@ import { langState } from "@/atom/atom";
 import Image from "next/image";
 import Link from "next/link";
 
+const QLinks = ({ href, ar, en, lang }) => {
+  return (
+    <Link href={href}>
+      <p
+        className={`text-center ${
+          lang ? "text-md-end" : "text-md-start"
+        } text-white ms-0 ms-md-2 mb-4`}
+      >
+        {lang ? ar : en}{" "}
+      </p>
+    </Link>
+  );
+};
+
 export default function Footer() {
   const lang = useRecoilValue(langState);
+
+  const links = [
+    {
+      name: "Visit",
+      nameAr: "الزيارة",
+      links: [
+        {
+          name: "Why Visit",
+          nameAr: "لماذا نزور المعرض",
+          href: "/whyVisite",
+        },
+
+        {
+          name: "Development Road Vision",
+          nameAr: "رؤية طريق التنمية ",
+          href: "/whoattends",
+        },
+
+        {
+          name: "Benefits of Participation",
+          nameAr: "  فوائد المشاركة",
+          href: "/benf",
+        },
+        {
+          name: "Register to visit",
+          nameAr: "سجل للزيارة",
+          href: "/register",
+        },
+      ],
+    },
+
+    {
+      name: "Information for exhibitors",
+      nameAr: "معلومات مهمة ",
+      links: [
+        {
+          name: "Location",
+          nameAr: "الموقع",
+          href: "/location",
+        },
+        // {
+        //   name: "Visas and Travel",
+        //   nameAr: "التاشيرات و السفر",
+        //   href: "/travel",
+        // },
+        {
+          name: "Marketing campaign",
+          nameAr: "الحملة التسويقية",
+          href: "/markteing",
+        },
+        {
+          name: "Reports",
+          nameAr: "التقرير",
+          href: "/reports",
+        },
+        {
+          name: "Conference",
+          nameAr: "مؤتمر",
+          href: "/conference",
+        },
+      ],
+    },
+    {
+      name: "Exhibitors",
+      nameAr: "المعرض",
+
+      links: [
+        {
+          name: "Importance of government support",
+          nameAr: "اهمية الدعم الحكومي",
+          href: "/govermentSupport",
+        },
+        {
+          name: "Participating Sectors",
+          nameAr: " القطاعات المشاركة",
+          href: "/sectors",
+        },
+        {
+          name: "Book Your Space",
+          nameAr: "أحجز مساحتك",
+          href: "/reserveSpace",
+        },
+        {
+          name: "Become a Sponsor",
+          nameAr: "كن راعيا",
+          href: "/bookCare",
+        },
+      ],
+    },
+  ];
+
   return (
     <footer className="footer col-12">
       <div className="bg-footer d-flex justify-content-center flex-column">
         <div className="container ">
           <div className="footer__content">
             <div className="row d-flex">
-            <div className="col-md col-12 ">
+              <div className="col-md-3 col-12 mb-4 px-lg-4 px-2">
                 <div
                   className={
                     lang
@@ -22,19 +127,19 @@ export default function Footer() {
                       : " text-md-start text-center "
                   }
                 >
-                  <h3 className="text-white pb-3 ">
-                    {lang ? "مواقع التواصل" : "SOCIAL"}
-                  </h3>
+                  <Image
+                    width={2000}
+                    height={2000}
+                    src={"/logo_light.png"}
+                    className="col-12 h-auto mb-4"
+                  />
                 </div>
                 <div
-                  className={`d-flex justify-content-center justify-content-md-start gap-3 ${
+                  className={`d-flex justify-content-center  gap-3 ${
                     lang ? "" : "ms-1"
                   }`}
                 >
-                  <Link
-                    href="https://www.linkedin.com"
-                    target="_blank"
-                  >
+                  <Link href="https://www.linkedin.com/company/development-road-fair-conference/" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -46,10 +151,7 @@ export default function Footer() {
                     </svg>
                   </Link>
 
-                  <Link
-                    href="https://www.instagram.com/"
-                    target="_blank"
-                  >
+                  <Link href="https://www.instagram.com/development_road_fair?igsh=ZHd4MXYyM256b3Fy" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -61,7 +163,7 @@ export default function Footer() {
                     </svg>
                   </Link>
 
-                  <Link href="https://www.facebook.com/" target="_blank">
+                  <Link href="https://www.facebook.com/share/16Fo7XzXNJ/?mibextid=wwXIfr" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -73,22 +175,33 @@ export default function Footer() {
                     </svg>
                   </Link>
 
-                  <Link href="mailto:info@elec-fair.com">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#fff"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                    </svg>
-                  </Link>
+                 
                 </div>
               </div>
-              <div className="col-md col-12 ">
+              <div className="col-md-7 col-12 row px-lg-4 px-2">
                 {" "}
-                <div
+                {links.map((item) => (
+                  <a
+                    className={`${
+                      lang
+                        ? "text-md-end text-center "
+                        : "text-md-start text-center"
+                    } col-md-4 col-12`}
+                  >
+                    <h4 className="text-white pb-3 ">
+                      {lang ? item.nameAr : item.name}
+                    </h4>
+                    {item.links.map((it) => (
+                      <QLinks
+                        href={it.href}
+                        ar={it.nameAr}
+                        en={it.name}
+                        lang={lang}
+                      />
+                    ))}
+                  </a>
+                ))}
+                {/* <div
                   className={
                     lang
                       ? "text-md-end text-center "
@@ -98,124 +211,11 @@ export default function Footer() {
                   <h3 className="text-white pb-3 ">
                     {lang ? " روابط سريعة" : "QUICK LINKS"}
                   </h3>
-                </div>
-                <div>
-                  <Link href="/contact">
-                    <p
-                      className={`text-center ${
-                        lang ? "text-md-end" : "text-md-start"
-                      } text-white ms-0 ms-md-2 mb-4`}
-                    >
-                      {lang ? "تواصل معنا" : "Contact Us"}{" "}
-                    </p>
-                  </Link>
-                  <Link href="/register">
-                    <p
-                      className={`text-center ${
-                        lang ? "text-md-end" : "text-md-start"
-                      } text-white ms-0 ms-md-2 mb-4`}
-                    >
-                      {lang ? " قم بزيارتنا" : "Visit Us"}{" "}
-                    </p>
-                  </Link>
-                  <Link href="/conference">
-                    <p
-                      className={`text-center ${
-                        lang ? "text-md-end" : "text-md-start"
-                      } text-white ms-0 ms-md-2 mb-5 mb-md-3`}
-                    >
-                      {lang ? " اعرف المزيد" : " Know more"}{" "}
-                    </p>
-                  </Link>
-                </div>
+                </div> */}
+                <div></div>
               </div>
-              <div className="col-md col-12 mb-3">
-                <div className=" mb-5 mb-sm-0">
-                  <h3
-                    className={`text-center ${
-                      lang ? "text-md-end" : "text-md-start"
-                    } text-white me-0 me-md-2 mb-4`}
-                  >
-                    {lang ? "للتواصل" : "CONTACT"}
-                  </h3>
 
-                  <a className="d-flex justify-content-center justify-content-lg-start mb-3  ">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#fff"
-                      className="me-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
-                    </svg>
-                    <p className="text-white mb-0 me-2">
-                      {" "}
-                      <span
-                        onClick={() => {
-                          window.open("mailto:Eng.shahal2016@gmail.com");
-                        }}
-                      >
-                        info@bg-iq.net
-                      </span>{" "}
-                      <br />
-                    </p>
-                  </a>
-                  <a className="d-flex justify-content-center justify-content-lg-start align-items-center mb-3">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#fff"
-                      className="me-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
-                    </svg>
-                    <p
-                      className={`text-center ${
-                        lang ? "text-md-end" : "text-md-start"
-                      } text-white mb-0 me-2`}
-                    >
-                      <span
-                        onClick={() => {
-                          window.open("tel:+964 771 278 2919");
-                        }}
-                        dir="ltr"
-                      >
-                        +964 790 598 4770
-                      </span>
-                    </p>
-                  </a>
-
-                  <a
-                    href="https://maps.app.goo.gl/zairEvFrDkJe4ZGz7"
-                    target="_blank"
-                    className="d-flex justify-content-center justify-content-lg-start align-items-center text-decoration-none "
-                  >
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      fill="#fff"
-                      className="me-2"
-                      viewBox="0 0 16 16"
-                    >
-                      <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
-                      <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                    </svg>
-                    <p
-                      className={`text-center ${
-                        lang ? "text-md-end" : "text-md-start"
-                      } text-white mb-0 me-2`}
-                    >
-                      {lang ? "العراق - البصرة" : "Iraq – Basra"}
-                    </p>
-                  </a>
-                </div>
-              </div>
-              <div className="col-md col-12 mb-5 mb-md-0">
+              <div className="col-md-2 col-12 mb-5 mb-md-0">
                 {" "}
                 <div
                   className={
@@ -288,18 +288,69 @@ export default function Footer() {
                   </p>
                 </div>
               </div>
-
-             
             </div>
           </div>
         </div>
       </div>
-      <div className="footer-end d-flex justify-content-center">
-        <div className="py-3 ">
-          <h6 className="text-white text-center">
-            Copyright {new Date().toDateString().split(" ")[3]} ©{" "}
-            <span className="text-white">Project One </span>. كل الحقوق محفوظة.
-          </h6>
+      <div className="footer-end container d-flex justify-content-center w-100 border-top">
+        <div className="row w-100">
+          <div className=" d-flex justify-content-center justify-content-lg-start gap-3 col-lg-6 col-12">
+            <a
+              className="d-flex justify-content-center  mb-3  footer-icons"
+              href="mailto:Eng.shahal2016@gmail.com"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                viewBox="0 0 16 16"
+              >
+                <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>
+            </a>
+            <a
+              className="d-flex justify-content-center align-items-center mb-3 footer-icons"
+              href="tel:+964 771 278 2919"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                viewBox="0 0 16 16"
+              >
+                <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+              </svg>
+            </a>
+            <a
+              className="d-flex justify-content-center align-items-center mb-3 footer-icons"
+              href="https://maps.app.goo.gl/zairEvFrDkJe4ZGz7"
+              target="_blank"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                fill="#fff"
+                viewBox="0 0 16 16"
+              >
+                <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+              </svg>
+            </a>
+          </div>
+          <div className="py-3 col-lg-6 col-12 ">
+            <h6
+              className={`text-white text-center text-md-${
+                lang ? "start" : "end"
+              }`}
+            >
+              Copyright {new Date().toDateString().split(" ")[3]} ©{" "}
+              <span className="text-white">Project One </span>.{" "}
+              {lang ? "كل الحقوق محفوظة" : "All rights reserved"}.
+            </h6>
+          </div>
         </div>
       </div>
     </footer>

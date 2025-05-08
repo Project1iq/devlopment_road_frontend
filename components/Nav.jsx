@@ -29,15 +29,14 @@ export default function Nav() {
       const logo = document.getElementById("logo");
       if (logo) setImageHeight(logo.clientHeight);
     };
-  
+
     updateHeight(); // عند التحميل
     window.addEventListener("resize", updateHeight); // عند تغيير الحجم
-  
+
     return () => {
       window.removeEventListener("resize", updateHeight); // التنظيف
     };
   }, []); // تظل فارغة لأنك أضفت event listener بنفسك
-  
 
   // Handle route changes and hide offcanvas
   useEffect(() => {
@@ -91,7 +90,6 @@ export default function Nav() {
       name: "Visit",
       nameAr: "الزيارة",
       links: [
-
         {
           name: "Why Visit",
           nameAr: "لماذا نزور المعرض",
@@ -113,7 +111,7 @@ export default function Nav() {
           name: "Register to visit",
           nameAr: "سجل للزيارة",
           href: "/register",
-        }
+        },
       ],
     },
     {
@@ -215,75 +213,101 @@ export default function Nav() {
 
   return (
     <>
-      {scrollPosition > imageHeight && (
-        <Link
-          className="col-4"
-          href="/"
-          style={{
-            height: imageHeight,
-            top: "0",
-          }}
-        >
-          <Image
-            src={logo}
-            alt="logo"
-            width={3000}
-            height={3000}
-            style={{
-              height: imageHeight,
-            }}
-            className="logo w-100"
-            id="logo"
-          />
-        </Link>
-      )}
       <nav
-        className={`nav px-lx-0 px-2 d-block justify-content-center w-100 ${scrollPosition > imageHeight ? "nav-scrolled" : ""
-          }`}
+        className={`nav px-lx-0 px-2 d-block justify-content-center w-100 `}
         id="navbar"
-        style={{
-          top: scrollPosition > imageHeight ? -(imageHeight + 8) : "0",
-        }}
       >
         <div className="top_bar">
           <div className="container">
             <div className="row">
               <div className="col d-flex flex-row justify-content-between">
-                <div className="d-flex">
-                  <div className="top_bar_contact_item">
-                    <div className="top_bar_icon1">
-                      <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#999999"><path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" /></svg>
-                    </div> <span dir="ltr">+964 787 241 1111 </span></div>
-                  <div className="top_bar_contact_item"><div className="top_bar_icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#999999"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" /></svg>
-                  </div><a href="mailto:info@development-road.iq">info@development-road.iq</a></div>
+                <div className="d-flex ">
+                  <div className="top_bar_contact_item w-100 d-flex">
+                    <div className="top_bar_icon1 ">
+                      <svg
+                        className="mx-1"
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                        fill="#999999"
+                      >
+                        <path d="M763-145q-121-9-229.5-59.5T339-341q-86-86-135.5-194T144-764q-2-21 12.29-36.5Q170.57-816 192-816h136q17 0 29.5 10.5T374-779l24 106q2 13-1.5 25T385-628l-97 98q20 38 46 73t57.97 65.98Q422-361 456-335.5q34 25.5 72 45.5l99-96q8-8 20-11.5t25-1.5l107 23q17 5 27 17.5t10 29.5v136q0 21.43-16 35.71Q784-143 763-145ZM255-600l70-70-17.16-74H218q5 38 14 73.5t23 70.5Zm344 344q35.1 14.24 71.55 22.62Q707-225 744-220v-90l-75-16-70 70ZM255-600Zm344 344Z" />
+                      </svg>
+                    </div>{" "}
+                    <span dir="ltr" className="text-nowrap">
+                      +964 787 241 1111{" "}
+                    </span>
+                  </div>
+                  <div className="top_bar_contact_item w-100 d-flex">
+                    <div className="top_bar_icon mx-2 ">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        height="20px"
+                        viewBox="0 -960 960 960"
+                        width="20px"
+                        fill="#999999"
+                      >
+                        <path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z" />
+                      </svg>
+                    </div>
+                    <a
+                      href="mailto:info@development-road.iq"
+                      className="text-nowrap"
+                    >
+                      info@development-road.iq
+                    </a>
+                  </div>
                 </div>
-                <div className="top_bar_content ml-auto">
+                <div className="top_bar_content ml-auto d-lg-block d-none">
                   <div className="top_bar_menu">
                     <ul className="standard_dropdown top_bar_dropdown">
                       <li>
                         <a href="#">
-                          {lang ? 'اللغة' : 'Language'}
-                          <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px" fill="#999999"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
+                          {lang ? "اللغة" : "Language"}
+                          <svg
+                            className="mx-1"
+                            xmlns="http://www.w3.org/2000/svg"
+                            height="14px"
+                            viewBox="0 -960 960 960"
+                            width="14px"
+                            fill="#999999"
+                          >
+                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                          </svg>
                         </a>
                         <ul className="p-0">
-                          <li className={lang ? 'active-lang' : ''}><a className="d-flex justify-content-between align-items-center w-100" onClick={() => {
-                            setLang('ar');
-                          }} href="#">
-                            <span className="top_bar_menu-text">
-                              العربية
-                            </span>
-                            <Image width={28} height={28} src="/images/icons/ar.png" alt="ar" />
-                          </a>
+                          <li className={lang ? "active-lang" : ""}>
+                            <a
+                              className="d-flex justify-content-between align-items-center w-100"
+                              onClick={() => {
+                                setLang("ar");
+                              }}
+                              href="#"
+                            >
+                              <span className="top_bar_menu-text">العربية</span>
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/images/icons/ar.png"
+                                alt="ar"
+                              />
+                            </a>
                           </li>
-                          <li className={!lang ? 'active-lang' : ''}>
-                            <a onClick={() => {
-                              setLang(null);
-                            }} href="#">
-                              <span className="top_bar_menu-text">
-                                English
-                              </span>
-                              <Image width={28} height={28} src="/images/icons/en.png" alt="ar" />
+                          <li className={!lang ? "active-lang" : ""}>
+                            <a
+                              onClick={() => {
+                                setLang(null);
+                              }}
+                              href="#"
+                            >
+                              <span className="top_bar_menu-text">English</span>
+                              <Image
+                                width={28}
+                                height={28}
+                                src="/images/icons/en.png"
+                                alt="ar"
+                              />
                             </a>
                           </li>
                         </ul>
@@ -313,59 +337,73 @@ export default function Nav() {
                       alt="logo"
                       width={3000}
                       height={1000}
-                      style={{
-                        maxWidth: "280px",
-                        height: "auto",
-                      }}
-                      className="logo w-100"
+                      className="logo col-lg-10 col-12 "
                       id="logo"
                     />
                   </Link>
                   {/* =====================
                 start
                 ========================= */}
-                  {links.map((link, index) => (
-                    <div key={index} className="top_bar_content ml-auto p-1">
-                      <div className="top_bar_menu p-0">
-                        <ul className="standard_dropdown top_bar_dropdown p-0">
-                          <li className="p-0">
-                            <a href="#" onClick={() => {
-                              !link.links && router.push(link.href);
-                            }}>
-                              {lang ? link.nameAr : link.name}
-                              {link?.links &&
-                                <svg className="mx-1" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#222222"><path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" /></svg>
-                              }
-                            </a>
-                            <ul className="p-0">
-                              {link?.links &&
-                                link?.links.map((subLink, i) => (
-                                  <li key={i}>
-                                    <Link className={`d-flex justify-content-between align-items-center w-100 dropdown-item ${subLink.href === router.pathname
-                                      ? "active"
-                                      : ""
-                                      }`}
-                                      href={subLink.href}
-                                      onClick={() => {
-                                        router.push(subLink.href);
-                                      }}
-                                    >
-                                      <span className="top_bar_menu-text">
-                                        {lang ? subLink.nameAr : subLink.name}
-                                      </span>
-                                    </Link>
-                                  </li>
-                                ))}
-                            </ul>
-                          </li>
-                        </ul>
+                  <div className="col-7 d-flex gap-2 justify-content-end">
+                    {links.map((link, index) => (
+                      <div key={index} className="top_bar_content ml-auto p-1">
+                        <div className="top_bar_menu p-0">
+                          <ul className="standard_dropdown top_bar_dropdown p-0">
+                            <li className="p-0">
+                              <a
+                                href="#"
+                                onClick={() => {
+                                  !link.links && router.push(link.href);
+                                }}
+                              >
+                                {lang ? link.nameAr : link.name}
+                                {link?.links && (
+                                  <svg
+                                    className="mx-1"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    height="24px"
+                                    viewBox="0 -960 960 960"
+                                    width="24px"
+                                    fill="#222222"
+                                  >
+                                    <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
+                                  </svg>
+                                )}
+                              </a>
+                              <ul className="p-0">
+                                {link?.links &&
+                                  link?.links.map((subLink, i) => (
+                                    <li key={i}>
+                                      <Link
+                                        className={`d-flex justify-content-between align-items-center w-100 dropdown-item ${
+                                          subLink.href === router.pathname
+                                            ? "active"
+                                            : ""
+                                        }`}
+                                        href={subLink.href}
+                                        onClick={() => {
+                                          router.push(subLink.href);
+                                        }}
+                                      >
+                                        <span className="top_bar_menu-text">
+                                          {lang ? subLink.nameAr : subLink.name}
+                                        </span>
+                                      </Link>
+                                    </li>
+                                  ))}
+                              </ul>
+                            </li>
+                          </ul>
+                        </div>
                       </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
 
-                  <div className="d-flex justify-content-end align-item-center ">
+                  <div className="d-flex justify-content-end align-item-center col-2">
                     <Link href={"/register"} type="submit" className="btn-nav">
-                      <span>{lang ? "التسجيل للزيارة" : "Register to visit"}</span>
+                      <span>
+                        {lang ? "التسجيل للزيارة" : "Register to visit"}
+                      </span>
                     </Link>
                   </div>
                 </ul>
@@ -374,7 +412,7 @@ export default function Nav() {
           </div>
         </div>
 
-        <div className="row py-2 d-flex d-xl-none">
+        <div className="row py-2 d-flex d-xl-none px-2">
           <div className="col-2">
             <a
               className="menu d-xl-none d-flex "
@@ -398,33 +436,17 @@ export default function Nav() {
               </svg>
             </a>
           </div>
-          
 
-          <div className="col-lg-7 col-4 col-sm-6 col-md-4 d-flex justify-content-center align-items-center">
-            <Link href={"/register"} type="submit" className="shiny-cta-2">
-              <span>{lang ? "التسجيل للزيارة" : "Register to visit"}</span>
-            </Link>
-          </div>
-          <div className="col-lg-1 col-1 col-md-4"></div>
-          <div className="col-lg-2 col-5 d-flex justify-content-end align-content-center ps-5">
-            <Link
-              href="/"
-              style={{
-                height: imageHeight,
-                top: "0",
-                marginTop:"10px"
-              }}
-            >
+          <div className="col-2"> </div>
+
+          <div className="col-lg-2 col-8 d-flex justify-content-end align-content-center ">
+            <Link href="/" className="d-flex">
               <Image
                 src="/logo.png"
                 alt="logo"
                 width={3000}
                 height={3000}
-                style={{
-                  maxWidth: "600px",
-                  height: "auto",
-                }}
-                className="logo w-100"
+                className="logo w-100 my-auto"
                 id="logo"
               />
             </Link>
@@ -438,7 +460,6 @@ export default function Nav() {
           aria-labelledby="offcanvasFNavLabel"
         >
           <div className="offcanvas-header row">
-
             <button
               type="button"
               className="btn-close text-reset col-2 mx-auto"
@@ -446,24 +467,14 @@ export default function Nav() {
               aria-label="Close"
               ref={closeRef}
             ></button>
-            <div className="col-7"></div>
-            <div className="col-3">
-              <Link
-                href="/"
-                style={{
-                  height: imageHeight,
-                  top: "0",
-                }}
-              >
+            <div className="col-3"></div>
+            <div className="col-7">
+              <Link href="/">
                 <Image
-                src="/logo.png"
+                  src="/logo.png"
                   alt="logo"
                   width={3000}
                   height={3000}
-                  style={{
-                    maxWidth: "30px",
-                    height: "auto",
-                  }}
                   className="logo w-100"
                   id="logo"
                 />
@@ -476,11 +487,14 @@ export default function Nav() {
                 {links.map((link, index) => (
                   <div
                     key={index}
-                    className={`nav-item w-100 ${link.name === open ? "open" : ""}`}
+                    className={`nav-item w-100 ${
+                      link.name === open ? "open" : ""
+                    }`}
                   >
                     <button
-                      className={`a w-100 d-flex justify-content-between align-items-center ${router.pathname === link.href ? "active" : ""
-                        }`}
+                      className={`a w-100 d-flex justify-content-between align-items-center ${
+                        router.pathname === link.href ? "active" : ""
+                      }`}
                       role="button"
                       onClick={() => {
                         !link.links
@@ -495,8 +509,9 @@ export default function Nav() {
                         viewBox="0 -960 960 960"
                         width="24px"
                         fill="#000"
-                        className={`${link.links ? "" : "hidden"} ${open === link.name ? "open" : ""
-                          }`}
+                        className={`${link.links ? "" : "hidden"} ${
+                          open === link.name ? "open" : ""
+                        }`}
                       >
                         <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
                       </svg>
@@ -506,8 +521,9 @@ export default function Nav() {
                       <div className="d-flex overflow-hidden flex-column justify-content-center col-12">
                         {link.links.map((subLink, index) => (
                           <Link
-                            className={`${subLink.href === router.pathname ? "active" : ""
-                              } text-center`}
+                            className={`${
+                              subLink.href === router.pathname ? "active" : ""
+                            } text-center open`}
                             href={subLink.href}
                             key={index}
                           >

@@ -162,7 +162,7 @@ export default function Section4({ data }) {
           )}
         </div>
       </div>
-      <div className="fristr row col-12 d-flex justify-content-center ps-sm-5 ms-sm-2 ps-lg-0 ms-lg-0">
+      <div className="fristr row col-12 mx-auto justify-content-center ps-sm-5 ms-sm-2 ps-lg-0 ms-lg-0">
         <div className="col-lg-4 mt-md-4 col-sm-12 text-center">
           {" "}
           <Image

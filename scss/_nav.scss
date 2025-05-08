@@ -178,6 +178,11 @@
   align-items: center;
   gap: 28px;
 
+  .open{
+    height: auto;
+    
+  }
+
   .a {
     color: var(--foreground);
     font-size: 16px;
@@ -196,7 +201,8 @@
     }
     .open {
       transform: rotate(180deg);
-      transition: all 0.3s ease;
+      transition: all 0.3s ease; 
+      height: auto;
     }
 
     &:lang(en) {
