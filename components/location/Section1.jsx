@@ -67,7 +67,7 @@ export default function Section1({ data }) {
                 <p className="sub-text">
                   {lang ? (
                     <>
-                      يقام المعرض في أرض معرض بغداد الدولي / ميناء المعقل،
+                      يقام المعرض في أرض معرض بغداد الدولي،
                       مما يوفر الفرصة الأكبر لمشاركة ناجحة حيث يحتوي على مساحات
                       مسقفة ومكشوفة مخصصة للمعرض، بالإضافة إلى قاعات للمؤتمرات
                       الكبرى ومرافق لتقديم الخدمات اللوجستية ومنظومات أمنية
@@ -75,8 +75,8 @@ export default function Section1({ data }) {
                     </>
                   ) : (
                     <>
-                      The exhibition is held at the Baghdad International Fairground /
-                      Maqal Port, providing the greatest opportunity for successful
+                      The exhibition is held at the Baghdad International Fairground,
+                      providing the greatest opportunity for successful
                       participation. It includes covered and open spaces dedicated to
                       the expo, along with conference halls, logistical service
                       facilities, and integrated security systems.
