@@ -725,7 +725,7 @@ export default function Section1({ data }) {
                 </div>
                 <div className="px-5 text-white col-lg-8 col-12">
                   {" "}
-                  <h6>
+                  <h6 className="d-none d-md-block">
                     {lang
                       ? "لأي استفسارات أو لمزيد من المعلومات حول خدماتنا ومنتجاتنا، لا تتردد في الاتصال بنا. نحن هنا لخدمتك ونسعد بالإجابة على جميع استفساراتك. سواء كنت بحاجة إلى استشارة تصميم داخلي، أو مساعدة في اختيار الأنسب لمساحتك، نحن مستعدون دائمًا لتقديم الدعم والمساعدة. تواصل معنا اليوم لبدء مشروعك المقبل"
                       : "For any inquiries or more information about our services and products, feel free to reach out to us. We are here to serve you and are happy to answer all your questions. Whether you need interior design consultation or help in selecting the best options for your space, we are always ready to provide support and assistance. Contact us today to start your next project"}

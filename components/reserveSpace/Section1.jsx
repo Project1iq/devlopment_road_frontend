@@ -729,7 +729,7 @@ export default function Section1({ data }) {
                 </div>
                 <div className="px-5 text-white col-md-8 col-12">
                   {" "}
-                  <h6>
+                  <h6 className="d-none d-md-block">
                     {lang
                       ? "سجل تفاصيلك اليوم لضمان مشاركتك في هذا الحدث المهم. لا تفوت الفرصة للتواصل مع قادة الصناعة، استكشاف أحدث الابتكارات، والمساهمة في مستقبل قطاع الطاقة في العراق."
                       : "Register your details today to ensure your participation in this important event. Don’t miss the opportunity to connect with industry leaders, explore the latest innovations, and contribute to the future of the energy sector in Iraq."}

@@ -148,7 +148,7 @@ export default function Section1({ data }) {
                 </h1>
               </div>
               <div className="px-5 text-white col-lg-8 col-12">
-                <h6>
+                <h6 className="d-none d-md-block">
                   {lang
                     ? "نستهدف رجال الأعمال والأسواق التجارية محليًا ودوليًا عبر لوحات إعلانات في العراق، إعلانات راديو، حملات رقمية، إعلانات مدفوعة على محركات البحث، وسائل التواصل الاجتماعي، ورسائل SMS/WhatsApp. لدينا أيضًا شراكات إعلامية وتسويق عبر المؤثرين لتوسيع نطاق الوصول وتعزيز الحضور في المعرض."
                     : "We target business people and commercial markets locally and internationally through billboards in Iraq, radio ads, digital campaigns, paid ads on search engines, social media, and SMS/WhatsApp messages. We also have media partnerships and influencer marketing to expand reach and enhance exhibition presence."}

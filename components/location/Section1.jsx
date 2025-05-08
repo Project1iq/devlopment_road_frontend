@@ -52,7 +52,7 @@ export default function Section1({ data }) {
                 </div>
                 <div className="px-5 text-white col-lg-8 col-12">
                   {" "}
-                  <h6>
+                  <h6 className="d-none d-md-block">
                     {lang
                       ? "يُقام معرض طريق التنمية الدولي في بغداد، حيث يجمع الخبراء والشركات الرائدة في مجالات النقل والبناء والاستثمار والبنى التحتية والكهرباء لمناقشة أحدث المشاريع والتوجهات المستقبلية. فرصة فريدة للتواصل واستكشاف الحلول المتطورة في التنمية."
                       : "The Development Path International Expo is held in Baghdad, bringing together experts and leading companies in transportation, construction, investment, infrastructure, and electricity to discuss the latest projects and future trends. A unique opportunity to network and explore advanced development solutions."}

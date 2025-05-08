@@ -71,7 +71,7 @@ export default function Section1({ data }) {
                 </div>
                 <div className="px-5 text-white col-md-8 col-12">
                   {" "}
-                  <h6>
+                  <h6 className="d-none d-md-block">
                     {lang
                       ? "هذا التقرير يسلط الضوء على معرض التنمية الدولي في بغداد، حيث يتم استعراض البرامج والمبادرات الاستراتيجية التي تهدف إلى تعزيز مشاريع التنمية في العراق والمنطقة. كما يناقش المعرض التحديات الحالية والفرص المستقبلية لتحقيق التنمية المستدامة."
                       : "This report highlights the International Development Exhibition in Baghdad, showcasing strategic programs and initiatives aimed at enhancing development projects in Iraq and the region. The exhibition also discusses the current challenges and future opportunities for achieving sustainable development."}

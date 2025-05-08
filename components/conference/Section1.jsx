@@ -29,7 +29,7 @@ export default function Section1({ data }) {
                 </div>
                 <div className="px-5 text-white col-lg-8 col-12">
                   {" "}
-                  <h6>
+                  <h6 className="d-none d-md-block">
                     {lang
                       ? "يُسَلِّط معرض طريق التنمية الضوء على المبادرات الاستراتيجية والفرص التي تهدف إلى تحقيق التنمية المستدامة في العراق والمنطقة."
                       : "The Development Road Exhibition highlights strategic initiatives and opportunities aimed at achieving sustainable development in Iraq and the region."}

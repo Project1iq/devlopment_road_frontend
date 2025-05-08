@@ -43,7 +43,7 @@ Through this network of relations, Iraq aspires to enhance its geopolitical and 
                 </h1>
               </div>
               <div className="px-5 text-white colmd-8 col-12">
-                <h6>
+                <h6 className="d-md-block d-none">
                   {lang
                     ? "يُعد مشروع طريق التنمية منصة استراتيجية لتعزيز العلاقات الإقليمية والدولية للعراق، مما يسهم في تعزيز مكانته الجيوسياسية والاقتصادية."
                     : "The Development Road project serves as a strategic platform to bolster Iraq's regional and international relations, enhancing its geopolitical and economic stature."}
