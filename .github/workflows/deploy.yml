@@ -29,6 +29,7 @@ jobs:
           sleep 1  # Add a delay to ensure the key is loaded
         env:
           SSH_AUTH_SOCK: /tmp/ssh_agent.sock
+          
 
       # - name: Debug PATH
       #   run: |
