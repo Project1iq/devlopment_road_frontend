@@ -33,8 +33,8 @@ export default function Section1({ data }) {
     },
     {
       id: 4,
-      content_ar: "الموقع الالكتروني: www.idrexpo.net",
-      content: "Website: www.idrexpo.net",
+      content_ar: "الموقع الالكتروني:  www.devlopment-road.iq",
+      content: "Website: www.devlopment-road.iq",
     },
   ];
 
@@ -109,7 +109,7 @@ export default function Section1({ data }) {
                   <div className="col-md-2 col-12 px-0"></div>
                   <div className="col-md-12 col-12 px-0">
                     <Image
-                      src="/images/location/loc.png"
+                      src="/images/location/loca.png"
                       alt="plants"
                       width={3000}
                       height={3000}
