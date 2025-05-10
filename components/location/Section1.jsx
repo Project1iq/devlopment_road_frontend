@@ -120,7 +120,7 @@ export default function Section1({ data }) {
               </div>
               <div className="col-12">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3435.437201747679!2d47.78418343809816!3d30.56520114271435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fc49f3554130605%3A0x7ef66844633f9652!2z2KPYsdi2INmF2LnYp9ix2LYg2KfZhNio2LXYsdipINin2YTYr9mI2YTZig!5e0!3m2!1sar!2siq!4v1746642883413!5m2!1sar!2siq" 
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3334.1450499038674!2d44.36261958480407!3d33.31502318081287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMzPCsDE4JzU0LjEiTiA0NMKwMjEnMzcuNiJF!5e0!3m2!1sar!2siq!4v1746904794899!5m2!1sar!2siq" 
                   width="600"
                   height="450"
                   allowFullScreen

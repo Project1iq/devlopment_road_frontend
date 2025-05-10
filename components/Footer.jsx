@@ -345,7 +345,7 @@ export default function Footer() {
             </a>
             <a
               className="d-flex justify-content-center align-items-center mb-3 footer-icons"
-              href="https://maps.app.goo.gl/zairEvFrDkJe4ZGz7"
+              href="https://maps.app.goo.gl/YMVMNv26E8QH8zoy7?g_st=iw"
               target="_blank"
             >
               <svg
