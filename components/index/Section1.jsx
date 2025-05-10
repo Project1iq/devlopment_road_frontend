@@ -184,14 +184,23 @@ export default function Section1({ data }) {
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img
-                src={"/images/slider-home/1.png"}
-                class="d-block w-100"
-                alt="image"
-              />
-            </div>
-            <div class="carousel-item">
+          
+          <div className="carousel-item active" style={{ overflow: 'hidden' }}>
+  <img
+    src="/images/slider-home/7.png"
+    className="d-block imgh"
+    style={{
+      width: '100%',
+      objectFit: 'cover',
+      objectPosition: '20% center' // تحريك الصورة لليسار
+    }}
+    alt="image"
+  />
+</div>
+
+
+
+            {/* <div class="carousel-item">
               <img
                 src={"/images/slider-home/2.png"}
                 class="d-block w-100"
@@ -211,22 +220,22 @@ export default function Section1({ data }) {
                 class="d-block w-100"
                 alt="image"
               />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="video-timer">
           <div className="main col-lg-8 col-sm-12 ">
             <h1 className="text toxt1  ">
               {lang
-                ? "معرض يجمع الفرص ومؤتمر يصنع التغيير "
-                : "Opportunities meet. Change begins "}
+                ? "معرض ومؤتمر طريق التنمية"
+                : "Development Road Exhibition and Conference "}
             </h1>
             <h1 className="text toxt  ">
               {lang ? " في العراق" : "In The Iraq"}
             </h1>
             <h5 className={lang ? " text1  pe-3 " : " text1  ps-3"}>
               {" "}
-              {lang ? "    1-4  نوفمبر 2025" : "2025 nov 1-4  "}
+              {lang ? "    4-1  نوفمبر 2025" : "2025 nov 1-4  "}
             </h5>
             <h5 className={lang ? " text1 tmn pe-3 " : " text1 tmn ps-3"}>
               {" "}

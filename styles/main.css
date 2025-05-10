@@ -69,7 +69,7 @@
   font-weight: 600;
 }
 .index .text1 {
-  font-size: 21px;
+  font-size: 24px;
   color: #fff;
   font-weight: 600;
   text-shadow: 2px 2px 2px hsla(0, 0%, 5%, 0.6);
@@ -2146,7 +2146,7 @@
   }
 }
 .index .video-container .video-timer .tmn {
-  font-size: 19px;
+  font-size: 24px;
 }
 @media (max-width: 767px) {
   .index .video-container .video-timer .tmn {
