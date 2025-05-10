@@ -17,14 +17,17 @@
     }
 
     .title {
-      background-image: url("/images/register/road2.png");
+      background-image: url("/images/register/3.png");
       border-radius: 10px;
       height: 33.2vh;
-      background-position: center top;
-      background-size: cover;
+      background-position: 99% center; /* الصورة تتحرك أكثر إلى اليمين */
+
+      background-size: cover; /* ستجعل الصورة تظهر كاملة داخل العنصر */
       width: 92%;
       border: 1px solid #2e3f51;
-
+      background-repeat: no-repeat; /* يمنع تكرار الصورة */
+    
+    
       @media (max-width: 321px) {
         background-size: cover;
         height: 13.2vh;

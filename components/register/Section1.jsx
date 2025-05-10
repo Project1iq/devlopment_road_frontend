@@ -720,7 +720,7 @@ export default function Section1({ data }) {
                     />
                     <label className="input-label input-label-date">{labels.date_of_birth}</label>
                   </div>
-                  <div className="input col-md-8 col-12">
+                  {/* <div className="input col-md-8 col-12">
                     <input
                       type="text"
                       className="input-field"
@@ -752,7 +752,7 @@ export default function Section1({ data }) {
                       required
                     />
                     <label className="input-label">{labels.place_of_work}</label>
-                  </div>
+                  </div> */}
                   <div className="input col-md-8 col-12">
                     <textarea
                       className="input-field"
@@ -761,7 +761,7 @@ export default function Section1({ data }) {
                       onChange={handleChange}
                     />
                     <label className="input-label">{labels.note}</label>
-                  </div>
+                  </div> 
                   <div className="action col-md-8 col-12">
                     <button type="submit" className="shiny-cta-2">
                       <span>{labels.submit}</span>

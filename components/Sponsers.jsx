@@ -34,7 +34,7 @@ export default function Sponsers() {
           className="kbab col-12 text-center"
           style={{ marginTop: "2vh", marginBottom: "6vh" }}
         >
-          <div className="row" style={{ marginBottom: "6vh" }}>
+          <div className="row" style={{ marginBottom: "4vh" }}>
             <div className="col-1"></div>
             <div className="separator col  col-10   col-sm-none col-md-none col-lg-none justify-content-center ">
               <hr style={{ color: " #000000" }} />
@@ -45,11 +45,22 @@ export default function Sponsers() {
               color: "#304D73",
               width: "auto",
               fontWeight: "600",
-              marginBottom: "10vh",
+              marginBottom: "3vh",
             }}
           >
             {lang ? "تحت رعاية " : " UNDER THE PATRONAGE"}
           </h5>
+          <h6
+            style={{
+           
+              width: "auto",
+              fontWeight: "600",
+              marginBottom: "7vh",
+              fontSize:"16px",
+            }}
+          >
+            {lang ? "معالي رئيس مجلس الوزراء المهندس محمد شياع السوداني المحترم." : "   Prime Minister Engineer Mohammed Shiaa Al-Sudani."}
+          </h6>
           <div className="row d-flex justify-content-center align-items-center ">
             {/* <div className="col-lg-2 col-md-4 col-12 d-flex justify-content-center mb-5 mb-lg-0 mb-md-0">
               <Image

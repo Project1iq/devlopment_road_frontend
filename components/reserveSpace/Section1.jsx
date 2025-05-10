@@ -762,6 +762,9 @@ export default function Section1({ data }) {
                     <option value="special">
                       {lang ? "ديكور خاص" : "Special Decoration"}
                     </option>
+                    <option value="sponser">
+                      {lang ? " راعي" : " Sponsor"}
+                    </option>
                   </select>
                   <label className="input-label">
                     {lang ? "نوع الموقع" : "Location Type"}
