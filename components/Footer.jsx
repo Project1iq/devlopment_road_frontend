@@ -317,7 +317,7 @@ export default function Footer() {
           <div className=" d-flex justify-content-center justify-content-lg-start gap-3 col-lg-6 col-12">
             <a
               className="d-flex justify-content-center  mb-3  footer-icons"
-              href="mailto:Eng.shahal2016@gmail.com"
+              href="mailto:info@development-road.iq" 
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -331,7 +331,7 @@ export default function Footer() {
             </a>
             <a
               className="d-flex justify-content-center align-items-center mb-3 footer-icons"
-              href="tel:+964 771 278 2919"
+              href="tel:+964771115559"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
