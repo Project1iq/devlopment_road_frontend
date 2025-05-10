@@ -726,23 +726,7 @@ export default function Section1({ data }) {
                 height: "510px",
               }}
             >
-              <div className="allpic">
-                <div className="title pt-5 d-flex align-content-center px-4 overflow-hidden mb-3 ">
-                  <div className="line"> </div>
-
-                  <h1 className=" px-2 textfade ">
-                    {lang ? " كن راعيًا" : "Become a Sponsor"}
-                  </h1>
-                </div>
-                <div className="px-5  text-white col-lg-8 col-12 ">
-                  {" "}
-                  <h6 className="d-none d-md-block">
-                    {lang
-                      ? "الرعاية أسرع اشكال التسويق نمو في الوقت الحاضر الرعاية هي الدعم المالــــــــــي أو العيني لنشاط ما ويتم استخدامه بشكل أساسي للوصول إلى أهدافك التجاريـة. يستخدم عدد كبير من المعارض هذه الأيام دعم الرعاية لتقديم برامج أكثر إثـــــارة. تسمح لك الرعاية بالوصول إلى أسواق متخصصة وموجهة بالإضافة إلى ذلك كاستكمال قوي لبرامج التسويق الأخرى، يمكن أن يكون للرعاية تأثير كبير على علاقات العملاء."
-                      : "Sponsorship is the fastest growing form of marketing today. It is the financial or in-kind support of an activity, primarily used to achieve your business objectives. Many exhibitions today rely on sponsorship support to offer more exciting programs. Sponsorship allows you to reach specialized and targeted markets, in addition to being a powerful complement to other marketing programs. Sponsorship can have a significant impact on customer relationships."}
-                  </h6>
-                </div>
-              </div>
+            
             </div>
             <form action="" onSubmit={handleSubmit} className="form row">
               <div className="col-md-6 col-12 pe-md-5 px-0">
