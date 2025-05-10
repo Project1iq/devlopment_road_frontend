@@ -730,57 +730,41 @@ export default function Section1({ data }) {
             </div>
             <form action="" onSubmit={handleSubmit} className="form row">
               <div className="col-md-6 col-12 pe-md-5 px-0">
-                <div className="input col-md-12 col-12">
-                  <select
-                    className="input-field"
-                    name="location_type"
-                    value={formData.location_type || "null"}
-                    onChange={handleChage}
-                    required
-                  >
-                    <option disabled value="null">
-                      {lang ? "اختيار" : "Choose"}
-                    </option>
-                    <option value="inOnly">
-                      {lang ? "مساحة داخلية فقط" : "Indoor Space Only"}
-                    </option>
-                    <option value="standerd">
-                      {lang
-                        ? "مساحة داخلية مع ديكور اعتيادي"
-                        : "Indoor Space with Standard Decoration"}
-                    </option>
-                    <option value="special">
-                      {lang ? "ديكور خاص" : "Special Decoration"}
-                    </option>
-                  </select>
-                  <label className="input-label pb-2">
-                    {lang ? "نوع الموقع" : "Location Type"}
-                  </label>
-                </div>
+             
+              <div className="input col-md-12 col-12">
+  <select
+    className="input-field"
+    name="sponsorship_type"
+    value={formData.sponsorship_type || "null"}
+    onChange={handleChage}
+    required
+  >
+    <option disabled value="null">
+      {lang ? "اختيار" : "Choose"}
+    </option>
+    <option value="bronze">{lang ? "برونزي" : "Bronze"}</option>
+    <option value="silver">{lang ? "فضي" : "Silver"}</option>
+    <option value="gold">{lang ? "ذهبي" : "Gold"}</option>
+    <option value="platinum">{lang ? "بلاتيني" : "Platinum"}</option>
+  </select>
+  <label className="input-label pb-2">
+    {lang ? "نوع الرعاية" : "Sponsorship Type"}
+  </label>
+</div>
 
                 <div className="input col-md-12 col-12">
-                  <select
+                  <input
+                    type="text"
                     className="input-field"
-                    name="location_size"
-                    value={formData.location_size || "null"}
+                    name="full_name"
+                    value={formData.name}
                     onChange={handleChage}
                     required
-                  >
-                    <option disabled value="null">
-                      {lang ? "اختيار" : "Choose"}
-                    </option>
-                    <option value="12">{lang ? "12م" : "12M"}</option>
-                    <option value="15">{lang ? "15م" : "15M"}</option>
-                    <option value="18">{lang ? "18م" : "18M"}</option>
-                    <option value="21">{lang ? "21م" : "21M"}</option>
-                    <option value="24">{lang ? "24م" : "24M"}</option>
-                    <option value="more">{lang ? "أكثر" : "More"}</option>
-                  </select>
-                  <label className="input-label pb-2">
-                    {lang ? "ما مقدار المساحة" : "How much space"}
+                  />
+                  <label className="input-label">
+                    {lang ? "  جهة الرعاية" : "Sponsoring Organization"}
                   </label>
                 </div>
-
                 <div className="input col-md-12 col-12">
                   <input
                     type="text"
@@ -794,6 +778,7 @@ export default function Section1({ data }) {
                     {lang ? " الاسم الكامل" : "full Name"}
                   </label>
                 </div>
+              
 
                 <div className="input col-md-12 col-12">
                   <input
@@ -809,19 +794,6 @@ export default function Section1({ data }) {
                   </label>
                 </div>
 
-                <div className="input col-md-12 col-12">
-                  <input
-                    required
-                    className="input-field"
-                    type="text"
-                    name="job_title"
-                    value={formData.job_title || ""}
-                    onChange={handleChage}
-                  />
-                  <label className="input-label">
-                    {lang ? "المسمى الوظيفي" : "Job Title"}
-                  </label>
-                </div>
 
                 <div style={{ marginTop: "0px" }} className="input">
                   <textarea
@@ -893,15 +865,10 @@ export default function Section1({ data }) {
                     <option selected disabled value="null">
                       {lang ? "اختيار" : "Choose"}
                     </option>
-                    <option value="exhibitor">
-                      {lang ? "العارض" : "Exhibitor"}
-                    </option>
-                    <option value="visitor">
-                      {lang ? "الزائر" : "Visitor"}
-                    </option>
-                    <option value="research">
-                      {lang ? "البحث عن معلومات" : "Looking for information"}
-                    </option>
+                    <option value="branding">{lang ? "بروز العلامة التجارية" : "Brand Visibility"}</option>
+<option value="networking">{lang ? "التواصل مع الجهات" : "Networking"}</option>
+<option value="marketing">{lang ? "فرص تسويقية" : "Marketing Opportunities"}</option>
+
                   </select>
                   <label style={{ color: "#2f2f2f" }} className="input-label pb-2">
                     {lang ? "مهتم" : "Interested in"}
@@ -956,31 +923,7 @@ export default function Section1({ data }) {
                     {lang ? "كيف سمعت عنا؟" : "How did you hear about us?"}
                   </label>
                 </div>
-                <div
-                  className="input col-md-12 col-12"
-                  style={{ position: "relative", marginTop: "16px" }}
-                >
-                  <Select
-                    options={countryOptions}
-                    value={countryOptions.find(
-                      (option) => option.value === formData.country
-                    )}
-                    onChange={handleChangeCountry}
-                    placeholder={lang ? "اختر البلد..." : "select country"}
-                    isSearchable
-                    styles={customStyles}
-                    onFocus={() => setIsFocused(true)}
-                    onBlur={() => setIsFocused(false)}
-                  />
-                  <label
-                    style={{ paddingBottom: "4px", color: "#2f2f2f" }}
-                    className={`select-label pb-2 ${
-                      isFocused || formData.country ? "focused" : ""
-                    }`}
-                  >
-                    {lang ? "الدولة" : " country"}
-                  </label>
-                </div>
+         
 
                 <div className="input-group d-flex flex-column">
                   <button
