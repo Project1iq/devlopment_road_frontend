@@ -236,7 +236,8 @@ export default function Nav() {
                       </svg>
                     </div>{" "}
                     <span dir="ltr" className="text-nowrap">
-                      +964 787 241 1111{" "}
+                      
+0771115559{" "}
                     </span>
                   </div>
                   <div className="top_bar_contact_item w-100 d-flex">

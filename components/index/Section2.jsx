@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function Section2({ data }) {
   const lang = useRecoilValue(langState);
-
+const [stopAnimation, setstopAnimation] = useState(false);
   const settings = {
     vertical: true,
     verticalSwiping: true,
@@ -42,13 +42,19 @@ export default function Section2({ data }) {
     rtl: true,
     arrows: false,
   };
+  useEffect(() => {
+      const isSmallScreen = window.innerWidth < 576;
+      setstopAnimation(isSmallScreen);
+    }, []);
   return (
-    <section className="section-2 mt-5 services">
+    <section className="all-2">
+    <section className="section-2 mt-2 services">
       <div className="sliderpos">
-        <div
+        <div   data-aos={!stopAnimation ? "fade" : ""}  // استخدام "fade" لجعل العنصر يظهر تدريجيًا
+  data-aos-anchor-placement={!stopAnimation ? "center-bottom" : ""}  // تحديد مكان التثبيت (يمكنك تعديله كما تريد)
           className={`text-container  p-5 pb-4 mx-3 d-lg-block d-none ${lang ? "lang-rtl" : "lang-ltr"} ${
             lang ? "text-right" : "text-left"
-          }`}
+          } ` }
         >
           {lang ? (
             <>
@@ -112,7 +118,9 @@ export default function Section2({ data }) {
             </>
           )}
         </div>
-        <div className="sliders d-lg-flex gap-4 mx-5 d-none">
+        <div data-aos={!stopAnimation ? "fade" : ""}  
+  data-aos-anchor-placement={!stopAnimation ? "center-bottom" : ""} className="sliders d-lg-flex gap-4 mx-5 d-none"
+        >
           <div style={{ width: "500px", height: "200px" }}>
             <Slider {...settings}>
               <div>
@@ -146,6 +154,282 @@ export default function Section2({ data }) {
           </div>
         </div>
       </div>
+    
     </section>
+    <section className="row section-1 container mx-auto mt-5 ">
+        <div className="bg-overlay"></div>
+        <div
+          className="col-md-12 col-12 px-lx-0 px-2 z-index mt-2 text-center mb-2"
+          data-aos={"fade-top"}
+        >
+          <div className="mb-4">
+            <h2 className="hn">
+              {lang
+                ? "  رؤية معرض ومؤتمر طريق التنمية    "
+                : "The Vision of the Development Path Exhibition & Conference"}
+            </h2>
+          </div>
+
+          <div className="row">
+            <div className="col-lg-2 col-12"></div>
+            <div className="col-lg-8 col-12 mt-2">
+              <p>
+                {lang
+                  ? "  أن يكون معرض مشروع طريق التنمية العراقي منصة ملهمة للتواصل والتفاعل مع المجتمع المحلي والدولي، تسلط الضوء على رؤية المشروع كمحرك رئيسي للتكامل الاقتصادي والتنمية المستدامة في العراق والمنطقة. يهدف المعرض إلى تقديم المشروع بوصفه نموذجًا عالميًا للابتكار والبنية التحتية، وتعزيز الشراكات المحلية والدولية، وتحفيز مشاركة القطاعين العام والخاص لتحقيق النمو الشامل والمستدام    "
+                  : "The Iraqi Development Path Exhibition aims to be an inspiring platform for local and international interaction, highlighting the project’s role as a key driver for economic integration and sustainable development in Iraq and the region."}
+              </p>
+            </div>
+            <div className="col-2"></div>
+          </div>
+
+          <div className="row justify-content-sm-center justify-content-md-between mb-5 mt-5">
+            <div className="card1 col-3 col-sm-12 hover-effect">
+              <Link href="/govermentSupport">
+                <h2>
+                  {lang ? " شبكة العلاقات" : " NETWORK"}
+                  <span
+                    className="underline"
+                    style={{ width: lang ? "94%" : "83%" }}
+                  ></span>
+                </h2>
+              </Link>
+            </div>
+            <div className="card2 col-3 col-sm-12 hover-effect">
+              <Link href="/whyVisite">
+                <h2>
+                  {lang ? "  المعرض" : " EXHIBIT"}
+                  <span
+                    className="underline"
+                    style={{ width: lang ? "64%" : "63%" }}
+                  ></span>
+                </h2>
+              </Link>
+            </div>
+            <div className="card3 col-3 col-sm-12 hover-effect">
+              <Link href="/conference">
+                <h2>
+                  {lang ? " اكتشف " : " DISCOVER"}
+                  <span
+                    className="underline"
+                    style={{ width: lang ? "60%" : "83%" }}
+                  ></span>
+                </h2>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section className="row section-1 container mx-auto mt-5 ">
+        <div className="bg-overlay"></div>
+        <div
+          className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
+          data-aos={!stopAnimation ? "fade-up" : ""}
+          data-aos-anchor-placement={!stopAnimation ? "center-bottom" : ""}
+        >
+          <div className="counter-section row mb-4 py-4 px-lg-5 px-2 ">
+            <div className="mb-5 pb-1">
+              <h2 className="title-section-1">
+                {lang ? "الفوائد الاقتصادية" : "Economic Benefits"}
+              </h2>
+            </div>
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/4.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "دعم تنوع الاقتصاد المحلي"
+                  : "Supporting Economic Growth"}
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/5.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "خلق فرص عمل دولية و محلية"
+                  : "Creating Local & Global Jobs"}
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/6.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "جذب استثمارات اجنبية مباشرة"
+                  : "Attracting Foreign Capital"}
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/3.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "تحسين الصورة العامة كبيئة استثمارية ناجحة"
+                  : "Improving Investment Image"}
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/1.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "تبادل المعرفة بين الجهات المشاركة"
+                  : "Sharing Knowledge & Ideas"}
+              </p>
+            </div>
+
+            <div className="col-lg-2 col-md-4 col-12">
+              <Image
+                src={"/images/icons/2.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "الترويج عن مشروع طريق التنمية"
+                  : "Promoting Development Projects"}
+              </p>
+            </div>
+
+            <div className="col-12 mt-3">
+              <Link className="btn-default" href={"/contact"}>
+                {lang ? "عرض التفاصيل" : "View Details"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+     
+      <section className="row section-1 container mx-auto mt-5 ">
+        <div className="bg-overlay"></div>
+        <div
+          className="col-md-12 col-12 px-lx-0 px-4 z-index mt-2 text-center mb-2"
+          data-aos={!stopAnimation ? "fade-up" : ""}
+          data-aos-anchor-placement={!stopAnimation ? "center-bottom" : ""}
+        >
+          <div className="counter-section row justify-content-center mb-4 py-4 px-lg-5 px-2">
+            <div className="mb-5 pb-1">
+              <h2 className="title-section-1">
+                {lang ? "   الفوائد الاجتماعية    " : "Social Benefits"}
+              </h2>
+            </div>
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image
+                src={"/images/icons/4.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "تبادل المعرفة و الخبرات من خلال اتاحة الفرص للمختصين والخبراء"
+                  : "Knowledge & Expertise Exchange"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image
+                src={"/images/icons/5.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "نشر الوعي باهمية هذا الطريق للجانب المحلي والاقليمي والدولي"
+                  : "Raising Awareness Locally & Globally"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 col-md-4 col-12">
+              <Image
+                src={"/images/icons/6.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "تحسين مستوى المعيشة للمواطن و زيادة الدخل المحلي للفرد"
+                  : "Improving Living Standards"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 mt-md-5 col-md-4 col-12">
+              <Image
+                src={"/images/icons/3.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "انشاء نقطة حوار مباشرة توضح المتطلبات المستهدفة في المشروع"
+                  : "Direct Dialogue for Project Requirements"}
+              </p>
+            </div>
+
+            <div className="col-lg-4 mt-md-5 col-md-4 col-12">
+              <Image
+                src={"/images/icons/1.png"}
+                alt="image"
+                width={80}
+                height={80}
+              />
+              <p className="text text-center">
+                <br />
+                {lang
+                  ? "تقليل معدل البطالة و زيادة فرص الشباب في المشاركة في اعمار البلد"
+                  : "Reducing Unemployment & Creating Youth Opportunities"}
+              </p>
+            </div>
+
+            <div className="col-12 mt-3">
+              <Link className="btn-default" href={"/contact"}>
+                {lang ? "عرض التفاصيل" : "View Details"}
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+     
+    </section>
+    
   );
 }
