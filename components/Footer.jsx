@@ -95,8 +95,8 @@ export default function Footer() {
           href: "/govermentSupport",
         },
         {
-          name: "Participating Sectors",
-          nameAr: " القطاعات المشاركة",
+          name: "Exhibition Results",
+          nameAr: " نتائج المعرض ",
           href: "/sectors",
         },
         {

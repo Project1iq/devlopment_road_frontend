@@ -11,7 +11,7 @@ export default function Sectors() {
     <div className="sectors container">
       <div className="pt-md-0 pt-5">
         <h2 className="main-text text-center mt-5 mb-5">
-          {lang ? "القطاعات المشاركة" : "Participating Sectors"}
+          {lang ? "نتائج المعرض " : "Exhibition Results"}
         </h2>
       </div>
       <div className="text-center px-5 fw-normal mb-4">
